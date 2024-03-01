@@ -3,6 +3,7 @@
 namespace Orisai\CronExpressionExplainer;
 
 use Cron\CronExpression;
+use DateTimeZone;
 use InvalidArgumentException;
 use Orisai\CronExpressionExplainer\Exception\InvalidExpression;
 use Orisai\CronExpressionExplainer\Interpreter\BasePartInterpreter;
@@ -45,7 +46,7 @@ final class DefaultCronExpressionExplainer implements CronExpressionExplainer
 		$this->dayOfWeekInterpreter = new DayOfWeekInterpreter();
 	}
 
-	public function explain(string $expression, ?int $repeatSeconds = null): string
+	public function explain(string $expression, ?int $repeatSeconds = null, ?DateTimeZone $timeZone = null): string
 	{
 		try {
 			$expr = new CronExpression($expression);
@@ -128,6 +129,10 @@ final class DefaultCronExpressionExplainer implements CronExpressionExplainer
 
 		$monthExplanation = $this->monthInterpreter->explainPart($monthPart);
 		$explanation .= $monthExplanation !== '' ? ' in ' . $monthExplanation : '';
+
+		if ($timeZone !== null) {
+			$explanation .= " in {$timeZone->getName()} time zone";
+		}
 
 		return $explanation . '.';
 	}

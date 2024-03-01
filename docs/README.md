@@ -7,6 +7,7 @@ Human-readable cron expressions
 - [Setup](#setup)
 - [Usage](#usage)
 - [Seconds](#seconds)
+- [Time zones](#time-zones)
 - [Compatibility](#compatibility)
 
 ## Setup
@@ -40,6 +41,14 @@ $explainer->explain('* * * * *', 1); // At every second.
 $explainer->explain('* * * * *', 30); // At every 30 seconds.
 $explainer->explain('30 10 * * *', 2); // At every 2 seconds at 10:30.
 $explainer->explain('1 * * * *', 2); // At every 2 seconds at minute 1.
+```
+
+## Time zones
+
+```php
+use DateTimeZone;
+
+$explainer->explain('30 10 * * *', null, new DateTimeZone('America/New_York')); // At 10:30 in America/New_York time zone.
 ```
 
 ## Compatibility

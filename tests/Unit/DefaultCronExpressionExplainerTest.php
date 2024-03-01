@@ -2,6 +2,7 @@
 
 namespace Tests\Orisai\CronExpressionExplainer\Unit;
 
+use DateTimeZone;
 use Generator;
 use Orisai\CronExpressionExplainer\DefaultCronExpressionExplainer;
 use Orisai\CronExpressionExplainer\Exception\InvalidExpression;
@@ -807,6 +808,34 @@ final class DefaultCronExpressionExplainerTest extends TestCase
 			'* * 1 * *',
 			59,
 			'At every 59 seconds on day-of-month 1.',
+		];
+	}
+
+	/**
+	 * @dataProvider provideTimeZone
+	 */
+	public function testTimeZone(string $expression, DateTimeZone $timeZone, string $explanation): void
+	{
+		$explainer = new DefaultCronExpressionExplainer();
+
+		self::assertSame(
+			$explanation,
+			$explainer->explain($expression, null, $timeZone),
+		);
+	}
+
+	public function provideTimeZone(): Generator
+	{
+		yield [
+			'* 12 * * *',
+			new DateTimeZone('Europe/Prague'),
+			'At every minute past hour 12 in Europe/Prague time zone.',
+		];
+
+		yield [
+			'30 10 * * *',
+			new DateTimeZone('America/New_York'),
+			'At 10:30 in America/New_York time zone.',
 		];
 	}
 
