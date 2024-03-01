@@ -45,7 +45,7 @@ final class DefaultCronExpressionExplainer implements CronExpressionExplainer
 		$this->dayOfWeekInterpreter = new DayOfWeekInterpreter();
 	}
 
-	public function explain(string $expression): string
+	public function explain(string $expression, ?int $repeatSeconds = null): string
 	{
 		try {
 			$expr = new CronExpression($expression);
@@ -53,6 +53,7 @@ final class DefaultCronExpressionExplainer implements CronExpressionExplainer
 			throw new InvalidExpression($exception->getMessage(), $exception);
 		}
 
+		$repeatSeconds ??= 0;
 		$minute = $expr->getExpression(CronExpression::MINUTE);
 		assert($minute !== null);
 		$hour = $expr->getExpression(CronExpression::HOUR);
@@ -71,6 +72,10 @@ final class DefaultCronExpressionExplainer implements CronExpressionExplainer
 		$dayOfWeekPart = $this->parsePart($dayOfWeek, $this->dayOfWeekInterpreter);
 
 		$explanation = 'At ';
+		$secondsExplanation = $this->explainSeconds($repeatSeconds);
+		if ($secondsExplanation !== '') {
+			$explanation .= $secondsExplanation;
+		}
 
 		if (
 			$minutePart instanceof ValuePart
@@ -78,6 +83,10 @@ final class DefaultCronExpressionExplainer implements CronExpressionExplainer
 			&& is_numeric($minutePartValue = $minutePart->getValue())
 			&& is_numeric($hourPartValue = $hourPart->getValue())
 		) {
+			if ($secondsExplanation !== '') {
+				$explanation .= ' at ';
+			}
+
 			$this->hourInterpreter->assertValueInRange($hourPartValue);
 			$this->minuteInterpreter->assertValueInRange($minutePartValue);
 
@@ -85,7 +94,14 @@ final class DefaultCronExpressionExplainer implements CronExpressionExplainer
 				. ':'
 				. str_pad($minutePartValue, 2, '0', STR_PAD_LEFT);
 		} else {
-			$explanation .= $this->minuteInterpreter->explainPart($minutePart);
+			if (!($repeatSeconds > 0 && $minutePart instanceof ValuePart && $minutePart->getValue() === '*')) {
+				if ($secondsExplanation !== '') {
+					$explanation .= ' at ';
+				}
+
+				$explanation .= $this->minuteInterpreter->explainPart($minutePart);
+			}
+
 			$hourExplanation = $this->hourInterpreter->explainPart($hourPart);
 			$explanation .= $hourExplanation !== '' ? ' past ' . $hourExplanation : '';
 		}
@@ -114,6 +130,22 @@ final class DefaultCronExpressionExplainer implements CronExpressionExplainer
 		$explanation .= $monthExplanation !== '' ? ' in ' . $monthExplanation : '';
 
 		return $explanation . '.';
+	}
+
+	/**
+	 * @param int<0, 59> $repeatSeconds
+	 */
+	private function explainSeconds(int $repeatSeconds): string
+	{
+		if ($repeatSeconds <= 0) {
+			return '';
+		}
+
+		if ($repeatSeconds === 1) {
+			return 'every second';
+		}
+
+		return "every $repeatSeconds seconds";
 	}
 
 	private function parsePart(string $part, BasePartInterpreter $interpreter): Part

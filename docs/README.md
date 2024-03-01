@@ -6,6 +6,7 @@ Human-readable cron expressions
 
 - [Setup](#setup)
 - [Usage](#usage)
+- [Seconds](#seconds)
 - [Compatibility](#compatibility)
 
 ## Setup
@@ -30,6 +31,15 @@ $explainer->explain('0 22 * 12 *'); // At 22:00 in December.
 $explainer->explain('0 8-18 * * *'); // At minute 0 past every hour from 8 through 18.
 $explainer->explain('0 8-18/2 * * *'); // At minute 0 past every 2nd hour from 8 through 18.
 $explainer->explain('0 8,12,16 * * *'); // At minute 0 past hour 8, 12 and 16.
+```
+
+## Seconds
+
+```php
+$explainer->explain('* * * * *', 1); // At every second.
+$explainer->explain('* * * * *', 30); // At every 30 seconds.
+$explainer->explain('30 10 * * *', 2); // At every 2 seconds at 10:30.
+$explainer->explain('1 * * * *', 2); // At every 2 seconds at minute 1.
 ```
 
 ## Compatibility

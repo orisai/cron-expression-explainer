@@ -750,6 +750,66 @@ final class DefaultCronExpressionExplainerTest extends TestCase
 		];
 	}
 
+	/**
+	 * @param int<0, 59> $repeatSeconds
+	 *
+	 * @dataProvider provideExplainSeconds
+	 */
+	public function testExplainSeconds(string $expression, int $repeatSeconds, string $explanation): void
+	{
+		$explainer = new DefaultCronExpressionExplainer();
+
+		self::assertSame(
+			$explanation,
+			$explainer->explain($expression, $repeatSeconds),
+		);
+	}
+
+	public function provideExplainSeconds(): Generator
+	{
+		yield [
+			'* * * * *',
+			0,
+			'At every minute.',
+		];
+
+		yield [
+			'* * * * *',
+			1,
+			'At every second.',
+		];
+
+		yield [
+			'* * * * *',
+			2,
+			'At every 2 seconds.',
+		];
+
+		yield [
+			'* * * * *',
+			59,
+			'At every 59 seconds.',
+		];
+
+		yield [
+			'1 * * * *',
+			59,
+			'At every 59 seconds at minute 1.',
+		];
+
+		yield [
+			'30 10 * * *',
+			59,
+			'At every 59 seconds at 10:30.',
+		];
+
+		yield [
+			'* * 1 * *',
+			59,
+			'At every 59 seconds on day-of-month 1.',
+		];
+	}
+
 	public function testInvalidExpression(): void
 	{
 		$explainer = new DefaultCronExpressionExplainer();

@@ -5,6 +5,9 @@ namespace Orisai\CronExpressionExplainer;
 interface CronExpressionExplainer
 {
 
-	public function explain(string $expression): string;
+	/**
+	 * @param int<0,59>|null $repeatSeconds
+	 */
+	public function explain(string $expression, ?int $repeatSeconds = null): string;
 
 }
