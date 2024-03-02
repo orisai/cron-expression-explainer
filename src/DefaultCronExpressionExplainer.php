@@ -6,26 +6,22 @@ use Cron\CronExpression;
 use DateTimeZone;
 use InvalidArgumentException;
 use Orisai\CronExpressionExplainer\Exception\InvalidExpression;
-use Orisai\CronExpressionExplainer\Interpreter\BasePartInterpreter;
 use Orisai\CronExpressionExplainer\Interpreter\DayOfMonthInterpreter;
 use Orisai\CronExpressionExplainer\Interpreter\DayOfWeekInterpreter;
 use Orisai\CronExpressionExplainer\Interpreter\HourInterpreter;
 use Orisai\CronExpressionExplainer\Interpreter\MinuteInterpreter;
 use Orisai\CronExpressionExplainer\Interpreter\MonthInterpreter;
-use Orisai\CronExpressionExplainer\Part\ListPart;
-use Orisai\CronExpressionExplainer\Part\Part;
-use Orisai\CronExpressionExplainer\Part\RangePart;
-use Orisai\CronExpressionExplainer\Part\StepPart;
+use Orisai\CronExpressionExplainer\Part\PartParser;
 use Orisai\CronExpressionExplainer\Part\ValuePart;
 use function assert;
-use function explode;
 use function is_numeric;
-use function str_contains;
 use function str_pad;
 use const STR_PAD_LEFT;
 
 final class DefaultCronExpressionExplainer implements CronExpressionExplainer
 {
+
+	private PartParser $parser;
 
 	private MinuteInterpreter $minuteInterpreter;
 
@@ -39,6 +35,7 @@ final class DefaultCronExpressionExplainer implements CronExpressionExplainer
 
 	public function __construct()
 	{
+		$this->parser = new PartParser();
 		$this->minuteInterpreter = new MinuteInterpreter();
 		$this->hourInterpreter = new HourInterpreter();
 		$this->dayOfMonthInterpreter = new DayOfMonthInterpreter();
@@ -66,11 +63,11 @@ final class DefaultCronExpressionExplainer implements CronExpressionExplainer
 		$dayOfWeek = $expr->getExpression(CronExpression::WEEKDAY);
 		assert($dayOfWeek !== null);
 
-		$minutePart = $this->parsePart($minute, $this->minuteInterpreter);
-		$hourPart = $this->parsePart($hour, $this->hourInterpreter);
-		$dayOfMonthPart = $this->parsePart($dayOfMonth, $this->dayOfMonthInterpreter);
-		$monthPart = $this->parsePart($month, $this->monthInterpreter);
-		$dayOfWeekPart = $this->parsePart($dayOfWeek, $this->dayOfWeekInterpreter);
+		$minutePart = $this->parser->parsePart($minute, $this->minuteInterpreter);
+		$hourPart = $this->parser->parsePart($hour, $this->hourInterpreter);
+		$dayOfMonthPart = $this->parser->parsePart($dayOfMonth, $this->dayOfMonthInterpreter);
+		$monthPart = $this->parser->parsePart($month, $this->monthInterpreter);
+		$dayOfWeekPart = $this->parser->parsePart($dayOfWeek, $this->dayOfWeekInterpreter);
 
 		$explanation = 'At ';
 		$secondsExplanation = $this->explainSeconds($repeatSeconds);
@@ -151,61 +148,6 @@ final class DefaultCronExpressionExplainer implements CronExpressionExplainer
 		}
 
 		return "every $repeatSeconds seconds";
-	}
-
-	private function parsePart(string $part, BasePartInterpreter $interpreter): Part
-	{
-		if (str_contains($part, ',')) {
-			$list = [];
-			foreach (explode(',', $part) as $item) {
-				$list[] = $this->parseUnlistedPart($item, $interpreter);
-			}
-
-			return new ListPart($list);
-		}
-
-		return $this->parseUnlistedPart($part, $interpreter);
-	}
-
-	/**
-	 * @return RangePart|StepPart|ValuePart
-	 */
-	private function parseUnlistedPart(string $part, BasePartInterpreter $interpreter): Part
-	{
-		if (str_contains($part, '/')) {
-			$stepParts = explode('/', $part, 2);
-			$step = (int) $stepParts[1];
-			assert((string) $step === $stepParts[1]);
-
-			return new StepPart(
-				$this->parseRangePart($stepParts[0], $interpreter),
-				$step,
-			);
-		}
-
-		if (str_contains($part, '-')) {
-			return $this->parseRangePart($part, $interpreter);
-		}
-
-		return $this->parseValuePart($part, $interpreter);
-	}
-
-	private function parseRangePart(string $part, BasePartInterpreter $interpreter): RangePart
-	{
-		assert(str_contains($part, '-'));
-		$range = explode('-', $part, 2);
-
-		return new RangePart(
-			$this->parseValuePart($range[0], $interpreter),
-			$this->parseValuePart($range[1], $interpreter),
-		);
-	}
-
-	private function parseValuePart(string $part, BasePartInterpreter $interpreter): ValuePart
-	{
-		$part = $interpreter->deduplicateValue($part);
-
-		return new ValuePart($part);
 	}
 
 }
