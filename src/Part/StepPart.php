@@ -5,17 +5,24 @@ namespace Orisai\CronExpressionExplainer\Part;
 final class StepPart implements Part
 {
 
-	private RangePart $range;
+	/** @var RangePart|ValuePart */
+	private Part $range;
 
 	private int $step;
 
-	public function __construct(RangePart $range, int $step)
+	/**
+	 * @param RangePart|ValuePart $range
+	 */
+	public function __construct(Part $range, int $step)
 	{
 		$this->range = $range;
 		$this->step = $step;
 	}
 
-	public function getRange(): RangePart
+	/**
+	 * @return RangePart|ValuePart
+	 */
+	public function getRange(): Part
 	{
 		return $this->range;
 	}

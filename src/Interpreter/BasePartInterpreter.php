@@ -39,18 +39,26 @@ abstract class BasePartInterpreter
 		}
 
 		if ($part instanceof StepPart) {
+			$range = $part->getRange();
 			$step = $part->getStep();
 
 			// Range with step === 1 is the same as range without step
 			if ($step === 1) {
-				return $this->explainPart($part->getRange());
+				return $this->explainPart($range);
+			}
+
+			if ($range instanceof ValuePart && $range->getValue() === '*') {
+				return 'every '
+					. $step
+					. $this->getNumberExtension($step)
+					. " {$this->getInStepName()}";
 			}
 
 			return 'every '
 				. $step
 				. $this->getNumberExtension($step)
 				. " {$this->getInStepName()} "
-				. $this->explainPart($part->getRange(), false);
+				. $this->explainPart($range, false);
 		}
 
 		if ($part instanceof RangePart) {

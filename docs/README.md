@@ -26,6 +26,7 @@ use Orisai\CronExpressionExplainer\DefaultCronExpressionExplainer;
 $explainer = new DefaultCronExpressionExplainer();
 
 $explainer->explain('* * * * *'); // At every minute.
+$explainer->explain('*/30 * * * *'); // At every 30th minute.
 $explainer->explain('@daily'); // At 00:00.
 $explainer->explain('* * 1 * 1'); // At every minute on day-of-month 1 and on every Monday.
 $explainer->explain('0 22 * 12 *'); // At 22:00 in December.

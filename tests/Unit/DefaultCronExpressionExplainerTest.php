@@ -77,6 +77,11 @@ final class DefaultCronExpressionExplainerTest extends TestCase
 		];
 
 		yield [
+			'*/30 * * * *',
+			'At every 30th minute.',
+		];
+
+		yield [
 			'1-30/1 * * * *',
 			'At every minute from 1 through 30.',
 		];
@@ -171,6 +176,11 @@ final class DefaultCronExpressionExplainerTest extends TestCase
 		yield [
 			'* 1-5,11-15 * * *',
 			'At every minute past every hour from 1 through 5 and from 11 through 15.',
+		];
+
+		yield [
+			'* */2 * * *',
+			'At every minute past every 2nd hour.',
 		];
 
 		yield [
@@ -295,6 +305,11 @@ final class DefaultCronExpressionExplainerTest extends TestCase
 		yield [
 			'* * 1-5,11-15 * *',
 			'At every minute on every day-of-month from 1 through 5 and from 11 through 15.',
+		];
+
+		yield [
+			'* * */2 * *',
+			'At every minute on every 2nd day-of-month.',
 		];
 
 		yield [
@@ -467,6 +482,11 @@ final class DefaultCronExpressionExplainerTest extends TestCase
 		yield [
 			'* * * * 0-2,4-6',
 			'At every minute on every day-of-week from Sunday through Tuesday and from Thursday through Saturday.',
+		];
+
+		yield [
+			'* * * * */2',
+			'At every minute on every 2nd day-of-week.',
 		];
 
 		yield [
@@ -669,6 +689,11 @@ final class DefaultCronExpressionExplainerTest extends TestCase
 		yield [
 			'* * * 1-3,5-7 *',
 			'At every minute in every month from January through March and from May through July.',
+		];
+
+		yield [
+			'* * * */2 *',
+			'At every minute in every 2nd month.',
 		];
 
 		yield [

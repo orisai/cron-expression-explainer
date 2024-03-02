@@ -31,13 +31,15 @@ final class PartParser
 	{
 		if (str_contains($part, '/')) {
 			$stepParts = explode('/', $part, 2);
+
 			$step = (int) $stepParts[1];
 			assert((string) $step === $stepParts[1]);
 
-			return new StepPart(
-				$this->parseRangePart($stepParts[0], $interpreter),
-				$step,
-			);
+			$range = str_contains($stepParts[0], '-')
+				? $this->parseRangePart($stepParts[0], $interpreter)
+				: $this->parseValuePart($stepParts[0], $interpreter);
+
+			return new StepPart($range, $step);
 		}
 
 		if (str_contains($part, '-')) {
