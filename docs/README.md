@@ -8,6 +8,7 @@ Human-readable cron expressions
 - [Usage](#usage)
 - [Seconds](#seconds)
 - [Time zones](#time-zones)
+- [Handling unsupported expressions](#handling-unsupported-expressions)
 - [Compatibility](#compatibility)
 
 ## Setup
@@ -50,6 +51,21 @@ $explainer->explain('1 * * * *', 2); // At every 2 seconds at minute 1.
 use DateTimeZone;
 
 $explainer->explain('30 10 * * *', null, new DateTimeZone('America/New_York')); // At 10:30 in America/New_York time zone.
+```
+
+## Handling unsupported expressions
+
+Syntax may not be recognized as valid or may just be some complex variant that we don't support (yet).
+For that case you may catch the `UnsupportedExpression` exception.
+
+```php
+use Orisai\CronExpressionExplainer\Exception\UnsupportedExpression;
+
+try {
+	$explained = $explainer->explain('not supported');
+} catch (UnsupportedExpression $e) {
+	$explained = $e->getMessage();
+}
 ```
 
 ## Compatibility
