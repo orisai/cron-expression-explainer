@@ -5,7 +5,7 @@ namespace Orisai\CronExpressionExplainer;
 use Cron\CronExpression;
 use DateTimeZone;
 use InvalidArgumentException;
-use Orisai\CronExpressionExplainer\Exception\InvalidExpression;
+use Orisai\CronExpressionExplainer\Exception\UnsupportedExpression;
 use Orisai\CronExpressionExplainer\Interpreter\DayOfMonthInterpreter;
 use Orisai\CronExpressionExplainer\Interpreter\DayOfWeekInterpreter;
 use Orisai\CronExpressionExplainer\Interpreter\HourInterpreter;
@@ -48,7 +48,7 @@ final class DefaultCronExpressionExplainer implements CronExpressionExplainer
 		try {
 			$expr = new CronExpression($expression);
 		} catch (InvalidArgumentException $exception) {
-			throw new InvalidExpression($exception->getMessage(), $exception);
+			throw new UnsupportedExpression($exception->getMessage(), $exception);
 		}
 
 		$repeatSeconds ??= 0;

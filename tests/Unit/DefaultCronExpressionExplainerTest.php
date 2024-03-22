@@ -5,7 +5,7 @@ namespace Tests\Orisai\CronExpressionExplainer\Unit;
 use DateTimeZone;
 use Generator;
 use Orisai\CronExpressionExplainer\DefaultCronExpressionExplainer;
-use Orisai\CronExpressionExplainer\Exception\InvalidExpression;
+use Orisai\CronExpressionExplainer\Exception\UnsupportedExpression;
 use PHPUnit\Framework\TestCase;
 
 final class DefaultCronExpressionExplainerTest extends TestCase
@@ -868,7 +868,7 @@ final class DefaultCronExpressionExplainerTest extends TestCase
 	{
 		$explainer = new DefaultCronExpressionExplainer();
 
-		$this->expectException(InvalidExpression::class);
+		$this->expectException(UnsupportedExpression::class);
 		$this->expectExceptionMessage('invalid is not a valid CRON expression');
 
 		$explainer->explain('invalid');

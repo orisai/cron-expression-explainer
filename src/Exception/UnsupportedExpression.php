@@ -5,7 +5,7 @@ namespace Orisai\CronExpressionExplainer\Exception;
 use InvalidArgumentException;
 use Throwable;
 
-final class InvalidExpression extends InvalidArgumentException
+final class UnsupportedExpression extends InvalidArgumentException
 {
 
 	public function __construct(string $message, Throwable $previous)

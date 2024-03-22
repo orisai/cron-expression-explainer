@@ -3,10 +3,10 @@
 namespace Tests\Orisai\CronExpressionExplainer\Unit\Exception;
 
 use Exception;
-use Orisai\CronExpressionExplainer\Exception\InvalidExpression;
+use Orisai\CronExpressionExplainer\Exception\UnsupportedExpression;
 use PHPUnit\Framework\TestCase;
 
-final class InvalidExpressionTest extends TestCase
+final class UnsupportedExpressionTest extends TestCase
 {
 
 	public function test(): void
@@ -14,7 +14,7 @@ final class InvalidExpressionTest extends TestCase
 		$message = 'message';
 		$previous = new Exception();
 
-		$exception = new InvalidExpression($message, $previous);
+		$exception = new UnsupportedExpression($message, $previous);
 		self::assertSame($message, $exception->getMessage());
 		self::assertSame($previous, $exception->getPrevious());
 	}
