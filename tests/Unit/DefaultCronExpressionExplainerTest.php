@@ -6,6 +6,7 @@ use DateTimeZone;
 use Generator;
 use Orisai\CronExpressionExplainer\DefaultCronExpressionExplainer;
 use Orisai\CronExpressionExplainer\Exception\UnsupportedExpression;
+use Orisai\CronExpressionExplainer\Exception\UnsupportedLanguage;
 use PHPUnit\Framework\TestCase;
 
 final class DefaultCronExpressionExplainerTest extends TestCase
@@ -872,6 +873,41 @@ final class DefaultCronExpressionExplainerTest extends TestCase
 		$this->expectExceptionMessage('invalid is not a valid CRON expression');
 
 		$explainer->explain('invalid');
+	}
+
+	public function testTranslate(): void
+	{
+		$explainer = new DefaultCronExpressionExplainer();
+
+		self::assertSame(
+			'At every minute.',
+			$explainer->explain('* * * * *', null, null, 'en'),
+		);
+	}
+
+	public function testSupportedLanguages(): void
+	{
+		$explainer = new DefaultCronExpressionExplainer();
+
+		self::assertSame(
+			['en' => 'english'],
+			$explainer->getSupportedLanguages(),
+		);
+	}
+
+	public function testNotSupportedLanguage(): void
+	{
+		$explainer = new DefaultCronExpressionExplainer();
+
+		$exception = null;
+		try {
+			$explainer->explain('* * * * *', null, null, 'nope');
+		} catch (UnsupportedLanguage $exception) {
+			// Bellow
+		}
+
+		self::assertNotNull($exception);
+		self::assertSame('nope', $exception->getLanguage());
 	}
 
 }

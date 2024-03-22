@@ -6,6 +6,7 @@ use Cron\CronExpression;
 use DateTimeZone;
 use InvalidArgumentException;
 use Orisai\CronExpressionExplainer\Exception\UnsupportedExpression;
+use Orisai\CronExpressionExplainer\Exception\UnsupportedLanguage;
 use Orisai\CronExpressionExplainer\Interpreter\DayOfMonthInterpreter;
 use Orisai\CronExpressionExplainer\Interpreter\DayOfWeekInterpreter;
 use Orisai\CronExpressionExplainer\Interpreter\HourInterpreter;
@@ -13,6 +14,7 @@ use Orisai\CronExpressionExplainer\Interpreter\MinuteInterpreter;
 use Orisai\CronExpressionExplainer\Interpreter\MonthInterpreter;
 use Orisai\CronExpressionExplainer\Part\PartParser;
 use Orisai\CronExpressionExplainer\Part\ValuePart;
+use function array_key_exists;
 use function assert;
 use function is_numeric;
 use function str_pad;
@@ -43,8 +45,24 @@ final class DefaultCronExpressionExplainer implements CronExpressionExplainer
 		$this->dayOfWeekInterpreter = new DayOfWeekInterpreter();
 	}
 
-	public function explain(string $expression, ?int $repeatSeconds = null, ?DateTimeZone $timeZone = null): string
+	public function getSupportedLanguages(): array
 	{
+		return [
+			'en' => 'english',
+		];
+	}
+
+	public function explain(
+		string $expression,
+		?int $repeatSeconds = null,
+		?DateTimeZone $timeZone = null,
+		?string $language = null
+	): string
+	{
+		if ($language !== null && !array_key_exists($language, $this->getSupportedLanguages())) {
+			throw new UnsupportedLanguage($language);
+		}
+
 		try {
 			$expr = new CronExpression($expression);
 		} catch (InvalidArgumentException $exception) {

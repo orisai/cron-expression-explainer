@@ -8,6 +8,7 @@ Human-readable cron expressions
 - [Usage](#usage)
 - [Seconds](#seconds)
 - [Time zones](#time-zones)
+- [Translations](#translations)
 - [Handling unsupported expressions](#handling-unsupported-expressions)
 - [Compatibility](#compatibility)
 
@@ -51,6 +52,15 @@ $explainer->explain('1 * * * *', 2); // At every 2 seconds at minute 1.
 use DateTimeZone;
 
 $explainer->explain('30 10 * * *', null, new DateTimeZone('America/New_York')); // At 10:30 in America/New_York time zone.
+```
+
+## Translations
+
+Yeah, localization is actually not supported (yet). But the interface is ready for it!
+
+```php
+$explainer->getSupportedLanguages(); // array<string, string> e.g. ['en' => 'english']
+$explainer->explain('* * * * *', null, null, 'en');
 ```
 
 ## Handling unsupported expressions
