@@ -91,6 +91,8 @@ Currently supported locales are:
 - `es` - spanish / español
 - `fr` - french / français
 - `it` - italian / italiano
+- `ja` - japanese / 日本語
+- `ko` - korean / 한국어
 - `nl` - dutch / Nederlands
 - `pl` - polish / polski
 - `pt` - portuguese / português
@@ -98,6 +100,7 @@ Currently supported locales are:
 - `sk` - slovak / slovenčina
 - `tr` - turkish / Türkçe
 - `uk` - ukrainian / українська
+- `zh` - chinese / 简体中文
 
 In case given locale is not supported, the `UnsupportedLocale` exception is thrown.
 
@@ -127,6 +130,10 @@ For example with [orisai/scheduler](https://github.com/orisai/scheduler)!
 To add support for a new locale:
 
 - create file in `src/Translator/translations` and add translations for all the keys used in other translation files
+- besides ICU messages, each file contains meta keys: `parts-order` (space-separated
+  order in which sentence parts are rendered), `sentence-end` (terminal punctuation)
+  and `before-*` glue keys which receive a `position` parameter (`first` at sentence
+  start, `other` elsewhere)
 - add it to supported locales in `DefaultCronExpressionExplainer`
 - generate translations via `make update-snapshots`
 - verify that the generated test translations in `tests/Snapshots/translations` make sense and match their configuration

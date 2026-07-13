@@ -1,0 +1,849 @@
+{
+    "minute-0": {
+        "expression": "* * * * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute.",
+        "translation": "매분."
+    },
+    "minute-1": {
+        "expression": "1 * * * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At minute 1.",
+        "translation": "매시 1분."
+    },
+    "minute-2": {
+        "expression": "1,2 * * * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At minute 1 and 2.",
+        "translation": "매시 1분 및 2분."
+    },
+    "minute-3": {
+        "expression": "1,2,3,4,5 * * * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At minute 1, 2, 3, 4 and 5.",
+        "translation": "매시 1분, 2분, 3분, 4분 및 5분."
+    },
+    "minute-4": {
+        "expression": "1-10 * * * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute from 1 through 10.",
+        "translation": "매시 1분부터 10분까지."
+    },
+    "minute-5": {
+        "expression": "*\/2 * * * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every 2nd minute.",
+        "translation": "2분마다."
+    },
+    "minute-6": {
+        "expression": "*\/3 * * * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every 3rd minute.",
+        "translation": "3분마다."
+    },
+    "minute-7": {
+        "expression": "*\/4 * * * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every 4th minute.",
+        "translation": "4분마다."
+    },
+    "minute-8": {
+        "expression": "*\/5 * * * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every 5th minute.",
+        "translation": "5분마다."
+    },
+    "minute-9": {
+        "expression": "1-10\/2 * * * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every 2nd minute from 1 through 10.",
+        "translation": "1분부터 10분까지 2분마다."
+    },
+    "minute-10": {
+        "expression": "1-15,31-45 * * * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute from 1 through 15 and from 31 through 45.",
+        "translation": "매시 1분부터 15분까지 및 31분부터 45분까지."
+    },
+    "minute-11": {
+        "expression": "1-30\/2,40,41,42,45-50,51,52 * * * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every 2nd minute from 1 through 30, 40, 41, 42, from 45 through 50, 51 and 52.",
+        "translation": "1분부터 30분까지 2분마다, 40분, 41분, 42분, 45분부터 50분까지, 51분 및 52분."
+    },
+    "hour-0": {
+        "expression": "* 1 * * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute past hour 1.",
+        "translation": "1시 매분."
+    },
+    "hour-1": {
+        "expression": "* 1,2 * * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute past hour 1 and 2.",
+        "translation": "1시 및 2시 매분."
+    },
+    "hour-2": {
+        "expression": "* 1,2,3,4,5 * * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute past hour 1, 2, 3, 4 and 5.",
+        "translation": "1시, 2시, 3시, 4시 및 5시 매분."
+    },
+    "hour-3": {
+        "expression": "* 1-10 * * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute past every hour from 1 through 10.",
+        "translation": "1시부터 10시까지 매분."
+    },
+    "hour-4": {
+        "expression": "* *\/2 * * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute past every 2nd hour.",
+        "translation": "2시간마다 매분."
+    },
+    "hour-5": {
+        "expression": "* *\/3 * * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute past every 3rd hour.",
+        "translation": "3시간마다 매분."
+    },
+    "hour-6": {
+        "expression": "* *\/4 * * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute past every 4th hour.",
+        "translation": "4시간마다 매분."
+    },
+    "hour-7": {
+        "expression": "* *\/5 * * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute past every 5th hour.",
+        "translation": "5시간마다 매분."
+    },
+    "hour-8": {
+        "expression": "* 1-10\/2 * * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute past every 2nd hour from 1 through 10.",
+        "translation": "1시부터 10시까지 2시간마다 매분."
+    },
+    "hour-9": {
+        "expression": "* 1-5,11-15 * * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute past every hour from 1 through 5 and from 11 through 15.",
+        "translation": "1시부터 5시까지 및 11시부터 15시까지 매분."
+    },
+    "hour-10": {
+        "expression": "* 1 * * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute past hour 1.",
+        "translation": "1시 매분."
+    },
+    "hour-11": {
+        "expression": "* 1-5\/2,6,7,8,10-12,13,14 * * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute past every 2nd hour from 1 through 5, 6, 7, 8, from 10 through 12, 13 and 14.",
+        "translation": "1시부터 5시까지 2시간마다, 6시, 7시, 8시, 10시부터 12시까지, 13시 및 14시 매분."
+    },
+    "hour+minute-0": {
+        "expression": "@midnight",
+        "seconds": null,
+        "timezone": null,
+        "english": "At 00:00.",
+        "translation": "0:00에."
+    },
+    "hour+minute-1": {
+        "expression": "0 0 * * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At 00:00.",
+        "translation": "0:00에."
+    },
+    "hour+minute-2": {
+        "expression": "10 0 * * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At 00:10.",
+        "translation": "0:10에."
+    },
+    "hour+minute-3": {
+        "expression": "0 2 * * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At 02:00.",
+        "translation": "2:00에."
+    },
+    "hour+minute-4": {
+        "expression": "0 3 * * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At 03:00.",
+        "translation": "3:00에."
+    },
+    "hour+minute-5": {
+        "expression": "0 4 * * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At 04:00.",
+        "translation": "4:00에."
+    },
+    "hour+minute-6": {
+        "expression": "0 10 * * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At 10:00.",
+        "translation": "10:00에."
+    },
+    "hour+minute-7": {
+        "expression": "0 12 * * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At 12:00.",
+        "translation": "12:00에."
+    },
+    "hour+minute-8": {
+        "expression": "0 13 * * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At 13:00.",
+        "translation": "13:00에."
+    },
+    "hour+minute-9": {
+        "expression": "0 14 * * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At 14:00.",
+        "translation": "14:00에."
+    },
+    "hour+minute-10": {
+        "expression": "0 22 * * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At 22:00.",
+        "translation": "22:00에."
+    },
+    "hour+minute-11": {
+        "expression": "0 23 * * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At 23:00.",
+        "translation": "23:00에."
+    },
+    "day-of-month-0": {
+        "expression": "* * 1 * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on day-of-month 1.",
+        "translation": "매월 1일 매분."
+    },
+    "day-of-month-1": {
+        "expression": "* * 1,2 * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on day-of-month 1 and 2.",
+        "translation": "매월 1일 및 2일 매분."
+    },
+    "day-of-month-2": {
+        "expression": "* * 1,2,3,4,5 * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on day-of-month 1, 2, 3, 4 and 5.",
+        "translation": "매월 1일, 2일, 3일, 4일 및 5일 매분."
+    },
+    "day-of-month-3": {
+        "expression": "* * 1-10 * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on every day-of-month from 1 through 10.",
+        "translation": "매월 1일부터 10일까지 매분."
+    },
+    "day-of-month-4": {
+        "expression": "* * *\/2 * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on every 2nd day-of-month.",
+        "translation": "2일마다 매분."
+    },
+    "day-of-month-5": {
+        "expression": "* * *\/3 * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on every 3rd day-of-month.",
+        "translation": "3일마다 매분."
+    },
+    "day-of-month-6": {
+        "expression": "* * *\/4 * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on every 4th day-of-month.",
+        "translation": "4일마다 매분."
+    },
+    "day-of-month-7": {
+        "expression": "* * *\/5 * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on every 5th day-of-month.",
+        "translation": "5일마다 매분."
+    },
+    "day-of-month-8": {
+        "expression": "* * 1-10\/2 * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on every 2nd day-of-month from 1 through 10.",
+        "translation": "1일부터 10일까지 2일마다 매분."
+    },
+    "day-of-month-9": {
+        "expression": "* * 1-5,11-15 * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on every day-of-month from 1 through 5 and from 11 through 15.",
+        "translation": "매월 1일부터 5일까지 및 11일부터 15일까지 매분."
+    },
+    "day-of-month-10": {
+        "expression": "* * 1-10\/2,11,12,13,15-20,21,22 * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on every 2nd day-of-month from 1 through 10, 11, 12, 13, from 15 through 20, 21 and 22.",
+        "translation": "1일부터 10일까지 2일마다, 11일, 12일, 13일, 15일부터 20일까지, 21일 및 22일 매분."
+    },
+    "day-of-month-11": {
+        "expression": "* * 1W * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on a weekday nearest to the 1st.",
+        "translation": "1일에 가장 가까운 평일에 매분."
+    },
+    "day-of-month-12": {
+        "expression": "* * 15W * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on a weekday nearest to the 15th.",
+        "translation": "15일에 가장 가까운 평일에 매분."
+    },
+    "day-of-month-13": {
+        "expression": "* * 1W-5W * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on every day-of-month from a weekday nearest to the 1st through a weekday nearest to the 5th.",
+        "translation": "매월 1일에 가장 가까운 평일부터 5일에 가장 가까운 평일까지 매분."
+    },
+    "day-of-month-14": {
+        "expression": "* * L * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on a last day-of-month.",
+        "translation": "매월 마지막 날에 매분."
+    },
+    "day-of-month-15": {
+        "expression": "* * 1-L * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on every day-of-month from 1 through a last day-of-month.",
+        "translation": "매월 1일부터 마지막 날까지 매분."
+    },
+    "day-of-month-16": {
+        "expression": "* * LW * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on a last weekday.",
+        "translation": "매월 마지막 평일에 매분."
+    },
+    "day-of-month-17": {
+        "expression": "* * 1-LW * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on every day-of-month from 1 through a last weekday.",
+        "translation": "매월 1일부터 마지막 평일까지 매분."
+    },
+    "day-of-week-0": {
+        "expression": "* * * * MON",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on Monday.",
+        "translation": "월요일에 매분."
+    },
+    "day-of-week-1": {
+        "expression": "* * * * 1",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on Monday.",
+        "translation": "월요일에 매분."
+    },
+    "day-of-week-2": {
+        "expression": "* * * * 2",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on Tuesday.",
+        "translation": "화요일에 매분."
+    },
+    "day-of-week-3": {
+        "expression": "* * * * 3",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on Wednesday.",
+        "translation": "수요일에 매분."
+    },
+    "day-of-week-4": {
+        "expression": "* * * * 4",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on Thursday.",
+        "translation": "목요일에 매분."
+    },
+    "day-of-week-5": {
+        "expression": "* * * * 5",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on Friday.",
+        "translation": "금요일에 매분."
+    },
+    "day-of-week-6": {
+        "expression": "* * * * 6",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on Saturday.",
+        "translation": "토요일에 매분."
+    },
+    "day-of-week-7": {
+        "expression": "* * * * 7",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on Sunday.",
+        "translation": "일요일에 매분."
+    },
+    "day-of-week-8": {
+        "expression": "* * * * 1,2",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on Monday and Tuesday.",
+        "translation": "월요일 및 화요일 매분."
+    },
+    "day-of-week-9": {
+        "expression": "* * * * 1,2,3,4,5",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on Monday, Tuesday, Wednesday, Thursday and Friday.",
+        "translation": "월요일, 화요일, 수요일, 목요일 및 금요일 매분."
+    },
+    "day-of-week-10": {
+        "expression": "* * * * 1-2",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on every day-of-week from Monday through Tuesday.",
+        "translation": "월요일부터 화요일까지 매분."
+    },
+    "day-of-week-11": {
+        "expression": "* * * * 3-4",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on every day-of-week from Wednesday through Thursday.",
+        "translation": "수요일부터 목요일까지 매분."
+    },
+    "day-of-week-12": {
+        "expression": "* * * * 5-6",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on every day-of-week from Friday through Saturday.",
+        "translation": "금요일부터 토요일까지 매분."
+    },
+    "day-of-week-13": {
+        "expression": "* * * * 7-1",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on every day-of-week from Sunday through Monday.",
+        "translation": "일요일부터 월요일까지 매분."
+    },
+    "day-of-week-14": {
+        "expression": "* * * * 1-2\/2",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on every 2nd day-of-week from Monday through Tuesday.",
+        "translation": "월요일부터 화요일까지 매 2번째 요일 매분."
+    },
+    "day-of-week-15": {
+        "expression": "* * * * 3-4\/2",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on every 2nd day-of-week from Wednesday through Thursday.",
+        "translation": "수요일부터 목요일까지 매 2번째 요일 매분."
+    },
+    "day-of-week-16": {
+        "expression": "* * * * 5-6\/2",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on every 2nd day-of-week from Friday through Saturday.",
+        "translation": "금요일부터 토요일까지 매 2번째 요일 매분."
+    },
+    "day-of-week-17": {
+        "expression": "* * * * 7-1\/2",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on every 2nd day-of-week from Sunday through Monday.",
+        "translation": "일요일부터 월요일까지 매 2번째 요일 매분."
+    },
+    "day-of-week-18": {
+        "expression": "* * * * *\/2",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on every 2nd day-of-week.",
+        "translation": "매 2번째 요일 매분."
+    },
+    "day-of-week-19": {
+        "expression": "* * * * *\/3",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on every 3rd day-of-week.",
+        "translation": "매 3번째 요일 매분."
+    },
+    "day-of-week-20": {
+        "expression": "* * * * *\/4",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on every 4th day-of-week.",
+        "translation": "매 4번째 요일 매분."
+    },
+    "day-of-week-21": {
+        "expression": "* * * * *\/5",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on every 5th day-of-week.",
+        "translation": "매 5번째 요일 매분."
+    },
+    "day-of-week-22": {
+        "expression": "* * * * 0-5",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on every day-of-week from Sunday through Friday.",
+        "translation": "일요일부터 금요일까지 매분."
+    },
+    "day-of-week-23": {
+        "expression": "* * * * 0-5\/2",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on every 2nd day-of-week from Sunday through Friday.",
+        "translation": "일요일부터 금요일까지 매 2번째 요일 매분."
+    },
+    "day-of-week-24": {
+        "expression": "* * * * 0-2,3,4,5-6",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on every day-of-week from Sunday through Tuesday, Wednesday, Thursday and from Friday through Saturday.",
+        "translation": "일요일부터 화요일까지, 수요일, 목요일 및 금요일부터 토요일까지 매분."
+    },
+    "day-of-week-25": {
+        "expression": "* * * * 7#5",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on 5th Sunday.",
+        "translation": "5번째 일요일에 매분."
+    },
+    "day-of-week-26": {
+        "expression": "* * * * 7L",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on the last Sunday.",
+        "translation": "마지막 일요일에 매분."
+    },
+    "day-of-week-27": {
+        "expression": "* * * * 7L,4",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on the last Sunday and Thursday.",
+        "translation": "마지막 일요일 및 목요일 매분."
+    },
+    "day-of-week-28": {
+        "expression": "* * * * 4,7L",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on Thursday and the last Sunday.",
+        "translation": "목요일 및 마지막 일요일 매분."
+    },
+    "day-of-week-29": {
+        "expression": "* * * * 7L,4L",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on the last Sunday and the last Thursday.",
+        "translation": "마지막 일요일 및 마지막 목요일 매분."
+    },
+    "day-of-week-30": {
+        "expression": "* * * * 7L-4L",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on every day-of-week from the last Sunday through the last Thursday.",
+        "translation": "마지막 일요일부터 마지막 목요일까지 매분."
+    },
+    "day-of-week-31": {
+        "expression": "* * * * 7L-4",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on every day-of-week from the last Sunday through Thursday.",
+        "translation": "마지막 일요일부터 목요일까지 매분."
+    },
+    "day-of-week-32": {
+        "expression": "* * * * 7#5,3#3",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on 5th Sunday and 3rd Wednesday.",
+        "translation": "5번째 일요일 및 3번째 수요일 매분."
+    },
+    "day-of-week-33": {
+        "expression": "* * * * 3#3-7#5",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on every day-of-week from 3rd Wednesday through 5th Sunday.",
+        "translation": "3번째 수요일부터 5번째 일요일까지 매분."
+    },
+    "day-of-week-34": {
+        "expression": "* * * * 7#5,3",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on 5th Sunday and Wednesday.",
+        "translation": "5번째 일요일 및 수요일 매분."
+    },
+    "day-of-week-35": {
+        "expression": "* * * * 7#5-3",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on every day-of-week from 5th Sunday through Wednesday.",
+        "translation": "5번째 일요일부터 수요일까지 매분."
+    },
+    "day-of-week-36": {
+        "expression": "* * * * 3-7#5",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on every day-of-week from Wednesday through 5th Sunday.",
+        "translation": "수요일부터 5번째 일요일까지 매분."
+    },
+    "month-0": {
+        "expression": "* * * JAN *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute in January.",
+        "translation": "1월에 매분."
+    },
+    "month-1": {
+        "expression": "* * * 1 *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute in January.",
+        "translation": "1월에 매분."
+    },
+    "month-2": {
+        "expression": "* * * 2 *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute in February.",
+        "translation": "2월에 매분."
+    },
+    "month-3": {
+        "expression": "* * * 3 *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute in March.",
+        "translation": "3월에 매분."
+    },
+    "month-4": {
+        "expression": "* * * 4 *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute in April.",
+        "translation": "4월에 매분."
+    },
+    "month-5": {
+        "expression": "* * * 5 *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute in May.",
+        "translation": "5월에 매분."
+    },
+    "month-6": {
+        "expression": "* * * 6 *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute in June.",
+        "translation": "6월에 매분."
+    },
+    "month-7": {
+        "expression": "* * * 7 *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute in July.",
+        "translation": "7월에 매분."
+    },
+    "month-8": {
+        "expression": "* * * 8 *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute in August.",
+        "translation": "8월에 매분."
+    },
+    "month-9": {
+        "expression": "* * * 9 *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute in September.",
+        "translation": "9월에 매분."
+    },
+    "month-10": {
+        "expression": "* * * 10 *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute in October.",
+        "translation": "10월에 매분."
+    },
+    "month-11": {
+        "expression": "* * * 11 *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute in November.",
+        "translation": "11월에 매분."
+    },
+    "month-12": {
+        "expression": "* * * 12 *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute in December.",
+        "translation": "12월에 매분."
+    },
+    "month-13": {
+        "expression": "* * * 1,2 *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute in January and February.",
+        "translation": "1월 및 2월 매분."
+    },
+    "month-14": {
+        "expression": "* * * 1,2,3,4,5 *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute in January, February, March, April and May.",
+        "translation": "1월, 2월, 3월, 4월 및 5월 매분."
+    },
+    "month-15": {
+        "expression": "* * * 1-11 *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute in every month from January through November.",
+        "translation": "1월부터 11월까지 매분."
+    },
+    "month-16": {
+        "expression": "* * * *\/2 *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute in every 2nd month.",
+        "translation": "2개월마다 매분."
+    },
+    "month-17": {
+        "expression": "* * * *\/3 *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute in every 3rd month.",
+        "translation": "3개월마다 매분."
+    },
+    "month-18": {
+        "expression": "* * * *\/4 *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute in every 4th month.",
+        "translation": "4개월마다 매분."
+    },
+    "month-19": {
+        "expression": "* * * *\/5 *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute in every 5th month.",
+        "translation": "5개월마다 매분."
+    },
+    "month-20": {
+        "expression": "* * * 1-11\/2 *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute in every 2nd month from January through November.",
+        "translation": "1월부터 11월까지 2개월마다 매분."
+    },
+    "month-21": {
+        "expression": "* * * 1-2,3,4,5-6 *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute in every month from January through February, March, April and from May through June.",
+        "translation": "1월부터 2월까지, 3월, 4월 및 5월부터 6월까지 매분."
+    },
+    "mixed-0": {
+        "expression": "* * * * *",
+        "seconds": 1,
+        "timezone": null,
+        "english": "At every second.",
+        "translation": "매초."
+    },
+    "mixed-1": {
+        "expression": "* * * * *",
+        "seconds": 30,
+        "timezone": null,
+        "english": "At every 30 seconds.",
+        "translation": "30초마다."
+    },
+    "mixed-2": {
+        "expression": "* * * * *",
+        "seconds": null,
+        "timezone": "Europe\/Prague",
+        "english": "At every minute in Europe\/Prague time zone.",
+        "translation": "Europe\/Prague 시간대에서 매분."
+    },
+    "mixed-3": {
+        "expression": "10 * * * *",
+        "seconds": 10,
+        "timezone": null,
+        "english": "At every 10 seconds at minute 10.",
+        "translation": "매시 10분, 10초마다."
+    },
+    "mixed-4": {
+        "expression": "30 10 1 2 *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At 10:30 on 1st of February.",
+        "translation": "2월 1일 10:30에."
+    },
+    "mixed-5": {
+        "expression": "* * 1 * 1",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on day-of-month 1 and on Monday.",
+        "translation": "매월 1일, 그리고 월요일에 매분."
+    },
+    "mixed-6": {
+        "expression": "* * 1 * 1,2",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on day-of-month 1 and on Monday and Tuesday.",
+        "translation": "매월 1일, 그리고 월요일 및 화요일 매분."
+    },
+    "mixed-7": {
+        "expression": "0-59 0-23 1-31 1-12 0-6",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute from 0 through 59 past every hour from 0 through 23 on every day-of-month from 1 through 31 and on every day-of-week from Sunday through Saturday in every month from January through December.",
+        "translation": "1월부터 12월까지 매월 1일부터 31일까지, 그리고 일요일부터 토요일까지 0시부터 23시까지 매시 0분부터 59분까지."
+    }
+}

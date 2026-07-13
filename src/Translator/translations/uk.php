@@ -1,6 +1,8 @@
 <?php declare(strict_types = 1);
 
 return [
+	'parts-order' => 'second time minute hour date day-of-month day-of-week month timezone',
+	'sentence-end' => '.',
 	'listSeparator' => ', ',
 	'list' => '{values} і {lastValue}',
 	'step-all-minute' => '{step, plural,
@@ -80,7 +82,8 @@ return [
       many {кожні # секунд}
       other {кожні # секунди}
     }',
-	'before-minute' => '',
+	'before-second' => '',
+	'before-minute' => '{position, select, first {} other { }}',
 	'every-minute' => 'щохвилини',
 	'minute' => '{minute}',
 	'minute-named' => 'у хвилину {minute}',
@@ -240,10 +243,12 @@ return [
         other {{month} - unknown}
       }}
     }',
+	'before-time' => '{position, select, first {} other { }}',
 	'hour+minute' => '{hourNumeric, select,
       11 {об}
       other {о}
     } {hour}:{minute}',
+	'before-date' => ' ',
 	'day-of-month+month' => '{day} {month, select,
       1 {січня}
       2 {лютого}
@@ -259,5 +264,6 @@ return [
       12 {грудня}
       other {{month} - unknown}
     }',
+	'before-timezone' => ' ',
 	'timezone' => 'у часовому поясі {tz}',
 ];

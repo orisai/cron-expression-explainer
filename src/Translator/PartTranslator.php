@@ -3,13 +3,29 @@
 namespace Orisai\CronExpressionExplainer\Translator;
 
 use MessageFormatter;
+use function array_diff;
 use function assert;
+use function count;
+use function explode;
+use function is_string;
 
 /**
  * @internal
  */
 final class PartTranslator
 {
+
+	private const PartsOrderTokens = [
+		'second',
+		'time',
+		'minute',
+		'hour',
+		'date',
+		'day-of-month',
+		'day-of-week',
+		'month',
+		'timezone',
+	];
 
 	/** @var array<string, array<mixed>> */
 	private array $translations = [];
@@ -29,6 +45,21 @@ final class PartTranslator
 		assert($translatedMessage !== false);
 
 		return $translatedMessage;
+	}
+
+	/**
+	 * @return list<string>
+	 */
+	public function getPartsOrder(string $locale): array
+	{
+		$order = $this->loadTranslations($locale)['parts-order'];
+		assert(is_string($order));
+
+		$tokens = explode(' ', $order);
+		assert(count($tokens) === count(self::PartsOrderTokens));
+		assert(array_diff(self::PartsOrderTokens, $tokens) === []);
+
+		return $tokens;
 	}
 
 	/**

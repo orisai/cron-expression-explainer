@@ -10,6 +10,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Added
 
 - `de`, `es`, `fr`, `it`, `nl`, `pl`, `pt`, `ru`, `tr` and `uk` locales
+- `ja`, `ko` and `zh` locales
+- Translation files control sentence part order (`parts-order`) and terminal punctuation (`sentence-end`)
 
 ### Fixed
 

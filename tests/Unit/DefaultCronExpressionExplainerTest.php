@@ -1219,6 +1219,8 @@ final class DefaultCronExpressionExplainerTest extends TestCase
 				'es' => 'spanish',
 				'fr' => 'french',
 				'it' => 'italian',
+				'ja' => 'japanese',
+				'ko' => 'korean',
 				'nl' => 'dutch',
 				'pl' => 'polish',
 				'pt' => 'portuguese',
@@ -1226,6 +1228,7 @@ final class DefaultCronExpressionExplainerTest extends TestCase
 				'sk' => 'slovak',
 				'tr' => 'turkish',
 				'uk' => 'ukrainian',
+				'zh' => 'chinese',
 			],
 			$explainer->getSupportedLocales(),
 		);

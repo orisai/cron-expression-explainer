@@ -69,6 +69,8 @@ final class DefaultCronExpressionExplainer implements CronExpressionExplainer
 			'es' => 'spanish',
 			'fr' => 'french',
 			'it' => 'italian',
+			'ja' => 'japanese',
+			'ko' => 'korean',
 			'nl' => 'dutch',
 			'pl' => 'polish',
 			'pt' => 'portuguese',
@@ -76,6 +78,7 @@ final class DefaultCronExpressionExplainer implements CronExpressionExplainer
 			'sk' => 'slovak',
 			'tr' => 'turkish',
 			'uk' => 'ukrainian',
+			'zh' => 'chinese',
 		];
 	}
 
@@ -246,9 +249,84 @@ final class DefaultCronExpressionExplainer implements CronExpressionExplainer
 		?DateTimeZone $timeZone
 	): string
 	{
+		$fragments = $this->buildFragments(
+			$locale,
+			$repeatSeconds,
+			$minutePart,
+			$hourPart,
+			$dayOfWeekPart,
+			$dayOfMonthPart,
+			$monthPart,
+			$timeZone,
+		);
+
+		$renderDayJoiner = isset($fragments['day-of-month'], $fragments['day-of-week']);
+		$dayPartRendered = false;
+
 		$explanation = '';
-		$secondsExplanation = $this->explainSeconds($repeatSeconds, $locale);
-		$explanation .= $secondsExplanation;
+		foreach ($this->translator->getPartsOrder($locale) as $token) {
+			$fragment = $fragments[$token] ?? null;
+			if ($fragment === null) {
+				continue;
+			}
+
+			$isDayPart = $token === 'day-of-month' || $token === 'day-of-week';
+			if ($isDayPart && $dayPartRendered && $renderDayJoiner) {
+				$explanation .= $this->translator->translate('between-day-of-month-and-week', [], $locale);
+			}
+
+			if ($isDayPart) {
+				$dayPartRendered = true;
+			}
+
+			$explanation .= $this->translator->translate(
+				"before-$token",
+				$fragment['parameters'] + [
+					'position' => $explanation === '' ? 'first' : 'other',
+				],
+				$locale,
+			);
+			$explanation .= $fragment['explanation'];
+		}
+
+		$sentenceEnd = $this->translator->translate('sentence-end', [], $locale);
+		if (!str_ends_with($explanation, $sentenceEnd)) {
+			$explanation .= $sentenceEnd;
+		}
+
+		return $this->capitalizeFirstLetter($explanation);
+	}
+
+	/**
+	 * @param int<0, 59> $repeatSeconds
+	 * @param ListPart|StepPart|RangePart|ValuePart $minutePart
+	 * @param ListPart|StepPart|RangePart|ValuePart $hourPart
+	 * @param ListPart|StepPart|RangePart|ValuePart $dayOfWeekPart
+	 * @param ListPart|StepPart|RangePart|ValuePart $dayOfMonthPart
+	 * @param ListPart|StepPart|RangePart|ValuePart $monthPart
+	 * @return array<string, array{explanation: string, parameters: array<string, string|int>}>
+	 */
+	private function buildFragments(
+		string $locale,
+		int $repeatSeconds,
+		Part $minutePart,
+		Part $hourPart,
+		Part $dayOfWeekPart,
+		Part $dayOfMonthPart,
+		Part $monthPart,
+		?DateTimeZone $timeZone
+	): array
+	{
+		$fragments = [];
+
+		if ($repeatSeconds > 0) {
+			$fragments['second'] = [
+				'explanation' => $this->translator->translate('second', [
+					'second' => $repeatSeconds,
+				], $locale),
+				'parameters' => [],
+			];
+		}
 
 		if (
 			$minutePart instanceof ValuePart
@@ -256,10 +334,6 @@ final class DefaultCronExpressionExplainer implements CronExpressionExplainer
 			&& is_numeric($minutePartValue = $minutePart->getValue())
 			&& is_numeric($hourPartValue = $hourPart->getValue())
 		) {
-			if ($secondsExplanation !== '') {
-				$explanation .= ' ';
-			}
-
 			$hourPartValueNumeric = $this->hourInterpreter->convertNumericValue($hourPartValue);
 			$hourPartValue = str_pad(
 				(string) $hourPartValueNumeric,
@@ -274,11 +348,14 @@ final class DefaultCronExpressionExplainer implements CronExpressionExplainer
 				STR_PAD_LEFT,
 			);
 
-			$explanation .= $this->translator->translate('hour+minute', [
-				'hourNumeric' => $hourPartValueNumeric,
-				'hour' => $hourPartValue,
-				'minute' => $minutePartValue,
-			], $locale);
+			$fragments['time'] = [
+				'explanation' => $this->translator->translate('hour+minute', [
+					'hourNumeric' => $hourPartValueNumeric,
+					'hour' => $hourPartValue,
+					'minute' => $minutePartValue,
+				], $locale),
+				'parameters' => [],
+			];
 		} else {
 			if (
 				!(
@@ -287,18 +364,21 @@ final class DefaultCronExpressionExplainer implements CronExpressionExplainer
 					&& $this->minuteInterpreter->isAll($minutePart)
 				)
 			) {
-				if ($secondsExplanation !== '') {
-					$explanation .= ' ';
+				$minuteExplanation = $this->minuteInterpreter->explainPart($minutePart, $locale);
+				if ($minuteExplanation !== '') {
+					$fragments['minute'] = [
+						'explanation' => $minuteExplanation,
+						'parameters' => [],
+					];
 				}
-
-				$explanation .= $this->translator->translate('before-minute', [], $locale);
-				$explanation .= $this->minuteInterpreter->explainPart($minutePart, $locale);
 			}
 
 			$hourExplanation = $this->hourInterpreter->explainPart($hourPart, $locale);
 			if ($hourExplanation !== '') {
-				$explanation .= $this->translator->translate('before-hour', [], $locale);
-				$explanation .= $hourExplanation;
+				$fragments['hour'] = [
+					'explanation' => $hourExplanation,
+					'parameters' => [],
+				];
 			}
 		}
 
@@ -310,48 +390,50 @@ final class DefaultCronExpressionExplainer implements CronExpressionExplainer
 			&& is_numeric($dayOfMonthPart->getValue())
 			&& is_numeric($monthPart->getValue())
 		) {
-			$explanation .= ' ' . $this->translator->translate('day-of-month+month', [
-				'day' => $this->dayOfMonthInterpreter->convertNumericValue($dayOfMonthPart->getValue()),
-				'month' => $monthPart->getValue(),
-			], $locale);
+			$fragments['date'] = [
+				'explanation' => $this->translator->translate('day-of-month+month', [
+					'day' => $this->dayOfMonthInterpreter->convertNumericValue($dayOfMonthPart->getValue()),
+					'month' => $monthPart->getValue(),
+				], $locale),
+				'parameters' => [],
+			];
 		} else {
 			$dayOfMonthExplanation = $this->dayOfMonthInterpreter->explainPart($dayOfMonthPart, $locale);
-
 			if ($dayOfMonthExplanation !== '') {
-				$explanation .= $this->translator->translate('before-day-of-month', [], $locale);
-				$explanation .= $dayOfMonthExplanation;
-			}
-
-			if ($dayOfMonthExplanation !== '' && $dayOfWeekExplanation !== '') {
-				$explanation .= $this->translator->translate('between-day-of-month-and-week', [], $locale);
+				$fragments['day-of-month'] = [
+					'explanation' => $dayOfMonthExplanation,
+					'parameters' => [],
+				];
 			}
 
 			if ($dayOfWeekExplanation !== '') {
-				$explanation .= $this->translator->translate('before-day-of-week', [
-					'dayNumber' => $this->getFirstValueIfNumeric($dayOfWeekPart),
-				], $locale);
+				$fragments['day-of-week'] = [
+					'explanation' => $dayOfWeekExplanation,
+					'parameters' => [
+						'dayNumber' => $this->getFirstValueIfNumeric($dayOfWeekPart),
+					],
+				];
 			}
-
-			$explanation .= $dayOfWeekExplanation;
 
 			$monthExplanation = $this->monthInterpreter->explainPart($monthPart, $locale);
 			if ($monthExplanation !== '') {
-				$explanation .= $this->translator->translate('before-month', [], $locale);
-				$explanation .= $monthExplanation;
+				$fragments['month'] = [
+					'explanation' => $monthExplanation,
+					'parameters' => [],
+				];
 			}
 		}
 
 		if ($timeZone !== null) {
-			$explanation .= ' ' . $this->translator->translate('timezone', [
-				'tz' => $timeZone->getName(),
-			], $locale);
+			$fragments['timezone'] = [
+				'explanation' => $this->translator->translate('timezone', [
+					'tz' => $timeZone->getName(),
+				], $locale),
+				'parameters' => [],
+			];
 		}
 
-		if (!str_ends_with($explanation, '.')) {
-			$explanation .= '.';
-		}
-
-		return $this->capitalizeFirstLetter($explanation);
+		return $fragments;
 	}
 
 	private function capitalizeFirstLetter(string $string): string
@@ -366,20 +448,6 @@ final class DefaultCronExpressionExplainer implements CronExpressionExplainer
 		}
 
 		return $firstUpper . $matches[2];
-	}
-
-	/**
-	 * @param int<0, 59> $repeatSeconds
-	 */
-	private function explainSeconds(int $repeatSeconds, string $locale): string
-	{
-		if ($repeatSeconds <= 0) {
-			return '';
-		}
-
-		return $this->translator->translate('second', [
-			'second' => $repeatSeconds,
-		], $locale);
 	}
 
 	private function getFirstValueIfNumeric(Part $part): string

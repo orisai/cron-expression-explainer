@@ -1,6 +1,8 @@
 <?php declare(strict_types = 1);
 
 return [
+	'parts-order' => 'second time minute hour date day-of-month day-of-week month timezone',
+	'sentence-end' => '.',
 	'listSeparator' => ', ',
 	'list' => '{values} e {lastValue}',
 	'step-all-minute' => 'ogni {step, plural,
@@ -57,7 +59,8 @@ return [
       one {ogni secondo}
       other {ogni # secondi}
     }',
-	'before-minute' => '',
+	'before-second' => '',
+	'before-minute' => '{position, select, first {} other { }}',
 	'every-minute' => 'ogni minuto',
 	'minute' => '{minute}',
 	'minute-named' => 'al minuto {minute}',
@@ -201,10 +204,12 @@ return [
         other {{month} - unknown}
       }}
     }',
+	'before-time' => '{position, select, first {} other { }}',
 	'hour+minute' => '{hourNumeric, select,
       1 {all’1:{minute}}
       other {alle {hour}:{minute}}
     }',
+	'before-date' => ' ',
 	'day-of-month+month' => 'il {day, select,
       1 {1º}
       other {{day}}
@@ -223,5 +228,6 @@ return [
       12 {dicembre}
       other {{month} - unknown}
     }',
+	'before-timezone' => ' ',
 	'timezone' => 'nel fuso orario {tz}',
 ];

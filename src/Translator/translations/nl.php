@@ -1,6 +1,8 @@
 <?php declare(strict_types = 1);
 
 return [
+	'parts-order' => 'second time minute hour date day-of-month day-of-week month timezone',
+	'sentence-end' => '.',
 	'listSeparator' => ', ',
 	'list' => '{values} en {lastValue}',
 	'step-all-minute' => 'elke {step} minuten',
@@ -27,7 +29,8 @@ return [
       one {elke seconde}
       other {elke # seconden}
     }',
-	'before-minute' => '',
+	'before-second' => '',
+	'before-minute' => '{position, select, first {} other { }}',
 	'every-minute' => 'elke minuut',
 	'minute' => '{minute}',
 	'minute-named' => 'op minuut {minute}',
@@ -125,7 +128,9 @@ return [
         other {{month} - unknown}
       }}
     }',
+	'before-time' => '{position, select, first {} other { }}',
 	'hour+minute' => 'om {hour}:{minute}',
+	'before-date' => ' ',
 	'day-of-month+month' => 'op {day} {month, select,
       1 {januari}
       2 {februari}
@@ -141,5 +146,6 @@ return [
       12 {december}
       other {{month} - unknown}
     }',
+	'before-timezone' => ' ',
 	'timezone' => 'in de tijdzone {tz}',
 ];

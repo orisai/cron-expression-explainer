@@ -1,0 +1,849 @@
+{
+    "minute-0": {
+        "expression": "* * * * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute.",
+        "translation": "毎分。"
+    },
+    "minute-1": {
+        "expression": "1 * * * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At minute 1.",
+        "translation": "毎時1分。"
+    },
+    "minute-2": {
+        "expression": "1,2 * * * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At minute 1 and 2.",
+        "translation": "毎時1分と2分。"
+    },
+    "minute-3": {
+        "expression": "1,2,3,4,5 * * * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At minute 1, 2, 3, 4 and 5.",
+        "translation": "毎時1分、2分、3分、4分と5分。"
+    },
+    "minute-4": {
+        "expression": "1-10 * * * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute from 1 through 10.",
+        "translation": "1分から10分までの毎分。"
+    },
+    "minute-5": {
+        "expression": "*\/2 * * * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every 2nd minute.",
+        "translation": "2分ごとに。"
+    },
+    "minute-6": {
+        "expression": "*\/3 * * * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every 3rd minute.",
+        "translation": "3分ごとに。"
+    },
+    "minute-7": {
+        "expression": "*\/4 * * * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every 4th minute.",
+        "translation": "4分ごとに。"
+    },
+    "minute-8": {
+        "expression": "*\/5 * * * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every 5th minute.",
+        "translation": "5分ごとに。"
+    },
+    "minute-9": {
+        "expression": "1-10\/2 * * * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every 2nd minute from 1 through 10.",
+        "translation": "1分から10分までの2分ごとに。"
+    },
+    "minute-10": {
+        "expression": "1-15,31-45 * * * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute from 1 through 15 and from 31 through 45.",
+        "translation": "1分から15分までの毎分と31分から45分まで。"
+    },
+    "minute-11": {
+        "expression": "1-30\/2,40,41,42,45-50,51,52 * * * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every 2nd minute from 1 through 30, 40, 41, 42, from 45 through 50, 51 and 52.",
+        "translation": "1分から30分までの2分ごとに、40分、41分、42分、45分から50分まで、51分と52分。"
+    },
+    "hour-0": {
+        "expression": "* 1 * * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute past hour 1.",
+        "translation": "1時台に毎分。"
+    },
+    "hour-1": {
+        "expression": "* 1,2 * * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute past hour 1 and 2.",
+        "translation": "1時台と2時台に毎分。"
+    },
+    "hour-2": {
+        "expression": "* 1,2,3,4,5 * * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute past hour 1, 2, 3, 4 and 5.",
+        "translation": "1時台、2時台、3時台、4時台と5時台に毎分。"
+    },
+    "hour-3": {
+        "expression": "* 1-10 * * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute past every hour from 1 through 10.",
+        "translation": "1時台から10時台までの間に毎分。"
+    },
+    "hour-4": {
+        "expression": "* *\/2 * * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute past every 2nd hour.",
+        "translation": "2時間ごとに毎分。"
+    },
+    "hour-5": {
+        "expression": "* *\/3 * * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute past every 3rd hour.",
+        "translation": "3時間ごとに毎分。"
+    },
+    "hour-6": {
+        "expression": "* *\/4 * * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute past every 4th hour.",
+        "translation": "4時間ごとに毎分。"
+    },
+    "hour-7": {
+        "expression": "* *\/5 * * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute past every 5th hour.",
+        "translation": "5時間ごとに毎分。"
+    },
+    "hour-8": {
+        "expression": "* 1-10\/2 * * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute past every 2nd hour from 1 through 10.",
+        "translation": "1時台から10時台までの2時間ごとに毎分。"
+    },
+    "hour-9": {
+        "expression": "* 1-5,11-15 * * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute past every hour from 1 through 5 and from 11 through 15.",
+        "translation": "1時台から5時台までの間と11時台から15時台までに毎分。"
+    },
+    "hour-10": {
+        "expression": "* 1 * * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute past hour 1.",
+        "translation": "1時台に毎分。"
+    },
+    "hour-11": {
+        "expression": "* 1-5\/2,6,7,8,10-12,13,14 * * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute past every 2nd hour from 1 through 5, 6, 7, 8, from 10 through 12, 13 and 14.",
+        "translation": "1時台から5時台までの2時間ごと、6時台、7時台、8時台、10時台から12時台まで、13時台と14時台に毎分。"
+    },
+    "hour+minute-0": {
+        "expression": "@midnight",
+        "seconds": null,
+        "timezone": null,
+        "english": "At 00:00.",
+        "translation": "0:00に。"
+    },
+    "hour+minute-1": {
+        "expression": "0 0 * * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At 00:00.",
+        "translation": "0:00に。"
+    },
+    "hour+minute-2": {
+        "expression": "10 0 * * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At 00:10.",
+        "translation": "0:10に。"
+    },
+    "hour+minute-3": {
+        "expression": "0 2 * * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At 02:00.",
+        "translation": "2:00に。"
+    },
+    "hour+minute-4": {
+        "expression": "0 3 * * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At 03:00.",
+        "translation": "3:00に。"
+    },
+    "hour+minute-5": {
+        "expression": "0 4 * * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At 04:00.",
+        "translation": "4:00に。"
+    },
+    "hour+minute-6": {
+        "expression": "0 10 * * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At 10:00.",
+        "translation": "10:00に。"
+    },
+    "hour+minute-7": {
+        "expression": "0 12 * * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At 12:00.",
+        "translation": "12:00に。"
+    },
+    "hour+minute-8": {
+        "expression": "0 13 * * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At 13:00.",
+        "translation": "13:00に。"
+    },
+    "hour+minute-9": {
+        "expression": "0 14 * * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At 14:00.",
+        "translation": "14:00に。"
+    },
+    "hour+minute-10": {
+        "expression": "0 22 * * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At 22:00.",
+        "translation": "22:00に。"
+    },
+    "hour+minute-11": {
+        "expression": "0 23 * * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At 23:00.",
+        "translation": "23:00に。"
+    },
+    "day-of-month-0": {
+        "expression": "* * 1 * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on day-of-month 1.",
+        "translation": "毎月1日に毎分。"
+    },
+    "day-of-month-1": {
+        "expression": "* * 1,2 * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on day-of-month 1 and 2.",
+        "translation": "毎月1日と2日に毎分。"
+    },
+    "day-of-month-2": {
+        "expression": "* * 1,2,3,4,5 * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on day-of-month 1, 2, 3, 4 and 5.",
+        "translation": "毎月1日、2日、3日、4日と5日に毎分。"
+    },
+    "day-of-month-3": {
+        "expression": "* * 1-10 * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on every day-of-month from 1 through 10.",
+        "translation": "1日から10日までの間に毎分。"
+    },
+    "day-of-month-4": {
+        "expression": "* * *\/2 * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on every 2nd day-of-month.",
+        "translation": "2日ごとに毎分。"
+    },
+    "day-of-month-5": {
+        "expression": "* * *\/3 * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on every 3rd day-of-month.",
+        "translation": "3日ごとに毎分。"
+    },
+    "day-of-month-6": {
+        "expression": "* * *\/4 * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on every 4th day-of-month.",
+        "translation": "4日ごとに毎分。"
+    },
+    "day-of-month-7": {
+        "expression": "* * *\/5 * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on every 5th day-of-month.",
+        "translation": "5日ごとに毎分。"
+    },
+    "day-of-month-8": {
+        "expression": "* * 1-10\/2 * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on every 2nd day-of-month from 1 through 10.",
+        "translation": "1日から10日までの2日ごとに毎分。"
+    },
+    "day-of-month-9": {
+        "expression": "* * 1-5,11-15 * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on every day-of-month from 1 through 5 and from 11 through 15.",
+        "translation": "1日から5日までの間と11日から15日までに毎分。"
+    },
+    "day-of-month-10": {
+        "expression": "* * 1-10\/2,11,12,13,15-20,21,22 * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on every 2nd day-of-month from 1 through 10, 11, 12, 13, from 15 through 20, 21 and 22.",
+        "translation": "1日から10日までの2日ごと、11日、12日、13日、15日から20日まで、21日と22日に毎分。"
+    },
+    "day-of-month-11": {
+        "expression": "* * 1W * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on a weekday nearest to the 1st.",
+        "translation": "1日に最も近い平日に毎分。"
+    },
+    "day-of-month-12": {
+        "expression": "* * 15W * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on a weekday nearest to the 15th.",
+        "translation": "15日に最も近い平日に毎分。"
+    },
+    "day-of-month-13": {
+        "expression": "* * 1W-5W * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on every day-of-month from a weekday nearest to the 1st through a weekday nearest to the 5th.",
+        "translation": "1日に最も近い平日から5日に最も近い平日までの間に毎分。"
+    },
+    "day-of-month-14": {
+        "expression": "* * L * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on a last day-of-month.",
+        "translation": "月の最終日に毎分。"
+    },
+    "day-of-month-15": {
+        "expression": "* * 1-L * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on every day-of-month from 1 through a last day-of-month.",
+        "translation": "1日から月の最終日までの間に毎分。"
+    },
+    "day-of-month-16": {
+        "expression": "* * LW * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on a last weekday.",
+        "translation": "月の最終平日に毎分。"
+    },
+    "day-of-month-17": {
+        "expression": "* * 1-LW * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on every day-of-month from 1 through a last weekday.",
+        "translation": "1日から月の最終平日までの間に毎分。"
+    },
+    "day-of-week-0": {
+        "expression": "* * * * MON",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on Monday.",
+        "translation": "月曜日に毎分。"
+    },
+    "day-of-week-1": {
+        "expression": "* * * * 1",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on Monday.",
+        "translation": "月曜日に毎分。"
+    },
+    "day-of-week-2": {
+        "expression": "* * * * 2",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on Tuesday.",
+        "translation": "火曜日に毎分。"
+    },
+    "day-of-week-3": {
+        "expression": "* * * * 3",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on Wednesday.",
+        "translation": "水曜日に毎分。"
+    },
+    "day-of-week-4": {
+        "expression": "* * * * 4",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on Thursday.",
+        "translation": "木曜日に毎分。"
+    },
+    "day-of-week-5": {
+        "expression": "* * * * 5",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on Friday.",
+        "translation": "金曜日に毎分。"
+    },
+    "day-of-week-6": {
+        "expression": "* * * * 6",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on Saturday.",
+        "translation": "土曜日に毎分。"
+    },
+    "day-of-week-7": {
+        "expression": "* * * * 7",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on Sunday.",
+        "translation": "日曜日に毎分。"
+    },
+    "day-of-week-8": {
+        "expression": "* * * * 1,2",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on Monday and Tuesday.",
+        "translation": "月曜日と火曜日に毎分。"
+    },
+    "day-of-week-9": {
+        "expression": "* * * * 1,2,3,4,5",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on Monday, Tuesday, Wednesday, Thursday and Friday.",
+        "translation": "月曜日、火曜日、水曜日、木曜日と金曜日に毎分。"
+    },
+    "day-of-week-10": {
+        "expression": "* * * * 1-2",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on every day-of-week from Monday through Tuesday.",
+        "translation": "月曜日から火曜日までの間に毎分。"
+    },
+    "day-of-week-11": {
+        "expression": "* * * * 3-4",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on every day-of-week from Wednesday through Thursday.",
+        "translation": "水曜日から木曜日までの間に毎分。"
+    },
+    "day-of-week-12": {
+        "expression": "* * * * 5-6",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on every day-of-week from Friday through Saturday.",
+        "translation": "金曜日から土曜日までの間に毎分。"
+    },
+    "day-of-week-13": {
+        "expression": "* * * * 7-1",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on every day-of-week from Sunday through Monday.",
+        "translation": "日曜日から月曜日までの間に毎分。"
+    },
+    "day-of-week-14": {
+        "expression": "* * * * 1-2\/2",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on every 2nd day-of-week from Monday through Tuesday.",
+        "translation": "月曜日から火曜日までの2日ごとに毎分。"
+    },
+    "day-of-week-15": {
+        "expression": "* * * * 3-4\/2",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on every 2nd day-of-week from Wednesday through Thursday.",
+        "translation": "水曜日から木曜日までの2日ごとに毎分。"
+    },
+    "day-of-week-16": {
+        "expression": "* * * * 5-6\/2",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on every 2nd day-of-week from Friday through Saturday.",
+        "translation": "金曜日から土曜日までの2日ごとに毎分。"
+    },
+    "day-of-week-17": {
+        "expression": "* * * * 7-1\/2",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on every 2nd day-of-week from Sunday through Monday.",
+        "translation": "日曜日から月曜日までの2日ごとに毎分。"
+    },
+    "day-of-week-18": {
+        "expression": "* * * * *\/2",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on every 2nd day-of-week.",
+        "translation": "週の2日ごとに毎分。"
+    },
+    "day-of-week-19": {
+        "expression": "* * * * *\/3",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on every 3rd day-of-week.",
+        "translation": "週の3日ごとに毎分。"
+    },
+    "day-of-week-20": {
+        "expression": "* * * * *\/4",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on every 4th day-of-week.",
+        "translation": "週の4日ごとに毎分。"
+    },
+    "day-of-week-21": {
+        "expression": "* * * * *\/5",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on every 5th day-of-week.",
+        "translation": "週の5日ごとに毎分。"
+    },
+    "day-of-week-22": {
+        "expression": "* * * * 0-5",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on every day-of-week from Sunday through Friday.",
+        "translation": "日曜日から金曜日までの間に毎分。"
+    },
+    "day-of-week-23": {
+        "expression": "* * * * 0-5\/2",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on every 2nd day-of-week from Sunday through Friday.",
+        "translation": "日曜日から金曜日までの2日ごとに毎分。"
+    },
+    "day-of-week-24": {
+        "expression": "* * * * 0-2,3,4,5-6",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on every day-of-week from Sunday through Tuesday, Wednesday, Thursday and from Friday through Saturday.",
+        "translation": "日曜日から火曜日までの間、水曜日、木曜日と金曜日から土曜日までに毎分。"
+    },
+    "day-of-week-25": {
+        "expression": "* * * * 7#5",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on 5th Sunday.",
+        "translation": "第5日曜日に毎分。"
+    },
+    "day-of-week-26": {
+        "expression": "* * * * 7L",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on the last Sunday.",
+        "translation": "最終日曜日に毎分。"
+    },
+    "day-of-week-27": {
+        "expression": "* * * * 7L,4",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on the last Sunday and Thursday.",
+        "translation": "最終日曜日と木曜日に毎分。"
+    },
+    "day-of-week-28": {
+        "expression": "* * * * 4,7L",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on Thursday and the last Sunday.",
+        "translation": "木曜日と最終日曜日に毎分。"
+    },
+    "day-of-week-29": {
+        "expression": "* * * * 7L,4L",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on the last Sunday and the last Thursday.",
+        "translation": "最終日曜日と最終木曜日に毎分。"
+    },
+    "day-of-week-30": {
+        "expression": "* * * * 7L-4L",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on every day-of-week from the last Sunday through the last Thursday.",
+        "translation": "最終日曜日から最終木曜日までの間に毎分。"
+    },
+    "day-of-week-31": {
+        "expression": "* * * * 7L-4",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on every day-of-week from the last Sunday through Thursday.",
+        "translation": "最終日曜日から木曜日までの間に毎分。"
+    },
+    "day-of-week-32": {
+        "expression": "* * * * 7#5,3#3",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on 5th Sunday and 3rd Wednesday.",
+        "translation": "第5日曜日と第3水曜日に毎分。"
+    },
+    "day-of-week-33": {
+        "expression": "* * * * 3#3-7#5",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on every day-of-week from 3rd Wednesday through 5th Sunday.",
+        "translation": "第3水曜日から第5日曜日までの間に毎分。"
+    },
+    "day-of-week-34": {
+        "expression": "* * * * 7#5,3",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on 5th Sunday and Wednesday.",
+        "translation": "第5日曜日と水曜日に毎分。"
+    },
+    "day-of-week-35": {
+        "expression": "* * * * 7#5-3",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on every day-of-week from 5th Sunday through Wednesday.",
+        "translation": "第5日曜日から水曜日までの間に毎分。"
+    },
+    "day-of-week-36": {
+        "expression": "* * * * 3-7#5",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on every day-of-week from Wednesday through 5th Sunday.",
+        "translation": "水曜日から第5日曜日までの間に毎分。"
+    },
+    "month-0": {
+        "expression": "* * * JAN *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute in January.",
+        "translation": "1月に毎分。"
+    },
+    "month-1": {
+        "expression": "* * * 1 *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute in January.",
+        "translation": "1月に毎分。"
+    },
+    "month-2": {
+        "expression": "* * * 2 *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute in February.",
+        "translation": "2月に毎分。"
+    },
+    "month-3": {
+        "expression": "* * * 3 *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute in March.",
+        "translation": "3月に毎分。"
+    },
+    "month-4": {
+        "expression": "* * * 4 *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute in April.",
+        "translation": "4月に毎分。"
+    },
+    "month-5": {
+        "expression": "* * * 5 *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute in May.",
+        "translation": "5月に毎分。"
+    },
+    "month-6": {
+        "expression": "* * * 6 *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute in June.",
+        "translation": "6月に毎分。"
+    },
+    "month-7": {
+        "expression": "* * * 7 *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute in July.",
+        "translation": "7月に毎分。"
+    },
+    "month-8": {
+        "expression": "* * * 8 *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute in August.",
+        "translation": "8月に毎分。"
+    },
+    "month-9": {
+        "expression": "* * * 9 *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute in September.",
+        "translation": "9月に毎分。"
+    },
+    "month-10": {
+        "expression": "* * * 10 *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute in October.",
+        "translation": "10月に毎分。"
+    },
+    "month-11": {
+        "expression": "* * * 11 *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute in November.",
+        "translation": "11月に毎分。"
+    },
+    "month-12": {
+        "expression": "* * * 12 *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute in December.",
+        "translation": "12月に毎分。"
+    },
+    "month-13": {
+        "expression": "* * * 1,2 *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute in January and February.",
+        "translation": "1月と2月に毎分。"
+    },
+    "month-14": {
+        "expression": "* * * 1,2,3,4,5 *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute in January, February, March, April and May.",
+        "translation": "1月、2月、3月、4月と5月に毎分。"
+    },
+    "month-15": {
+        "expression": "* * * 1-11 *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute in every month from January through November.",
+        "translation": "1月から11月までの間に毎分。"
+    },
+    "month-16": {
+        "expression": "* * * *\/2 *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute in every 2nd month.",
+        "translation": "2か月ごとに毎分。"
+    },
+    "month-17": {
+        "expression": "* * * *\/3 *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute in every 3rd month.",
+        "translation": "3か月ごとに毎分。"
+    },
+    "month-18": {
+        "expression": "* * * *\/4 *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute in every 4th month.",
+        "translation": "4か月ごとに毎分。"
+    },
+    "month-19": {
+        "expression": "* * * *\/5 *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute in every 5th month.",
+        "translation": "5か月ごとに毎分。"
+    },
+    "month-20": {
+        "expression": "* * * 1-11\/2 *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute in every 2nd month from January through November.",
+        "translation": "1月から11月までの2か月ごとに毎分。"
+    },
+    "month-21": {
+        "expression": "* * * 1-2,3,4,5-6 *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute in every month from January through February, March, April and from May through June.",
+        "translation": "1月から2月までの間、3月、4月と5月から6月までに毎分。"
+    },
+    "mixed-0": {
+        "expression": "* * * * *",
+        "seconds": 1,
+        "timezone": null,
+        "english": "At every second.",
+        "translation": "毎秒。"
+    },
+    "mixed-1": {
+        "expression": "* * * * *",
+        "seconds": 30,
+        "timezone": null,
+        "english": "At every 30 seconds.",
+        "translation": "30秒ごとに。"
+    },
+    "mixed-2": {
+        "expression": "* * * * *",
+        "seconds": null,
+        "timezone": "Europe\/Prague",
+        "english": "At every minute in Europe\/Prague time zone.",
+        "translation": "Europe\/Pragueタイムゾーンでの時刻に毎分。"
+    },
+    "mixed-3": {
+        "expression": "10 * * * *",
+        "seconds": 10,
+        "timezone": null,
+        "english": "At every 10 seconds at minute 10.",
+        "translation": "毎時10分、10秒ごとに。"
+    },
+    "mixed-4": {
+        "expression": "30 10 1 2 *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At 10:30 on 1st of February.",
+        "translation": "2月1日の10:30に。"
+    },
+    "mixed-5": {
+        "expression": "* * 1 * 1",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on day-of-month 1 and on Monday.",
+        "translation": "毎月1日と月曜日に毎分。"
+    },
+    "mixed-6": {
+        "expression": "* * 1 * 1,2",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute on day-of-month 1 and on Monday and Tuesday.",
+        "translation": "毎月1日と月曜日と火曜日に毎分。"
+    },
+    "mixed-7": {
+        "expression": "0-59 0-23 1-31 1-12 0-6",
+        "seconds": null,
+        "timezone": null,
+        "english": "At every minute from 0 through 59 past every hour from 0 through 23 on every day-of-month from 1 through 31 and on every day-of-week from Sunday through Saturday in every month from January through December.",
+        "translation": "1月から12月までの間の1日から31日までの間と日曜日から土曜日までの間の0時台から23時台までの間に0分から59分までの毎分。"
+    }
+}

@@ -1,6 +1,8 @@
 <?php declare(strict_types = 1);
 
 return [
+	'parts-order' => 'second time minute hour date day-of-month day-of-week month timezone',
+	'sentence-end' => '.',
 	'listSeparator' => ', ',
 	'list' => '{values} ve {lastValue}',
 	'step-all-minute' => 'her {step} dakikada bir',
@@ -27,7 +29,8 @@ return [
       one {her saniye}
       other {her # saniyede bir}
     }',
-	'before-minute' => '',
+	'before-second' => '',
+	'before-minute' => '{position, select, first {} other { }}',
 	'every-minute' => 'her dakika',
 	'minute' => '{minute}',
 	'minute-named' => '{minute}. dakikada',
@@ -151,7 +154,9 @@ return [
         other {{month} - unknown}
       } ayında}
     }',
+	'before-time' => '{position, select, first {} other { }}',
 	'hour+minute' => 'saat {hour}:{minute}',
+	'before-date' => ' ',
 	'day-of-month+month' => '{month, select,
       1 {ocak}
       2 {şubat}
@@ -167,5 +172,6 @@ return [
       12 {aralık}
       other {{month} - unknown}
     } ayının {day}. günü',
+	'before-timezone' => ' ',
 	'timezone' => '{tz} saat diliminde',
 ];

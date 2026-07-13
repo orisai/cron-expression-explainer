@@ -1,6 +1,8 @@
 <?php declare(strict_types = 1);
 
 return [
+	'parts-order' => 'second time minute hour date day-of-month day-of-week month timezone',
+	'sentence-end' => '.',
 	'listSeparator' => ', ',
 	'list' => '{values} a {lastValue}',
 	'step-all-minute' => 'každou {step}. minutu',
@@ -28,8 +30,9 @@ return [
       few {každé # sekundy}
       other {každých # sekund}
     }',
+	'before-second' => '',
 	'every-minute' => 'každou minutu',
-	'before-minute' => '',
+	'before-minute' => '{position, select, first {} other { }}',
 	'minute' => '{minute}',
 	'minute-named' => 'v minutě {minute}',
 	'before-hour' => ' ',
@@ -150,6 +153,7 @@ return [
         other {{month} - unknown}
       }}
     }',
+	'before-time' => '{position, select, first {} other { }}',
 	'hour+minute' => '{hourNumeric, select,
       2 {ve}
       3 {ve}
@@ -161,6 +165,7 @@ return [
       23 {ve}
       other {v}
     } {hourNumeric}:{minute}',
+	'before-date' => ' ',
 	'day-of-month+month' => '{day}. {month, select,
       1 {ledna}
       2 {února}
@@ -176,5 +181,6 @@ return [
       12 {prosince}
       other {{month} - unknown}
     }',
+	'before-timezone' => ' ',
 	'timezone' => 'v časové zóně {tz}',
 ];
