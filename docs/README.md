@@ -33,7 +33,7 @@ $explainer = new DefaultCronExpressionExplainer();
 $explainer->explain('* * * * *'); // At every minute.
 $explainer->explain('*/30 * * * *'); // At every 30th minute.
 $explainer->explain('@daily'); // At 00:00.
-$explainer->explain('* * 1 * 1'); // At every minute on day 1 and on Monday.
+$explainer->explain('* * 1 * 1'); // At every minute on the 1st day of the month and on Monday.
 $explainer->explain('0 22 * 12 *'); // At 22:00 in December.
 $explainer->explain('0 8-18 * * *'); // At minute 0 past every hour from 8 through 18.
 $explainer->explain('0 8-18/2 * * *'); // At minute 0 past every 2nd hour from 8 through 18.
@@ -137,8 +137,9 @@ To add support for a new locale:
   before, e.g. `month`, `dayOfMonth`, or `none`)
 - value keys (minute, hour, day-of-month and their `-named` variants, day-of-week, month)
   receive `valueCount` (number of items when the enclosing list holds only plain numeric
-  values, otherwise `1` — usable for plural unit labels) and `context`
-  (`value`/`list`/`range`/`step`)
+  values, otherwise `1` — usable for plural unit labels), `context`
+  (`value`/`list`/`range`/`step`) and `listPosition` (`only` outside lists, otherwise
+  `first`/`middle`/`last` — usable to attach a trailing unit label to the last list item)
 - add it to supported locales in `DefaultCronExpressionExplainer`
 - generate translations via `make update-snapshots`
 - verify that the generated test translations in `tests/Snapshots/translations` make sense and match their configuration

@@ -67,10 +67,22 @@ return [
       other {jedem letzten {day}}
     }',
 	'before-day-of-month' => ' ',
-	'day-of-month' => '{day}',
+	'day-of-month' => '{context, select,
+      list {{valueCount, plural,
+        one {{day}}
+        other {{listPosition, select,
+          last {{day}. Tag des Monats}
+          other {{day}.}
+        }}
+      }}
+      other {{day}}
+    }',
 	'day-of-month-named' => '{valueCount, plural,
-      one {am Monatstag {day}}
-      other {an den Monatstagen {day}}
+      one {{listPosition, select,
+        only {am {day}. Tag des Monats}
+        other {am Monatstag {day}}
+      }}
+      other {am {day}.}
     }',
 	'day-of-month-last-day' => '{context, select,
       range {zum letzten Tag des Monats}

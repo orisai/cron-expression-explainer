@@ -152,10 +152,43 @@ return [
       }}
     }',
 	'before-day-of-month' => ' ',
-	'day-of-month' => '{day}',
-	'day-of-month-named' => '{valueCount, plural,
-      one {il giorno {day}}
-      other {i giorni {day}}
+	'day-of-month' => '{context, select,
+      list {{valueCount, plural,
+        one {{day}}
+        other {{listPosition, select,
+          last {{day, select,
+            1 {il 1º del mese}
+            8 {l’8 del mese}
+            11 {l’11 del mese}
+            other {il {day} del mese}
+          }}
+          middle {{day, select,
+            1 {il 1º}
+            8 {l’8}
+            11 {l’11}
+            other {il {day}}
+          }}
+          other {{day}}
+        }}
+      }}
+      other {{day}}
+    }',
+	'day-of-month-named' => '{context, select,
+      list {{valueCount, plural,
+        one {il giorno {day}}
+        other {{day, select,
+          1 {il 1º}
+          8 {l’8}
+          11 {l’11}
+          other {il {day}}
+        }}
+      }}
+      other {{day, select,
+        1 {il 1º del mese}
+        8 {l’8 del mese}
+        11 {l’11 del mese}
+        other {il {day} del mese}
+      }}
     }',
 	'day-of-month-last-day' => 'l’ultimo giorno del mese',
 	'day-of-month-last-weekday' => 'l’ultimo giorno lavorativo del mese',
@@ -219,9 +252,11 @@ return [
       other {alle {hour}:{minute}}
     }',
 	'before-date' => ' ',
-	'day-of-month+month' => 'il {day, select,
-      1 {1º}
-      other {{day}}
+	'day-of-month+month' => '{day, select,
+      1 {il 1º}
+      8 {l’8}
+      11 {l’11}
+      other {il {day}}
     } {month, select,
       1 {gennaio}
       2 {febbraio}

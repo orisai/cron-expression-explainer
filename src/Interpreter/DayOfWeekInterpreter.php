@@ -61,7 +61,8 @@ final class DayOfWeekInterpreter extends BasePartInterpreter
 		string $context,
 		string $locale,
 		bool $renderName,
-		int $valueCount
+		int $valueCount,
+		string $listPosition
 	): string
 	{
 		if (str_contains($value, '#')) {
@@ -83,6 +84,7 @@ final class DayOfWeekInterpreter extends BasePartInterpreter
 				'dayNumber' => $intValue,
 				'context' => $context,
 				'valueCount' => $valueCount,
+				'listPosition' => $listPosition,
 			],
 			$locale,
 		);
@@ -100,6 +102,7 @@ final class DayOfWeekInterpreter extends BasePartInterpreter
 					'nth' => $nth,
 					'context' => $context,
 					'valueCount' => $valueCount,
+					'listPosition' => $listPosition,
 				],
 				$locale,
 			);
@@ -113,6 +116,7 @@ final class DayOfWeekInterpreter extends BasePartInterpreter
 					'day' => $translated,
 					'context' => $context,
 					'valueCount' => $valueCount,
+					'listPosition' => $listPosition,
 				],
 				$locale,
 			);

@@ -91,8 +91,35 @@ return [
       other {poslední {day}}
     }',
 	'before-day-of-month' => ' ',
-	'day-of-month' => '{day}',
-	'day-of-month-named' => '{valueCount, plural, one {ve dni v měsíci {day}} other {ve dnech v měsíci {day}}}',
+	'day-of-month' => '{context, select,
+      list {{valueCount, plural,
+        one {{day}}
+        other {{listPosition, select,
+          last {{day}. den v měsíci}
+          other {{day}.}
+        }}
+      }}
+      other {{day}}
+    }',
+	'day-of-month-named' => '{context, select,
+      list {{valueCount, plural,
+        one {ve dni v měsíci {day}}
+        other {{day, select,
+          2 {ve} 3 {ve} 4 {ve}
+          12 {ve} 13 {ve} 14 {ve}
+          20 {ve} 21 {ve} 22 {ve} 23 {ve} 24 {ve} 25 {ve} 26 {ve} 27 {ve} 28 {ve} 29 {ve}
+          30 {ve} 31 {ve}
+          other {v}
+        } {day}.}
+      }}
+      other {{day, select,
+        2 {ve} 3 {ve} 4 {ve}
+        12 {ve} 13 {ve} 14 {ve}
+        20 {ve} 21 {ve} 22 {ve} 23 {ve} 24 {ve} 25 {ve} 26 {ve} 27 {ve} 28 {ve} 29 {ve}
+        30 {ve} 31 {ve}
+        other {v}
+      } {day}. den v měsíci}
+    }',
 	'day-of-month-last-day' => '{context, select,
       range {posledního dne v měsíci}
       other {v poslední den v měsíci}
@@ -161,6 +188,8 @@ return [
       12 {ve}
       13 {ve}
       14 {ve}
+      20 {ve}
+      21 {ve}
       22 {ve}
       23 {ve}
       other {v}

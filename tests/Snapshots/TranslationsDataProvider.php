@@ -183,6 +183,8 @@ final class TranslationsDataProvider
 		yield ['0 12 * * *'];
 		yield ['0 13 * * *'];
 		yield ['0 14 * * *'];
+		yield ['0 20 * * *'];
+		yield ['0 21 * * *'];
 		yield ['0 22 * * *'];
 		yield ['0 23 * * *'];
 	}
@@ -312,6 +314,7 @@ final class TranslationsDataProvider
 		];
 
 		yield ['30 10 1 2 *'];
+		yield ['30 10 8 3 *'];
 		yield ['* * 1 * 1'];
 		yield ['* * 1 * 1,2'];
 		yield ['0-59 0-23 1-31 1-12 0-6'];

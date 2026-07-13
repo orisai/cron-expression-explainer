@@ -297,22 +297,22 @@ final class DefaultCronExpressionExplainerTest extends TestCase
 	{
 		yield [
 			'* * 1 * *',
-			'At every minute on day 1.',
+			'At every minute on the 1st day of the month.',
 		];
 
 		yield [
 			'* * 31 * *',
-			'At every minute on day 31.',
+			'At every minute on the 31st day of the month.',
 		];
 
 		yield [
 			'* * 01 * *',
-			'At every minute on day 1.',
+			'At every minute on the 1st day of the month.',
 		];
 
 		yield [
 			'* * 1,2,3 * *',
-			'At every minute on days 1, 2 and 3.',
+			'At every minute on the 1st, 2nd and 3rd day of the month.',
 		];
 
 		yield [
@@ -1028,7 +1028,7 @@ final class DefaultCronExpressionExplainerTest extends TestCase
 
 		yield [
 			'@monthly',
-			'At 00:00 on day 1.',
+			'At 00:00 on the 1st day of the month.',
 		];
 
 		yield [
@@ -1048,22 +1048,22 @@ final class DefaultCronExpressionExplainerTest extends TestCase
 
 		yield [
 			'* * 1 * 1',
-			'At every minute on day 1 and on Monday.',
+			'At every minute on the 1st day of the month and on Monday.',
 		];
 
 		yield [
 			'* * 1 * 1,2',
-			'At every minute on day 1 and on Monday and Tuesday.',
+			'At every minute on the 1st day of the month and on Monday and Tuesday.',
 		];
 
 		yield [
 			'* * 1 2 5',
-			'At every minute on day 1 and on Friday in February.',
+			'At every minute on the 1st day of the month and on Friday in February.',
 		];
 
 		yield [
 			'1 1 1 1 1',
-			'At 01:01 on day 1 and on Monday in January.',
+			'At 01:01 on the 1st day of the month and on Monday in January.',
 		];
 
 		yield [
@@ -1155,7 +1155,7 @@ final class DefaultCronExpressionExplainerTest extends TestCase
 		yield [
 			'* * 1 * *',
 			59,
-			'At every 59 seconds on day 1.',
+			'At every 59 seconds on the 1st day of the month.',
 		];
 	}
 

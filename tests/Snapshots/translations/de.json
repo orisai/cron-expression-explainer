@@ -238,13 +238,27 @@
         "translation": "Um 14:00."
     },
     "hour+minute-10": {
+        "expression": "0 20 * * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At 20:00.",
+        "translation": "Um 20:00."
+    },
+    "hour+minute-11": {
+        "expression": "0 21 * * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At 21:00.",
+        "translation": "Um 21:00."
+    },
+    "hour+minute-12": {
         "expression": "0 22 * * *",
         "seconds": null,
         "timezone": null,
         "english": "At 22:00.",
         "translation": "Um 22:00."
     },
-    "hour+minute-11": {
+    "hour+minute-13": {
         "expression": "0 23 * * *",
         "seconds": null,
         "timezone": null,
@@ -255,22 +269,22 @@
         "expression": "* * 1 * *",
         "seconds": null,
         "timezone": null,
-        "english": "At every minute on day 1.",
-        "translation": "Jede Minute am Monatstag 1."
+        "english": "At every minute on the 1st day of the month.",
+        "translation": "Jede Minute am 1. Tag des Monats."
     },
     "day-of-month-1": {
         "expression": "* * 1,2 * *",
         "seconds": null,
         "timezone": null,
-        "english": "At every minute on days 1 and 2.",
-        "translation": "Jede Minute an den Monatstagen 1 und 2."
+        "english": "At every minute on the 1st and 2nd day of the month.",
+        "translation": "Jede Minute am 1. und 2. Tag des Monats."
     },
     "day-of-month-2": {
         "expression": "* * 1,2,3,4,5 * *",
         "seconds": null,
         "timezone": null,
-        "english": "At every minute on days 1, 2, 3, 4 and 5.",
-        "translation": "Jede Minute an den Monatstagen 1, 2, 3, 4 und 5."
+        "english": "At every minute on the 1st, 2nd, 3rd, 4th and 5th day of the month.",
+        "translation": "Jede Minute am 1., 2., 3., 4. und 5. Tag des Monats."
     },
     "day-of-month-3": {
         "expression": "* * 1-10 * *",
@@ -826,20 +840,27 @@
         "translation": "Um 10:30 am 1. Februar."
     },
     "mixed-5": {
+        "expression": "30 10 8 3 *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At 10:30 on 8th of March.",
+        "translation": "Um 10:30 am 8. März."
+    },
+    "mixed-6": {
         "expression": "* * 1 * 1",
         "seconds": null,
         "timezone": null,
-        "english": "At every minute on day 1 and on Monday.",
-        "translation": "Jede Minute am Monatstag 1 und am Montag."
+        "english": "At every minute on the 1st day of the month and on Monday.",
+        "translation": "Jede Minute am 1. Tag des Monats und am Montag."
     },
-    "mixed-6": {
+    "mixed-7": {
         "expression": "* * 1 * 1,2",
         "seconds": null,
         "timezone": null,
-        "english": "At every minute on day 1 and on Monday and Tuesday.",
-        "translation": "Jede Minute am Monatstag 1 und am Montag und Dienstag."
+        "english": "At every minute on the 1st day of the month and on Monday and Tuesday.",
+        "translation": "Jede Minute am 1. Tag des Monats und am Montag und Dienstag."
     },
-    "mixed-7": {
+    "mixed-8": {
         "expression": "0-59 0-23 1-31 1-12 0-6",
         "seconds": null,
         "timezone": null,

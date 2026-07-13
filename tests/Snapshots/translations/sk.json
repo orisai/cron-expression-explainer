@@ -238,13 +238,27 @@
         "translation": "O 14:00."
     },
     "hour+minute-10": {
+        "expression": "0 20 * * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At 20:00.",
+        "translation": "O 20:00."
+    },
+    "hour+minute-11": {
+        "expression": "0 21 * * *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At 21:00.",
+        "translation": "O 21:00."
+    },
+    "hour+minute-12": {
         "expression": "0 22 * * *",
         "seconds": null,
         "timezone": null,
         "english": "At 22:00.",
         "translation": "O 22:00."
     },
-    "hour+minute-11": {
+    "hour+minute-13": {
         "expression": "0 23 * * *",
         "seconds": null,
         "timezone": null,
@@ -255,22 +269,22 @@
         "expression": "* * 1 * *",
         "seconds": null,
         "timezone": null,
-        "english": "At every minute on day 1.",
-        "translation": "Každú minútu dňa v mesiaci 1."
+        "english": "At every minute on the 1st day of the month.",
+        "translation": "Každú minútu v 1. deň v mesiaci."
     },
     "day-of-month-1": {
         "expression": "* * 1,2 * *",
         "seconds": null,
         "timezone": null,
-        "english": "At every minute on days 1 and 2.",
-        "translation": "Každú minútu v dňoch v mesiaci 1 a 2."
+        "english": "At every minute on the 1st and 2nd day of the month.",
+        "translation": "Každú minútu v 1. a 2. deň v mesiaci."
     },
     "day-of-month-2": {
         "expression": "* * 1,2,3,4,5 * *",
         "seconds": null,
         "timezone": null,
-        "english": "At every minute on days 1, 2, 3, 4 and 5.",
-        "translation": "Každú minútu v dňoch v mesiaci 1, 2, 3, 4 a 5."
+        "english": "At every minute on the 1st, 2nd, 3rd, 4th and 5th day of the month.",
+        "translation": "Každú minútu v 1., 2., 3., 4. a 5. deň v mesiaci."
     },
     "day-of-month-3": {
         "expression": "* * 1-10 * *",
@@ -826,20 +840,27 @@
         "translation": "O 10:30 1. februára."
     },
     "mixed-5": {
+        "expression": "30 10 8 3 *",
+        "seconds": null,
+        "timezone": null,
+        "english": "At 10:30 on 8th of March.",
+        "translation": "O 10:30 8. marca."
+    },
+    "mixed-6": {
         "expression": "* * 1 * 1",
         "seconds": null,
         "timezone": null,
-        "english": "At every minute on day 1 and on Monday.",
-        "translation": "Každú minútu dňa v mesiaci 1 a v pondelok."
+        "english": "At every minute on the 1st day of the month and on Monday.",
+        "translation": "Každú minútu v 1. deň v mesiaci a v pondelok."
     },
-    "mixed-6": {
+    "mixed-7": {
         "expression": "* * 1 * 1,2",
         "seconds": null,
         "timezone": null,
-        "english": "At every minute on day 1 and on Monday and Tuesday.",
-        "translation": "Každú minútu dňa v mesiaci 1 a v pondelok a utorok."
+        "english": "At every minute on the 1st day of the month and on Monday and Tuesday.",
+        "translation": "Každú minútu v 1. deň v mesiaci a v pondelok a utorok."
     },
-    "mixed-7": {
+    "mixed-8": {
         "expression": "0-59 0-23 1-31 1-12 0-6",
         "seconds": null,
         "timezone": null,

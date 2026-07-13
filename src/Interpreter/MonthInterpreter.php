@@ -57,7 +57,8 @@ final class MonthInterpreter extends BasePartInterpreter
 		string $context,
 		string $locale,
 		bool $renderName,
-		int $valueCount
+		int $valueCount,
+		string $listPosition
 	): string
 	{
 		return $this->translator->translate(
@@ -66,6 +67,7 @@ final class MonthInterpreter extends BasePartInterpreter
 				'month' => $this->convertNumericValue($value),
 				'context' => $context,
 				'valueCount' => $valueCount,
+				'listPosition' => $listPosition,
 			],
 			$locale,
 		);

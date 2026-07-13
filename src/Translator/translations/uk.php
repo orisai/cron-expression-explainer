@@ -88,8 +88,23 @@ return [
 	'minute' => '{minute}',
 	'minute-named' => '{valueCount, plural, =1 {у хвилину {minute}} other {у хвилини {minute}}}',
 	'before-hour' => ' ',
-	'hour' => '{hour}',
-	'hour-named' => '{valueCount, plural, =1 {о годині {hour}} other {о годинах {hour}}}',
+	'hour' => '{context, select,
+      list {{valueCount, plural,
+        =1 {{hour}}
+        other {{listPosition, select,
+          last {{hour}-й годині}
+          other {{hour}-й}
+        }}
+      }}
+      other {{hour}}
+    }',
+	'hour-named' => '{context, select,
+      list {{valueCount, plural,
+        =1 {о годині {hour}}
+        other {{hour, select, 11 {об} other {о}} {hour}-й}
+      }}
+      other {{hour, select, 11 {об} other {о}} {hour}-й годині}
+    }',
 	'between-day-of-month-and-week' => ' та',
 	'before-day-of-week' => '{dayNumber, select,
       NaN { }
@@ -181,8 +196,20 @@ return [
       } {day}}
     }',
 	'before-day-of-month' => ' ',
-	'day-of-month' => '{day}-го',
-	'day-of-month-named' => '{day}-го числа',
+	'day-of-month' => '{context, select,
+      list {{valueCount, plural,
+        =1 {{day}-го}
+        other {{listPosition, select,
+          last {{day}-го числа}
+          other {{day}-го}
+        }}
+      }}
+      other {{day}-го}
+    }',
+	'day-of-month-named' => '{valueCount, plural,
+      =1 {{day}-го числа}
+      other {{day}-го}
+    }',
 	'day-of-month-last-day' => '{context, select,
       range {останнього дня місяця}
       other {в останній день місяця}

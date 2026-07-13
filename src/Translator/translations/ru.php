@@ -174,8 +174,20 @@ return [
       } {day}}
     }',
 	'before-day-of-month' => ' ',
-	'day-of-month' => '{day}-го',
-	'day-of-month-named' => '{day}-го числа',
+	'day-of-month' => '{context, select,
+      list {{valueCount, plural,
+        =1 {{day}-го}
+        other {{listPosition, select,
+          last {{day}-го числа}
+          other {{day}-го}
+        }}
+      }}
+      other {{day}-го}
+    }',
+	'day-of-month-named' => '{valueCount, plural,
+      =1 {{day}-го числа}
+      other {{day}-го}
+    }',
 	'day-of-month-last-day' => '{context, select,
       range {последнего дня месяца}
       other {в последний день месяца}

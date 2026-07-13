@@ -107,8 +107,44 @@ return [
 	} {day}',
 	'day-of-week-last' => 'the last {day}',
 	'before-day-of-month' => ' on ',
-	'day-of-month' => '{day}',
-	'day-of-month-named' => '{valueCount, plural, one {day {day}} other {days {day}}}',
+	'day-of-month' => '{context, select,
+      list {{valueCount, plural,
+        one {{day, selectordinal, one {#} two {#} few {#} other {#}}}
+        other {{listPosition, select,
+          last {{day, selectordinal,
+            one {#st}
+            two {#nd}
+            few {#rd}
+            other {#th}
+          } day of the month}
+          middle {{day, selectordinal,
+            one {#st}
+            two {#nd}
+            few {#rd}
+            other {#th}
+          }}
+          other {{day, selectordinal, one {#} two {#} few {#} other {#}}}
+        }}
+      }}
+      other {{day, selectordinal, one {#} two {#} few {#} other {#}}}
+    }',
+	'day-of-month-named' => '{context, select,
+      list {{valueCount, plural,
+        one {day {day, selectordinal, one {#} two {#} few {#} other {#}}}
+        other {the {day, selectordinal,
+          one {#st}
+          two {#nd}
+          few {#rd}
+          other {#th}
+        }}
+      }}
+      other {the {day, selectordinal,
+        one {#st}
+        two {#nd}
+        few {#rd}
+        other {#th}
+      } day of the month}
+    }',
 	'day-of-month-last-day' => 'the last day of the month',
 	'day-of-month-last-weekday' => 'the last weekday of the month',
 	'day-of-month-nearest-weekday' => 'the weekday nearest to the {day, selectordinal,

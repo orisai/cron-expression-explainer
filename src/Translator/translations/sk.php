@@ -31,8 +31,8 @@ return [
       other {každých # sekúnd}
     }',
 	'before-second' => '',
-	'every-minute' => 'každú minútu',
 	'before-minute' => '{position, select, first {} other { }}',
+	'every-minute' => 'každú minútu',
 	'minute' => '{minute}',
 	'minute-named' => '{valueCount, plural, one {v minúte {minute}} other {v minútach {minute}}}',
 	'before-hour' => ' ',
@@ -99,8 +99,29 @@ return [
       } {day}}
     }',
 	'before-day-of-month' => ' ',
-	'day-of-month' => '{day}',
-	'day-of-month-named' => '{valueCount, plural, one {dňa v mesiaci {day}} other {v dňoch v mesiaci {day}}}',
+	'day-of-month' => '{context, select,
+      list {{valueCount, plural,
+        one {{day}}
+        other {{listPosition, select,
+          last {{day}. deň v mesiaci}
+          other {{day}.}
+        }}
+      }}
+      other {{day}}
+    }',
+	'day-of-month-named' => '{context, select,
+      list {{valueCount, plural,
+        one {dňa v mesiaci {day}}
+        other {{day, select,
+          4 {vo} 12 {vo} 20 {vo} 21 {vo} 22 {vo} 23 {vo} 24 {vo} 25 {vo} 26 {vo} 27 {vo} 28 {vo} 29 {vo}
+          other {v}
+        } {day}.}
+      }}
+      other {{day, select,
+        4 {vo} 12 {vo} 20 {vo} 21 {vo} 22 {vo} 23 {vo} 24 {vo} 25 {vo} 26 {vo} 27 {vo} 28 {vo} 29 {vo}
+        other {v}
+      } {day}. deň v mesiaci}
+    }',
 	'day-of-month-last-day' => '{context, select,
       range {posledného dňa v mesiaci}
       other {posledný deň v mesiaci}

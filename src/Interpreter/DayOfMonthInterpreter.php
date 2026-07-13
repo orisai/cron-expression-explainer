@@ -37,7 +37,8 @@ final class DayOfMonthInterpreter extends BasePartInterpreter
 		string $context,
 		string $locale,
 		bool $renderName,
-		int $valueCount
+		int $valueCount,
+		string $listPosition
 	): string
 	{
 		if ($value === 'L') {
@@ -46,6 +47,7 @@ final class DayOfMonthInterpreter extends BasePartInterpreter
 				[
 					'context' => $context,
 					'valueCount' => $valueCount,
+					'listPosition' => $listPosition,
 				],
 				$locale,
 			);
@@ -57,6 +59,7 @@ final class DayOfMonthInterpreter extends BasePartInterpreter
 				[
 					'context' => $context,
 					'valueCount' => $valueCount,
+					'listPosition' => $listPosition,
 				],
 				$locale,
 			);
@@ -76,6 +79,7 @@ final class DayOfMonthInterpreter extends BasePartInterpreter
 					'day' => $intValue,
 					'context' => $context,
 					'valueCount' => $valueCount,
+					'listPosition' => $listPosition,
 				],
 				$locale,
 			);
@@ -92,6 +96,7 @@ final class DayOfMonthInterpreter extends BasePartInterpreter
 				'day' => $intValue,
 				'context' => $context,
 				'valueCount' => $valueCount,
+				'listPosition' => $listPosition,
 			],
 			$locale,
 		);

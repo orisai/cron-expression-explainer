@@ -42,7 +42,8 @@ abstract class BasePartInterpreter
 		Part $contextPart,
 		string $locale,
 		bool $renderName = true,
-		int $valueCount = 1
+		int $valueCount = 1,
+		string $listPosition = 'only'
 	): string
 	{
 		if ($part instanceof ListPart) {
@@ -55,7 +56,23 @@ abstract class BasePartInterpreter
 			$string = '';
 			$lastValue = '';
 			foreach ($list as $key => $item) {
-				$explainedPart = $this->explainPartInternal($item, $part, $locale, $key === $firstKey, $itemValueCount);
+				$itemPosition = 'only';
+				if ($key === $firstKey && $key !== $lastKey) {
+					$itemPosition = 'first';
+				} elseif ($key === $lastKey && $key !== $firstKey) {
+					$itemPosition = 'last';
+				} elseif ($key !== $firstKey && $key !== $lastKey) {
+					$itemPosition = 'middle';
+				}
+
+				$explainedPart = $this->explainPartInternal(
+					$item,
+					$part,
+					$locale,
+					$key === $firstKey,
+					$itemValueCount,
+					$itemPosition,
+				);
 				if ($key !== $lastKey) {
 					$string .= $explainedPart;
 
@@ -119,7 +136,14 @@ abstract class BasePartInterpreter
 			return $this->getAsteriskDescription($locale);
 		}
 
-		return $this->translateValue($part->getValue(), $contextPart->getName(), $locale, $renderName, $valueCount);
+		return $this->translateValue(
+			$part->getValue(),
+			$contextPart->getName(),
+			$locale,
+			$renderName,
+			$valueCount,
+			$listPosition,
+		);
 	}
 
 	/**
@@ -234,7 +258,8 @@ abstract class BasePartInterpreter
 		string $context,
 		string $locale,
 		bool $renderName,
-		int $valueCount
+		int $valueCount,
+		string $listPosition
 	): string;
 
 }

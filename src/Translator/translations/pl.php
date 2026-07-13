@@ -165,8 +165,20 @@ return [
       }}
     }',
 	'before-day-of-month' => ' ',
-	'day-of-month' => '{day}.',
-	'day-of-month-named' => '{day}. dnia miesiąca',
+	'day-of-month' => '{context, select,
+      list {{valueCount, plural,
+        one {{day}.}
+        other {{listPosition, select,
+          last {{day}. dnia miesiąca}
+          other {{day}.}
+        }}
+      }}
+      other {{day}.}
+    }',
+	'day-of-month-named' => '{valueCount, plural,
+      one {{day}. dnia miesiąca}
+      other {{day}.}
+    }',
 	'day-of-month-last-day' => '{context, select,
       step {ostatniego dnia miesiąca}
       range {ostatniego dnia miesiąca}

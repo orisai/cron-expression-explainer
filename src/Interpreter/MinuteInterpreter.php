@@ -44,7 +44,8 @@ final class MinuteInterpreter extends BasePartInterpreter
 		string $context,
 		string $locale,
 		bool $renderName,
-		int $valueCount
+		int $valueCount,
+		string $listPosition
 	): string
 	{
 		$key = $this->getKey();
@@ -58,6 +59,7 @@ final class MinuteInterpreter extends BasePartInterpreter
 				'minute' => $this->convertNumericValue($value),
 				'context' => $context,
 				'valueCount' => $valueCount,
+				'listPosition' => $listPosition,
 			],
 			$locale,
 		);

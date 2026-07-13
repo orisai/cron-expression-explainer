@@ -32,8 +32,17 @@ return [
 	'before-second' => '',
 	'before-minute' => '{position, select, first {} other { }}',
 	'every-minute' => 'her dakika',
-	'minute' => '{minute}',
-	'minute-named' => '{minute}. dakikada',
+	'minute' => '{valueCount, plural,
+      one {{minute}}
+      other {{listPosition, select,
+        last {{minute}. dakikalarda}
+        other {{minute}.}
+      }}
+    }',
+	'minute-named' => '{valueCount, plural,
+      one {{minute}. dakikada}
+      other {{minute}.}
+    }',
 	'before-hour' => ' ',
 	'hour' => '{hour}',
 	'hour-named' => 'saat {hour}',
@@ -74,8 +83,17 @@ return [
 	'day-of-week-nth' => '{nth}. {day}',
 	'day-of-week-last' => 'son {day}',
 	'before-day-of-month' => ' ',
-	'day-of-month' => '{day}',
-	'day-of-month-named' => 'ayın {day}. günü',
+	'day-of-month' => '{valueCount, plural,
+      one {{day}}
+      other {{listPosition, select,
+        last {{day}. günü}
+        other {{day}.}
+      }}
+    }',
+	'day-of-month-named' => '{valueCount, plural,
+      one {ayın {day}. günü}
+      other {ayın {day}.}
+    }',
 	'day-of-month-last-day' => '{context, select,
       range {son günü}
       step {son günü}
