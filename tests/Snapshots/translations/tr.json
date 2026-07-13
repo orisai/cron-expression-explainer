@@ -4,846 +4,846 @@
         "seconds": null,
         "timezone": null,
         "english": "At every minute.",
-        "translation": "Každú minútu."
+        "translation": "Her dakika."
     },
     "minute-1": {
         "expression": "1 * * * *",
         "seconds": null,
         "timezone": null,
         "english": "At minute 1.",
-        "translation": "V minúte 1."
+        "translation": "1. dakikada."
     },
     "minute-2": {
         "expression": "1,2 * * * *",
         "seconds": null,
         "timezone": null,
         "english": "At minute 1 and 2.",
-        "translation": "V minúte 1 a 2."
+        "translation": "1. dakikada ve 2."
     },
     "minute-3": {
         "expression": "1,2,3,4,5 * * * *",
         "seconds": null,
         "timezone": null,
         "english": "At minute 1, 2, 3, 4 and 5.",
-        "translation": "V minúte 1, 2, 3, 4 a 5."
+        "translation": "1. dakikada, 2, 3, 4 ve 5."
     },
     "minute-4": {
         "expression": "1-10 * * * *",
         "seconds": null,
         "timezone": null,
         "english": "At every minute from 1 through 10.",
-        "translation": "Každú minútu od 1 do 10."
+        "translation": "1 ile 10 arasındaki her dakika."
     },
     "minute-5": {
         "expression": "*\/2 * * * *",
         "seconds": null,
         "timezone": null,
         "english": "At every 2nd minute.",
-        "translation": "Každú 2. minútu."
+        "translation": "Her 2 dakikada bir."
     },
     "minute-6": {
         "expression": "*\/3 * * * *",
         "seconds": null,
         "timezone": null,
         "english": "At every 3rd minute.",
-        "translation": "Každú 3. minútu."
+        "translation": "Her 3 dakikada bir."
     },
     "minute-7": {
         "expression": "*\/4 * * * *",
         "seconds": null,
         "timezone": null,
         "english": "At every 4th minute.",
-        "translation": "Každú 4. minútu."
+        "translation": "Her 4 dakikada bir."
     },
     "minute-8": {
         "expression": "*\/5 * * * *",
         "seconds": null,
         "timezone": null,
         "english": "At every 5th minute.",
-        "translation": "Každú 5. minútu."
+        "translation": "Her 5 dakikada bir."
     },
     "minute-9": {
         "expression": "1-10\/2 * * * *",
         "seconds": null,
         "timezone": null,
         "english": "At every 2nd minute from 1 through 10.",
-        "translation": "Každú 2. minútu od 1 do 10."
+        "translation": "1 ile 10 arasında her 2 dakikada bir."
     },
     "minute-10": {
         "expression": "1-15,31-45 * * * *",
         "seconds": null,
         "timezone": null,
         "english": "At every minute from 1 through 15 and from 31 through 45.",
-        "translation": "Každú minútu od 1 do 15 a od 31 do 45."
+        "translation": "1 ile 15 arasındaki her dakika ve 31 ile 45 arasında."
     },
     "minute-11": {
         "expression": "1-30\/2,40,41,42,45-50,51,52 * * * *",
         "seconds": null,
         "timezone": null,
         "english": "At every 2nd minute from 1 through 30, 40, 41, 42, from 45 through 50, 51 and 52.",
-        "translation": "Každú 2. minútu od 1 do 30, 40, 41, 42, od 45 do 50, 51 a 52."
+        "translation": "1 ile 30 arasında her 2 dakikada bir, 40, 41, 42, 45 ile 50 arasında, 51 ve 52."
     },
     "hour-0": {
         "expression": "* 1 * * *",
         "seconds": null,
         "timezone": null,
         "english": "At every minute past hour 1.",
-        "translation": "Každú minútu v hodine 1."
+        "translation": "Her dakika saat 1."
     },
     "hour-1": {
         "expression": "* 1,2 * * *",
         "seconds": null,
         "timezone": null,
         "english": "At every minute past hour 1 and 2.",
-        "translation": "Každú minútu v hodine 1 a 2."
+        "translation": "Her dakika saat 1 ve 2."
     },
     "hour-2": {
         "expression": "* 1,2,3,4,5 * * *",
         "seconds": null,
         "timezone": null,
         "english": "At every minute past hour 1, 2, 3, 4 and 5.",
-        "translation": "Každú minútu v hodine 1, 2, 3, 4 a 5."
+        "translation": "Her dakika saat 1, 2, 3, 4 ve 5."
     },
     "hour-3": {
         "expression": "* 1-10 * * *",
         "seconds": null,
         "timezone": null,
         "english": "At every minute past every hour from 1 through 10.",
-        "translation": "Každú minútu každú hodinu od 1 do 10."
+        "translation": "Her dakika saat 1 ile 10 arasında."
     },
     "hour-4": {
         "expression": "* *\/2 * * *",
         "seconds": null,
         "timezone": null,
         "english": "At every minute past every 2nd hour.",
-        "translation": "Každú minútu každú 2. hodinu."
+        "translation": "Her dakika her 2 saatte bir."
     },
     "hour-5": {
         "expression": "* *\/3 * * *",
         "seconds": null,
         "timezone": null,
         "english": "At every minute past every 3rd hour.",
-        "translation": "Každú minútu každú 3. hodinu."
+        "translation": "Her dakika her 3 saatte bir."
     },
     "hour-6": {
         "expression": "* *\/4 * * *",
         "seconds": null,
         "timezone": null,
         "english": "At every minute past every 4th hour.",
-        "translation": "Každú minútu každú 4. hodinu."
+        "translation": "Her dakika her 4 saatte bir."
     },
     "hour-7": {
         "expression": "* *\/5 * * *",
         "seconds": null,
         "timezone": null,
         "english": "At every minute past every 5th hour.",
-        "translation": "Každú minútu každú 5. hodinu."
+        "translation": "Her dakika her 5 saatte bir."
     },
     "hour-8": {
         "expression": "* 1-10\/2 * * *",
         "seconds": null,
         "timezone": null,
         "english": "At every minute past every 2nd hour from 1 through 10.",
-        "translation": "Každú minútu každú 2. hodinu od 1 do 10."
+        "translation": "Her dakika saat 1 ile 10 arasında her 2 saatte bir."
     },
     "hour-9": {
         "expression": "* 1-5,11-15 * * *",
         "seconds": null,
         "timezone": null,
         "english": "At every minute past every hour from 1 through 5 and from 11 through 15.",
-        "translation": "Každú minútu každú hodinu od 1 do 5 a od 11 do 15."
+        "translation": "Her dakika saat 1 ile 5 arasında ve saat 11 ile 15 arasında."
     },
     "hour-10": {
         "expression": "* 1 * * *",
         "seconds": null,
         "timezone": null,
         "english": "At every minute past hour 1.",
-        "translation": "Každú minútu v hodine 1."
+        "translation": "Her dakika saat 1."
     },
     "hour-11": {
         "expression": "* 1-5\/2,6,7,8,10-12,13,14 * * *",
         "seconds": null,
         "timezone": null,
         "english": "At every minute past every 2nd hour from 1 through 5, 6, 7, 8, from 10 through 12, 13 and 14.",
-        "translation": "Každú minútu každú 2. hodinu od 1 do 5, 6, 7, 8, od 10 do 12, 13 a 14."
+        "translation": "Her dakika saat 1 ile 5 arasında her 2 saatte bir, 6, 7, 8, saat 10 ile 12 arasında, 13 ve 14."
     },
     "hour+minute-0": {
         "expression": "@midnight",
         "seconds": null,
         "timezone": null,
         "english": "At 00:00.",
-        "translation": "O 00:00."
+        "translation": "Saat 00:00."
     },
     "hour+minute-1": {
         "expression": "0 0 * * *",
         "seconds": null,
         "timezone": null,
         "english": "At 00:00.",
-        "translation": "O 00:00."
+        "translation": "Saat 00:00."
     },
     "hour+minute-2": {
         "expression": "10 0 * * *",
         "seconds": null,
         "timezone": null,
         "english": "At 00:10.",
-        "translation": "O 00:10."
+        "translation": "Saat 00:10."
     },
     "hour+minute-3": {
         "expression": "0 2 * * *",
         "seconds": null,
         "timezone": null,
         "english": "At 02:00.",
-        "translation": "O 02:00."
+        "translation": "Saat 02:00."
     },
     "hour+minute-4": {
         "expression": "0 3 * * *",
         "seconds": null,
         "timezone": null,
         "english": "At 03:00.",
-        "translation": "O 03:00."
+        "translation": "Saat 03:00."
     },
     "hour+minute-5": {
         "expression": "0 4 * * *",
         "seconds": null,
         "timezone": null,
         "english": "At 04:00.",
-        "translation": "O 04:00."
+        "translation": "Saat 04:00."
     },
     "hour+minute-6": {
         "expression": "0 10 * * *",
         "seconds": null,
         "timezone": null,
         "english": "At 10:00.",
-        "translation": "O 10:00."
+        "translation": "Saat 10:00."
     },
     "hour+minute-7": {
         "expression": "0 12 * * *",
         "seconds": null,
         "timezone": null,
         "english": "At 12:00.",
-        "translation": "O 12:00."
+        "translation": "Saat 12:00."
     },
     "hour+minute-8": {
         "expression": "0 13 * * *",
         "seconds": null,
         "timezone": null,
         "english": "At 13:00.",
-        "translation": "O 13:00."
+        "translation": "Saat 13:00."
     },
     "hour+minute-9": {
         "expression": "0 14 * * *",
         "seconds": null,
         "timezone": null,
         "english": "At 14:00.",
-        "translation": "O 14:00."
+        "translation": "Saat 14:00."
     },
     "hour+minute-10": {
         "expression": "0 22 * * *",
         "seconds": null,
         "timezone": null,
         "english": "At 22:00.",
-        "translation": "O 22:00."
+        "translation": "Saat 22:00."
     },
     "hour+minute-11": {
         "expression": "0 23 * * *",
         "seconds": null,
         "timezone": null,
         "english": "At 23:00.",
-        "translation": "O 23:00."
+        "translation": "Saat 23:00."
     },
     "day-of-month-0": {
         "expression": "* * 1 * *",
         "seconds": null,
         "timezone": null,
         "english": "At every minute on day-of-month 1.",
-        "translation": "Každú minútu dňa v mesiaci 1."
+        "translation": "Her dakika ayın 1. günü."
     },
     "day-of-month-1": {
         "expression": "* * 1,2 * *",
         "seconds": null,
         "timezone": null,
         "english": "At every minute on day-of-month 1 and 2.",
-        "translation": "Každú minútu dňa v mesiaci 1 a 2."
+        "translation": "Her dakika ayın 1. günü ve 2."
     },
     "day-of-month-2": {
         "expression": "* * 1,2,3,4,5 * *",
         "seconds": null,
         "timezone": null,
         "english": "At every minute on day-of-month 1, 2, 3, 4 and 5.",
-        "translation": "Každú minútu dňa v mesiaci 1, 2, 3, 4 a 5."
+        "translation": "Her dakika ayın 1. günü, 2, 3, 4 ve 5."
     },
     "day-of-month-3": {
         "expression": "* * 1-10 * *",
         "seconds": null,
         "timezone": null,
         "english": "At every minute on every day-of-month from 1 through 10.",
-        "translation": "Každú minútu každý deň v mesiaci od 1 do 10."
+        "translation": "Her dakika ayın 1 ile 10 arasındaki her günü."
     },
     "day-of-month-4": {
         "expression": "* * *\/2 * *",
         "seconds": null,
         "timezone": null,
         "english": "At every minute on every 2nd day-of-month.",
-        "translation": "Každú minútu každý 2. deň v mesiaci."
+        "translation": "Her dakika ayın her 2. günü."
     },
     "day-of-month-5": {
         "expression": "* * *\/3 * *",
         "seconds": null,
         "timezone": null,
         "english": "At every minute on every 3rd day-of-month.",
-        "translation": "Každú minútu každý 3. deň v mesiaci."
+        "translation": "Her dakika ayın her 3. günü."
     },
     "day-of-month-6": {
         "expression": "* * *\/4 * *",
         "seconds": null,
         "timezone": null,
         "english": "At every minute on every 4th day-of-month.",
-        "translation": "Každú minútu každý 4. deň v mesiaci."
+        "translation": "Her dakika ayın her 4. günü."
     },
     "day-of-month-7": {
         "expression": "* * *\/5 * *",
         "seconds": null,
         "timezone": null,
         "english": "At every minute on every 5th day-of-month.",
-        "translation": "Každú minútu každý 5. deň v mesiaci."
+        "translation": "Her dakika ayın her 5. günü."
     },
     "day-of-month-8": {
         "expression": "* * 1-10\/2 * *",
         "seconds": null,
         "timezone": null,
         "english": "At every minute on every 2nd day-of-month from 1 through 10.",
-        "translation": "Každú minútu každý 2. deň v mesiaci od 1 do 10."
+        "translation": "Her dakika ayın 1 ile 10 arasında her 2 günde bir."
     },
     "day-of-month-9": {
         "expression": "* * 1-5,11-15 * *",
         "seconds": null,
         "timezone": null,
         "english": "At every minute on every day-of-month from 1 through 5 and from 11 through 15.",
-        "translation": "Každú minútu každý deň v mesiaci od 1 do 5 a od 11 do 15."
+        "translation": "Her dakika ayın 1 ile 5 arasındaki her günü ve 11 ile 15 arasında."
     },
     "day-of-month-10": {
         "expression": "* * 1-10\/2,11,12,13,15-20,21,22 * *",
         "seconds": null,
         "timezone": null,
         "english": "At every minute on every 2nd day-of-month from 1 through 10, 11, 12, 13, from 15 through 20, 21 and 22.",
-        "translation": "Každú minútu každý 2. deň v mesiaci od 1 do 10, 11, 12, 13, od 15 do 20, 21 a 22."
+        "translation": "Her dakika ayın 1 ile 10 arasında her 2 günde bir, 11, 12, 13, 15 ile 20 arasında, 21 ve 22."
     },
     "day-of-month-11": {
         "expression": "* * 1W * *",
         "seconds": null,
         "timezone": null,
         "english": "At every minute on a weekday nearest to the 1st.",
-        "translation": "Každú minútu pracovného dňa najbližšieho k 1."
+        "translation": "Her dakika ayın 1. gününe en yakın iş günü."
     },
     "day-of-month-12": {
         "expression": "* * 15W * *",
         "seconds": null,
         "timezone": null,
         "english": "At every minute on a weekday nearest to the 15th.",
-        "translation": "Každú minútu pracovného dňa najbližšieho k 15."
+        "translation": "Her dakika ayın 15. gününe en yakın iş günü."
     },
     "day-of-month-13": {
         "expression": "* * 1W-5W * *",
         "seconds": null,
         "timezone": null,
         "english": "At every minute on every day-of-month from a weekday nearest to the 1st through a weekday nearest to the 5th.",
-        "translation": "Každú minútu každý deň v mesiaci od pracovného dňa najbližšieho k 1. do pracovného dňa najbližšieho k 5."
+        "translation": "Her dakika ayın 1. gününe en yakın iş günü ile 5. gününe en yakın iş günü arasındaki her günü."
     },
     "day-of-month-14": {
         "expression": "* * L * *",
         "seconds": null,
         "timezone": null,
         "english": "At every minute on a last day-of-month.",
-        "translation": "Každú minútu posledný deň v mesiaci."
+        "translation": "Her dakika ayın son günü."
     },
     "day-of-month-15": {
         "expression": "* * 1-L * *",
         "seconds": null,
         "timezone": null,
         "english": "At every minute on every day-of-month from 1 through a last day-of-month.",
-        "translation": "Každú minútu každý deň v mesiaci od 1 do posledného dňa v mesiaci."
+        "translation": "Her dakika ayın 1 ile son günü arasındaki her günü."
     },
     "day-of-month-16": {
         "expression": "* * LW * *",
         "seconds": null,
         "timezone": null,
         "english": "At every minute on a last weekday.",
-        "translation": "Každú minútu v posledný pracovný deň."
+        "translation": "Her dakika ayın son iş günü."
     },
     "day-of-month-17": {
         "expression": "* * 1-LW * *",
         "seconds": null,
         "timezone": null,
         "english": "At every minute on every day-of-month from 1 through a last weekday.",
-        "translation": "Každú minútu každý deň v mesiaci od 1 do posledného pracovného dňa."
+        "translation": "Her dakika ayın 1 ile son iş günü arasındaki her günü."
     },
     "day-of-week-0": {
         "expression": "* * * * MON",
         "seconds": null,
         "timezone": null,
         "english": "At every minute on Monday.",
-        "translation": "Každú minútu v pondelok."
+        "translation": "Her dakika pazartesi günü."
     },
     "day-of-week-1": {
         "expression": "* * * * 1",
         "seconds": null,
         "timezone": null,
         "english": "At every minute on Monday.",
-        "translation": "Každú minútu v pondelok."
+        "translation": "Her dakika pazartesi günü."
     },
     "day-of-week-2": {
         "expression": "* * * * 2",
         "seconds": null,
         "timezone": null,
         "english": "At every minute on Tuesday.",
-        "translation": "Každú minútu v utorok."
+        "translation": "Her dakika salı günü."
     },
     "day-of-week-3": {
         "expression": "* * * * 3",
         "seconds": null,
         "timezone": null,
         "english": "At every minute on Wednesday.",
-        "translation": "Každú minútu v stredu."
+        "translation": "Her dakika çarşamba günü."
     },
     "day-of-week-4": {
         "expression": "* * * * 4",
         "seconds": null,
         "timezone": null,
         "english": "At every minute on Thursday.",
-        "translation": "Každú minútu vo štvrtok."
+        "translation": "Her dakika perşembe günü."
     },
     "day-of-week-5": {
         "expression": "* * * * 5",
         "seconds": null,
         "timezone": null,
         "english": "At every minute on Friday.",
-        "translation": "Každú minútu v piatok."
+        "translation": "Her dakika cuma günü."
     },
     "day-of-week-6": {
         "expression": "* * * * 6",
         "seconds": null,
         "timezone": null,
         "english": "At every minute on Saturday.",
-        "translation": "Každú minútu v sobotu."
+        "translation": "Her dakika cumartesi günü."
     },
     "day-of-week-7": {
         "expression": "* * * * 7",
         "seconds": null,
         "timezone": null,
         "english": "At every minute on Sunday.",
-        "translation": "Každú minútu v nedeľu."
+        "translation": "Her dakika pazar günü."
     },
     "day-of-week-8": {
         "expression": "* * * * 1,2",
         "seconds": null,
         "timezone": null,
         "english": "At every minute on Monday and Tuesday.",
-        "translation": "Každú minútu v pondelok a utorok."
+        "translation": "Her dakika pazartesi ve salı."
     },
     "day-of-week-9": {
         "expression": "* * * * 1,2,3,4,5",
         "seconds": null,
         "timezone": null,
         "english": "At every minute on Monday, Tuesday, Wednesday, Thursday and Friday.",
-        "translation": "Každú minútu v pondelok, utorok, stredu, štvrtok a piatok."
+        "translation": "Her dakika pazartesi, salı, çarşamba, perşembe ve cuma."
     },
     "day-of-week-10": {
         "expression": "* * * * 1-2",
         "seconds": null,
         "timezone": null,
         "english": "At every minute on every day-of-week from Monday through Tuesday.",
-        "translation": "Každú minútu v každý deň v týždni od pondelka do utorka."
+        "translation": "Her dakika pazartesi ile salı arasındaki her gün."
     },
     "day-of-week-11": {
         "expression": "* * * * 3-4",
         "seconds": null,
         "timezone": null,
         "english": "At every minute on every day-of-week from Wednesday through Thursday.",
-        "translation": "Každú minútu v každý deň v týždni od stredy do štvrtka."
+        "translation": "Her dakika çarşamba ile perşembe arasındaki her gün."
     },
     "day-of-week-12": {
         "expression": "* * * * 5-6",
         "seconds": null,
         "timezone": null,
         "english": "At every minute on every day-of-week from Friday through Saturday.",
-        "translation": "Každú minútu v každý deň v týždni od piatka do soboty."
+        "translation": "Her dakika cuma ile cumartesi arasındaki her gün."
     },
     "day-of-week-13": {
         "expression": "* * * * 7-1",
         "seconds": null,
         "timezone": null,
         "english": "At every minute on every day-of-week from Sunday through Monday.",
-        "translation": "Každú minútu v každý deň v týždni od nedele do pondelka."
+        "translation": "Her dakika pazar ile pazartesi arasındaki her gün."
     },
     "day-of-week-14": {
         "expression": "* * * * 1-2\/2",
         "seconds": null,
         "timezone": null,
         "english": "At every minute on every 2nd day-of-week from Monday through Tuesday.",
-        "translation": "Každú minútu v každý 2. deň v týždni od pondelka do utorka."
+        "translation": "Her dakika pazartesi ile salı arasında her 2 günde bir."
     },
     "day-of-week-15": {
         "expression": "* * * * 3-4\/2",
         "seconds": null,
         "timezone": null,
         "english": "At every minute on every 2nd day-of-week from Wednesday through Thursday.",
-        "translation": "Každú minútu v každý 2. deň v týždni od stredy do štvrtka."
+        "translation": "Her dakika çarşamba ile perşembe arasında her 2 günde bir."
     },
     "day-of-week-16": {
         "expression": "* * * * 5-6\/2",
         "seconds": null,
         "timezone": null,
         "english": "At every minute on every 2nd day-of-week from Friday through Saturday.",
-        "translation": "Každú minútu v každý 2. deň v týždni od piatka do soboty."
+        "translation": "Her dakika cuma ile cumartesi arasında her 2 günde bir."
     },
     "day-of-week-17": {
         "expression": "* * * * 7-1\/2",
         "seconds": null,
         "timezone": null,
         "english": "At every minute on every 2nd day-of-week from Sunday through Monday.",
-        "translation": "Každú minútu v každý 2. deň v týždni od nedele do pondelka."
+        "translation": "Her dakika pazar ile pazartesi arasında her 2 günde bir."
     },
     "day-of-week-18": {
         "expression": "* * * * *\/2",
         "seconds": null,
         "timezone": null,
         "english": "At every minute on every 2nd day-of-week.",
-        "translation": "Každú minútu v každý 2. deň v týždni."
+        "translation": "Her dakika haftanın her 2. günü."
     },
     "day-of-week-19": {
         "expression": "* * * * *\/3",
         "seconds": null,
         "timezone": null,
         "english": "At every minute on every 3rd day-of-week.",
-        "translation": "Každú minútu v každý 3. deň v týždni."
+        "translation": "Her dakika haftanın her 3. günü."
     },
     "day-of-week-20": {
         "expression": "* * * * *\/4",
         "seconds": null,
         "timezone": null,
         "english": "At every minute on every 4th day-of-week.",
-        "translation": "Každú minútu v každý 4. deň v týždni."
+        "translation": "Her dakika haftanın her 4. günü."
     },
     "day-of-week-21": {
         "expression": "* * * * *\/5",
         "seconds": null,
         "timezone": null,
         "english": "At every minute on every 5th day-of-week.",
-        "translation": "Každú minútu v každý 5. deň v týždni."
+        "translation": "Her dakika haftanın her 5. günü."
     },
     "day-of-week-22": {
         "expression": "* * * * 0-5",
         "seconds": null,
         "timezone": null,
         "english": "At every minute on every day-of-week from Sunday through Friday.",
-        "translation": "Každú minútu v každý deň v týždni od nedele do piatka."
+        "translation": "Her dakika pazar ile cuma arasındaki her gün."
     },
     "day-of-week-23": {
         "expression": "* * * * 0-5\/2",
         "seconds": null,
         "timezone": null,
         "english": "At every minute on every 2nd day-of-week from Sunday through Friday.",
-        "translation": "Každú minútu v každý 2. deň v týždni od nedele do piatka."
+        "translation": "Her dakika pazar ile cuma arasında her 2 günde bir."
     },
     "day-of-week-24": {
         "expression": "* * * * 0-2,3,4,5-6",
         "seconds": null,
         "timezone": null,
         "english": "At every minute on every day-of-week from Sunday through Tuesday, Wednesday, Thursday and from Friday through Saturday.",
-        "translation": "Každú minútu v každý deň v týždni od nedele do utorka, stredu, štvrtok a od piatka do soboty."
+        "translation": "Her dakika pazar ile salı arasındaki her gün, çarşamba, perşembe ve cuma ile cumartesi arasında."
     },
     "day-of-week-25": {
         "expression": "* * * * 7#5",
         "seconds": null,
         "timezone": null,
         "english": "At every minute on 5th Sunday.",
-        "translation": "Každú minútu v 5. nedeľu."
+        "translation": "Her dakika 5. pazar günü."
     },
     "day-of-week-26": {
         "expression": "* * * * 7L",
         "seconds": null,
         "timezone": null,
         "english": "At every minute on the last Sunday.",
-        "translation": "Každú minútu v poslednú nedeľu."
+        "translation": "Her dakika son pazar günü."
     },
     "day-of-week-27": {
         "expression": "* * * * 7L,4",
         "seconds": null,
         "timezone": null,
         "english": "At every minute on the last Sunday and Thursday.",
-        "translation": "Každú minútu v poslednú nedeľu a štvrtok."
+        "translation": "Her dakika son pazar ve perşembe."
     },
     "day-of-week-28": {
         "expression": "* * * * 4,7L",
         "seconds": null,
         "timezone": null,
         "english": "At every minute on Thursday and the last Sunday.",
-        "translation": "Každú minútu vo štvrtok a poslednú nedeľu."
+        "translation": "Her dakika perşembe ve son pazar."
     },
     "day-of-week-29": {
         "expression": "* * * * 7L,4L",
         "seconds": null,
         "timezone": null,
         "english": "At every minute on the last Sunday and the last Thursday.",
-        "translation": "Každú minútu v poslednú nedeľu a posledný štvrtok."
+        "translation": "Her dakika son pazar ve son perşembe."
     },
     "day-of-week-30": {
         "expression": "* * * * 7L-4L",
         "seconds": null,
         "timezone": null,
         "english": "At every minute on every day-of-week from the last Sunday through the last Thursday.",
-        "translation": "Každú minútu v každý deň v týždni od poslednej nedele do posledného štvrtka."
+        "translation": "Her dakika son pazar ile son perşembe arasındaki her gün."
     },
     "day-of-week-31": {
         "expression": "* * * * 7L-4",
         "seconds": null,
         "timezone": null,
         "english": "At every minute on every day-of-week from the last Sunday through Thursday.",
-        "translation": "Každú minútu v každý deň v týždni od poslednej nedele do štvrtka."
+        "translation": "Her dakika son pazar ile perşembe arasındaki her gün."
     },
     "day-of-week-32": {
         "expression": "* * * * 7#5,3#3",
         "seconds": null,
         "timezone": null,
         "english": "At every minute on 5th Sunday and 3rd Wednesday.",
-        "translation": "Každú minútu v 5. nedeľu a 3. stredu."
+        "translation": "Her dakika 5. pazar ve 3. çarşamba."
     },
     "day-of-week-33": {
         "expression": "* * * * 3#3-7#5",
         "seconds": null,
         "timezone": null,
         "english": "At every minute on every day-of-week from 3rd Wednesday through 5th Sunday.",
-        "translation": "Každú minútu v každý deň v týždni od 3. stredy do 5. nedele."
+        "translation": "Her dakika 3. çarşamba ile 5. pazar arasındaki her gün."
     },
     "day-of-week-34": {
         "expression": "* * * * 7#5,3",
         "seconds": null,
         "timezone": null,
         "english": "At every minute on 5th Sunday and Wednesday.",
-        "translation": "Každú minútu v 5. nedeľu a stredu."
+        "translation": "Her dakika 5. pazar ve çarşamba."
     },
     "day-of-week-35": {
         "expression": "* * * * 7#5-3",
         "seconds": null,
         "timezone": null,
         "english": "At every minute on every day-of-week from 5th Sunday through Wednesday.",
-        "translation": "Každú minútu v každý deň v týždni od 5. nedele do stredy."
+        "translation": "Her dakika 5. pazar ile çarşamba arasındaki her gün."
     },
     "day-of-week-36": {
         "expression": "* * * * 3-7#5",
         "seconds": null,
         "timezone": null,
         "english": "At every minute on every day-of-week from Wednesday through 5th Sunday.",
-        "translation": "Každú minútu v každý deň v týždni od stredy do 5. nedele."
+        "translation": "Her dakika çarşamba ile 5. pazar arasındaki her gün."
     },
     "month-0": {
         "expression": "* * * JAN *",
         "seconds": null,
         "timezone": null,
         "english": "At every minute in January.",
-        "translation": "Každú minútu v januári."
+        "translation": "Her dakika ocak ayında."
     },
     "month-1": {
         "expression": "* * * 1 *",
         "seconds": null,
         "timezone": null,
         "english": "At every minute in January.",
-        "translation": "Každú minútu v januári."
+        "translation": "Her dakika ocak ayında."
     },
     "month-2": {
         "expression": "* * * 2 *",
         "seconds": null,
         "timezone": null,
         "english": "At every minute in February.",
-        "translation": "Každú minútu v februári."
+        "translation": "Her dakika şubat ayında."
     },
     "month-3": {
         "expression": "* * * 3 *",
         "seconds": null,
         "timezone": null,
         "english": "At every minute in March.",
-        "translation": "Každú minútu v marci."
+        "translation": "Her dakika mart ayında."
     },
     "month-4": {
         "expression": "* * * 4 *",
         "seconds": null,
         "timezone": null,
         "english": "At every minute in April.",
-        "translation": "Každú minútu v apríli."
+        "translation": "Her dakika nisan ayında."
     },
     "month-5": {
         "expression": "* * * 5 *",
         "seconds": null,
         "timezone": null,
         "english": "At every minute in May.",
-        "translation": "Každú minútu v máji."
+        "translation": "Her dakika mayıs ayında."
     },
     "month-6": {
         "expression": "* * * 6 *",
         "seconds": null,
         "timezone": null,
         "english": "At every minute in June.",
-        "translation": "Každú minútu v júni."
+        "translation": "Her dakika haziran ayında."
     },
     "month-7": {
         "expression": "* * * 7 *",
         "seconds": null,
         "timezone": null,
         "english": "At every minute in July.",
-        "translation": "Každú minútu v júli."
+        "translation": "Her dakika temmuz ayında."
     },
     "month-8": {
         "expression": "* * * 8 *",
         "seconds": null,
         "timezone": null,
         "english": "At every minute in August.",
-        "translation": "Každú minútu v auguste."
+        "translation": "Her dakika ağustos ayında."
     },
     "month-9": {
         "expression": "* * * 9 *",
         "seconds": null,
         "timezone": null,
         "english": "At every minute in September.",
-        "translation": "Každú minútu v septembri."
+        "translation": "Her dakika eylül ayında."
     },
     "month-10": {
         "expression": "* * * 10 *",
         "seconds": null,
         "timezone": null,
         "english": "At every minute in October.",
-        "translation": "Každú minútu v októbri."
+        "translation": "Her dakika ekim ayında."
     },
     "month-11": {
         "expression": "* * * 11 *",
         "seconds": null,
         "timezone": null,
         "english": "At every minute in November.",
-        "translation": "Každú minútu v novembri."
+        "translation": "Her dakika kasım ayında."
     },
     "month-12": {
         "expression": "* * * 12 *",
         "seconds": null,
         "timezone": null,
         "english": "At every minute in December.",
-        "translation": "Každú minútu v decembri."
+        "translation": "Her dakika aralık ayında."
     },
     "month-13": {
         "expression": "* * * 1,2 *",
         "seconds": null,
         "timezone": null,
         "english": "At every minute in January and February.",
-        "translation": "Každú minútu v januári a februári."
+        "translation": "Her dakika ocakta ve şubatta."
     },
     "month-14": {
         "expression": "* * * 1,2,3,4,5 *",
         "seconds": null,
         "timezone": null,
         "english": "At every minute in January, February, March, April and May.",
-        "translation": "Každú minútu v januári, februári, marci, apríli a máji."
+        "translation": "Her dakika ocakta, şubatta, martta, nisanda ve mayısta."
     },
     "month-15": {
         "expression": "* * * 1-11 *",
         "seconds": null,
         "timezone": null,
         "english": "At every minute in every month from January through November.",
-        "translation": "Každú minútu v každý mesiac od januára do novembra."
+        "translation": "Her dakika ocak ile kasım arasındaki her ay."
     },
     "month-16": {
         "expression": "* * * *\/2 *",
         "seconds": null,
         "timezone": null,
         "english": "At every minute in every 2nd month.",
-        "translation": "Každú minútu v každý 2. mesiac."
+        "translation": "Her dakika her 2 ayda bir."
     },
     "month-17": {
         "expression": "* * * *\/3 *",
         "seconds": null,
         "timezone": null,
         "english": "At every minute in every 3rd month.",
-        "translation": "Každú minútu v každý 3. mesiac."
+        "translation": "Her dakika her 3 ayda bir."
     },
     "month-18": {
         "expression": "* * * *\/4 *",
         "seconds": null,
         "timezone": null,
         "english": "At every minute in every 4th month.",
-        "translation": "Každú minútu v každý 4. mesiac."
+        "translation": "Her dakika her 4 ayda bir."
     },
     "month-19": {
         "expression": "* * * *\/5 *",
         "seconds": null,
         "timezone": null,
         "english": "At every minute in every 5th month.",
-        "translation": "Každú minútu v každý 5. mesiac."
+        "translation": "Her dakika her 5 ayda bir."
     },
     "month-20": {
         "expression": "* * * 1-11\/2 *",
         "seconds": null,
         "timezone": null,
         "english": "At every minute in every 2nd month from January through November.",
-        "translation": "Každú minútu v každý 2. mesiac od januára do novembra."
+        "translation": "Her dakika ocak ile kasım arasında her 2 ayda bir."
     },
     "month-21": {
         "expression": "* * * 1-2,3,4,5-6 *",
         "seconds": null,
         "timezone": null,
         "english": "At every minute in every month from January through February, March, April and from May through June.",
-        "translation": "Každú minútu v každý mesiac od januára do februára, marci, apríli a od mája do júna."
+        "translation": "Her dakika ocak ile şubat arasındaki her ay, martta, nisanda ve mayıs ile haziran arasında."
     },
     "mixed-0": {
         "expression": "* * * * *",
         "seconds": 1,
         "timezone": null,
         "english": "At every second.",
-        "translation": "Každú sekundu."
+        "translation": "Her saniye."
     },
     "mixed-1": {
         "expression": "* * * * *",
         "seconds": 30,
         "timezone": null,
         "english": "At every 30 seconds.",
-        "translation": "Každých 30 sekúnd."
+        "translation": "Her 30 saniyede bir."
     },
     "mixed-2": {
         "expression": "* * * * *",
         "seconds": null,
         "timezone": "Europe\/Prague",
         "english": "At every minute in Europe\/Prague time zone.",
-        "translation": "Každú minútu v časovej zóne Europe\/Prague."
+        "translation": "Her dakika Europe\/Prague saat diliminde."
     },
     "mixed-3": {
         "expression": "10 * * * *",
         "seconds": 10,
         "timezone": null,
         "english": "At every 10 seconds at minute 10.",
-        "translation": "Každých 10 sekúnd v minúte 10."
+        "translation": "Her 10 saniyede bir 10. dakikada."
     },
     "mixed-4": {
         "expression": "30 10 1 2 *",
         "seconds": null,
         "timezone": null,
         "english": "At 10:30 on 1st of February.",
-        "translation": "O 10:30 1. februára."
+        "translation": "Saat 10:30 şubat ayının 1. günü."
     },
     "mixed-5": {
         "expression": "* * 1 * 1",
         "seconds": null,
         "timezone": null,
         "english": "At every minute on day-of-month 1 and on Monday.",
-        "translation": "Každú minútu dňa v mesiaci 1 a v pondelok."
+        "translation": "Her dakika ayın 1. günü ve pazartesi günü."
     },
     "mixed-6": {
         "expression": "* * 1 * 1,2",
         "seconds": null,
         "timezone": null,
         "english": "At every minute on day-of-month 1 and on Monday and Tuesday.",
-        "translation": "Každú minútu dňa v mesiaci 1 a v pondelok a utorok."
+        "translation": "Her dakika ayın 1. günü ve pazartesi ve salı."
     },
     "mixed-7": {
         "expression": "0-59 0-23 1-31 1-12 0-6",
         "seconds": null,
         "timezone": null,
         "english": "At every minute from 0 through 59 past every hour from 0 through 23 on every day-of-month from 1 through 31 and on every day-of-week from Sunday through Saturday in every month from January through December.",
-        "translation": "Každú minútu od 0 do 59 každú hodinu od 0 do 23 každý deň v mesiaci od 1 do 31 a v každý deň v týždni od nedele do soboty v každý mesiac od januára do decembra."
+        "translation": "0 ile 59 arasındaki her dakika saat 0 ile 23 arasında ayın 1 ile 31 arasındaki her günü ve pazar ile cumartesi arasındaki her gün ocak ile aralık arasındaki her ay."
     }
 }

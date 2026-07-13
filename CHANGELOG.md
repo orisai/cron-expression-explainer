@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased](https://github.com/orisai/cron-expression-explainer/compare/1.1.1...v1.x)
 
+### Added
+
+- `de`, `es`, `fr`, `it`, `nl`, `pl`, `pt`, `ru`, `tr` and `uk` locales
+
+### Fixed
+
+- Explanation starts with an uppercase letter also in locales written in non-latin scripts (e.g. cyrillic)
+
 ## [1.1.1](https://github.com/orisai/cron-expression-explainer/compare/1.1.0...1.1.1) - 2024-06-20
 
 ### Changed

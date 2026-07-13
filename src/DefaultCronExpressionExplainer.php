@@ -4,6 +4,7 @@ namespace Orisai\CronExpressionExplainer;
 
 use Cron\CronExpression;
 use DateTimeZone;
+use IntlChar;
 use InvalidArgumentException;
 use Orisai\CronExpressionExplainer\Exception\UnsupportedExpression;
 use Orisai\CronExpressionExplainer\Exception\UnsupportedLocale;
@@ -23,9 +24,10 @@ use Orisai\CronExpressionExplainer\Translator\PartTranslator;
 use function array_key_exists;
 use function assert;
 use function is_numeric;
+use function is_string;
+use function preg_match;
 use function str_ends_with;
 use function str_pad;
-use function ucfirst;
 use const STR_PAD_LEFT;
 
 final class DefaultCronExpressionExplainer implements CronExpressionExplainer
@@ -62,8 +64,18 @@ final class DefaultCronExpressionExplainer implements CronExpressionExplainer
 	{
 		return [
 			'cs' => 'czech',
+			'de' => 'german',
 			'en' => 'english',
+			'es' => 'spanish',
+			'fr' => 'french',
+			'it' => 'italian',
+			'nl' => 'dutch',
+			'pl' => 'polish',
+			'pt' => 'portuguese',
+			'ru' => 'russian',
 			'sk' => 'slovak',
+			'tr' => 'turkish',
+			'uk' => 'ukrainian',
 		];
 	}
 
@@ -339,7 +351,21 @@ final class DefaultCronExpressionExplainer implements CronExpressionExplainer
 			$explanation .= '.';
 		}
 
-		return ucfirst($explanation);
+		return $this->capitalizeFirstLetter($explanation);
+	}
+
+	private function capitalizeFirstLetter(string $string): string
+	{
+		if (preg_match('~^(.)(.*)~su', $string, $matches) !== 1) {
+			return $string;
+		}
+
+		$firstUpper = IntlChar::toupper($matches[1]);
+		if (!is_string($firstUpper)) {
+			return $string;
+		}
+
+		return $firstUpper . $matches[2];
 	}
 
 	/**

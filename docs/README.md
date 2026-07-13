@@ -86,8 +86,18 @@ $explainer->setDefaultLocale('cs');
 Currently supported locales are:
 
 - `cs` - czech / čeština
+- `de` - german / Deutsch
 - `en` - english
+- `es` - spanish / español
+- `fr` - french / français
+- `it` - italian / italiano
+- `nl` - dutch / Nederlands
+- `pl` - polish / polski
+- `pt` - portuguese / português
+- `ru` - russian / русский
 - `sk` - slovak / slovenčina
+- `tr` - turkish / Türkçe
+- `uk` - ukrainian / українська
 
 In case given locale is not supported, the `UnsupportedLocale` exception is thrown.
 
