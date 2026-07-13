@@ -22,13 +22,13 @@ return [
       two {#nd}
       few {#rd}
       other {#th}
-    } day-of-week',
+    } day of the week',
 	'step-all-day-of-month' => 'every {step, selectordinal,
       one {#st}
       two {#nd}
       few {#rd}
       other {#th}
-    } day-of-month',
+    } day of the month',
 	'step-all-month' => 'every {step, selectordinal,
       one {#st}
       two {#nd}
@@ -52,13 +52,13 @@ return [
       two {#nd}
       few {#rd}
       other {#th}
-    } day-of-week {part}',
+    } day of the week {part}',
 	'step-day-of-month' => 'every {step, selectordinal,
       one {#st}
       two {#nd}
       few {#rd}
       other {#th}
-    } day-of-month {part}',
+    } day of the month {part}',
 	'step-month' => 'every {step, selectordinal,
       one {#st}
       two {#nd}
@@ -70,9 +70,9 @@ return [
 	'range-hour' => 'from {left} through {right}',
 	'range-hour-named' => 'every hour from {left} through {right}',
 	'range-day-of-week' => 'from {left} through {right}',
-	'range-day-of-week-named' => 'every day-of-week from {left} through {right}',
+	'range-day-of-week-named' => 'every day of the week from {left} through {right}',
 	'range-day-of-month' => 'from {left} through {right}',
-	'range-day-of-month-named' => 'every day-of-month from {left} through {right}',
+	'range-day-of-month-named' => 'every day of the month from {left} through {right}',
 	'range-month' => 'from {left} through {right}',
 	'range-month-named' => 'every month from {left} through {right}',
 	'second' => 'at every {second, plural,
@@ -108,10 +108,10 @@ return [
 	'day-of-week-last' => 'the last {day}',
 	'before-day-of-month' => ' on ',
 	'day-of-month' => '{day}',
-	'day-of-month-named' => 'day-of-month {day}',
-	'day-of-month-last-day' => 'a last day-of-month',
-	'day-of-month-last-weekday' => 'a last weekday',
-	'day-of-month-nearest-weekday' => 'a weekday nearest to the {day, selectordinal,
+	'day-of-month-named' => 'day {day}',
+	'day-of-month-last-day' => 'the last day of the month',
+	'day-of-month-last-weekday' => 'the last weekday of the month',
+	'day-of-month-nearest-weekday' => 'the weekday nearest to the {day, selectordinal,
       one {#st}
       two {#nd}
       few {#rd}

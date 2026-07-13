@@ -13,6 +13,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - `ja`, `ko` and `zh` locales
 - Translation files control sentence part order (`parts-order`) and terminal punctuation (`sentence-end`)
 
+### Changed
+
+- `en` locale - more natural phrasing (e.g. `on the last day of the month` instead of `on a last day-of-month`)
+
 ### Fixed
 
 - Explanation starts with an uppercase letter also in locales written in non-latin scripts (e.g. cyrillic)

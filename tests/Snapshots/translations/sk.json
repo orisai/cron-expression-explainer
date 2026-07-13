@@ -255,126 +255,126 @@
         "expression": "* * 1 * *",
         "seconds": null,
         "timezone": null,
-        "english": "At every minute on day-of-month 1.",
+        "english": "At every minute on day 1.",
         "translation": "Každú minútu dňa v mesiaci 1."
     },
     "day-of-month-1": {
         "expression": "* * 1,2 * *",
         "seconds": null,
         "timezone": null,
-        "english": "At every minute on day-of-month 1 and 2.",
+        "english": "At every minute on day 1 and 2.",
         "translation": "Každú minútu dňa v mesiaci 1 a 2."
     },
     "day-of-month-2": {
         "expression": "* * 1,2,3,4,5 * *",
         "seconds": null,
         "timezone": null,
-        "english": "At every minute on day-of-month 1, 2, 3, 4 and 5.",
+        "english": "At every minute on day 1, 2, 3, 4 and 5.",
         "translation": "Každú minútu dňa v mesiaci 1, 2, 3, 4 a 5."
     },
     "day-of-month-3": {
         "expression": "* * 1-10 * *",
         "seconds": null,
         "timezone": null,
-        "english": "At every minute on every day-of-month from 1 through 10.",
+        "english": "At every minute on every day of the month from 1 through 10.",
         "translation": "Každú minútu každý deň v mesiaci od 1 do 10."
     },
     "day-of-month-4": {
         "expression": "* * *\/2 * *",
         "seconds": null,
         "timezone": null,
-        "english": "At every minute on every 2nd day-of-month.",
+        "english": "At every minute on every 2nd day of the month.",
         "translation": "Každú minútu každý 2. deň v mesiaci."
     },
     "day-of-month-5": {
         "expression": "* * *\/3 * *",
         "seconds": null,
         "timezone": null,
-        "english": "At every minute on every 3rd day-of-month.",
+        "english": "At every minute on every 3rd day of the month.",
         "translation": "Každú minútu každý 3. deň v mesiaci."
     },
     "day-of-month-6": {
         "expression": "* * *\/4 * *",
         "seconds": null,
         "timezone": null,
-        "english": "At every minute on every 4th day-of-month.",
+        "english": "At every minute on every 4th day of the month.",
         "translation": "Každú minútu každý 4. deň v mesiaci."
     },
     "day-of-month-7": {
         "expression": "* * *\/5 * *",
         "seconds": null,
         "timezone": null,
-        "english": "At every minute on every 5th day-of-month.",
+        "english": "At every minute on every 5th day of the month.",
         "translation": "Každú minútu každý 5. deň v mesiaci."
     },
     "day-of-month-8": {
         "expression": "* * 1-10\/2 * *",
         "seconds": null,
         "timezone": null,
-        "english": "At every minute on every 2nd day-of-month from 1 through 10.",
+        "english": "At every minute on every 2nd day of the month from 1 through 10.",
         "translation": "Každú minútu každý 2. deň v mesiaci od 1 do 10."
     },
     "day-of-month-9": {
         "expression": "* * 1-5,11-15 * *",
         "seconds": null,
         "timezone": null,
-        "english": "At every minute on every day-of-month from 1 through 5 and from 11 through 15.",
+        "english": "At every minute on every day of the month from 1 through 5 and from 11 through 15.",
         "translation": "Každú minútu každý deň v mesiaci od 1 do 5 a od 11 do 15."
     },
     "day-of-month-10": {
         "expression": "* * 1-10\/2,11,12,13,15-20,21,22 * *",
         "seconds": null,
         "timezone": null,
-        "english": "At every minute on every 2nd day-of-month from 1 through 10, 11, 12, 13, from 15 through 20, 21 and 22.",
+        "english": "At every minute on every 2nd day of the month from 1 through 10, 11, 12, 13, from 15 through 20, 21 and 22.",
         "translation": "Každú minútu každý 2. deň v mesiaci od 1 do 10, 11, 12, 13, od 15 do 20, 21 a 22."
     },
     "day-of-month-11": {
         "expression": "* * 1W * *",
         "seconds": null,
         "timezone": null,
-        "english": "At every minute on a weekday nearest to the 1st.",
+        "english": "At every minute on the weekday nearest to the 1st.",
         "translation": "Každú minútu pracovného dňa najbližšieho k 1."
     },
     "day-of-month-12": {
         "expression": "* * 15W * *",
         "seconds": null,
         "timezone": null,
-        "english": "At every minute on a weekday nearest to the 15th.",
+        "english": "At every minute on the weekday nearest to the 15th.",
         "translation": "Každú minútu pracovného dňa najbližšieho k 15."
     },
     "day-of-month-13": {
         "expression": "* * 1W-5W * *",
         "seconds": null,
         "timezone": null,
-        "english": "At every minute on every day-of-month from a weekday nearest to the 1st through a weekday nearest to the 5th.",
+        "english": "At every minute on every day of the month from the weekday nearest to the 1st through the weekday nearest to the 5th.",
         "translation": "Každú minútu každý deň v mesiaci od pracovného dňa najbližšieho k 1. do pracovného dňa najbližšieho k 5."
     },
     "day-of-month-14": {
         "expression": "* * L * *",
         "seconds": null,
         "timezone": null,
-        "english": "At every minute on a last day-of-month.",
+        "english": "At every minute on the last day of the month.",
         "translation": "Každú minútu posledný deň v mesiaci."
     },
     "day-of-month-15": {
         "expression": "* * 1-L * *",
         "seconds": null,
         "timezone": null,
-        "english": "At every minute on every day-of-month from 1 through a last day-of-month.",
+        "english": "At every minute on every day of the month from 1 through the last day of the month.",
         "translation": "Každú minútu každý deň v mesiaci od 1 do posledného dňa v mesiaci."
     },
     "day-of-month-16": {
         "expression": "* * LW * *",
         "seconds": null,
         "timezone": null,
-        "english": "At every minute on a last weekday.",
+        "english": "At every minute on the last weekday of the month.",
         "translation": "Každú minútu v posledný pracovný deň."
     },
     "day-of-month-17": {
         "expression": "* * 1-LW * *",
         "seconds": null,
         "timezone": null,
-        "english": "At every minute on every day-of-month from 1 through a last weekday.",
+        "english": "At every minute on every day of the month from 1 through the last weekday of the month.",
         "translation": "Každú minútu každý deň v mesiaci od 1 do posledného pracovného dňa."
     },
     "day-of-week-0": {
@@ -451,105 +451,105 @@
         "expression": "* * * * 1-2",
         "seconds": null,
         "timezone": null,
-        "english": "At every minute on every day-of-week from Monday through Tuesday.",
+        "english": "At every minute on every day of the week from Monday through Tuesday.",
         "translation": "Každú minútu v každý deň v týždni od pondelka do utorka."
     },
     "day-of-week-11": {
         "expression": "* * * * 3-4",
         "seconds": null,
         "timezone": null,
-        "english": "At every minute on every day-of-week from Wednesday through Thursday.",
+        "english": "At every minute on every day of the week from Wednesday through Thursday.",
         "translation": "Každú minútu v každý deň v týždni od stredy do štvrtka."
     },
     "day-of-week-12": {
         "expression": "* * * * 5-6",
         "seconds": null,
         "timezone": null,
-        "english": "At every minute on every day-of-week from Friday through Saturday.",
+        "english": "At every minute on every day of the week from Friday through Saturday.",
         "translation": "Každú minútu v každý deň v týždni od piatka do soboty."
     },
     "day-of-week-13": {
         "expression": "* * * * 7-1",
         "seconds": null,
         "timezone": null,
-        "english": "At every minute on every day-of-week from Sunday through Monday.",
+        "english": "At every minute on every day of the week from Sunday through Monday.",
         "translation": "Každú minútu v každý deň v týždni od nedele do pondelka."
     },
     "day-of-week-14": {
         "expression": "* * * * 1-2\/2",
         "seconds": null,
         "timezone": null,
-        "english": "At every minute on every 2nd day-of-week from Monday through Tuesday.",
+        "english": "At every minute on every 2nd day of the week from Monday through Tuesday.",
         "translation": "Každú minútu v každý 2. deň v týždni od pondelka do utorka."
     },
     "day-of-week-15": {
         "expression": "* * * * 3-4\/2",
         "seconds": null,
         "timezone": null,
-        "english": "At every minute on every 2nd day-of-week from Wednesday through Thursday.",
+        "english": "At every minute on every 2nd day of the week from Wednesday through Thursday.",
         "translation": "Každú minútu v každý 2. deň v týždni od stredy do štvrtka."
     },
     "day-of-week-16": {
         "expression": "* * * * 5-6\/2",
         "seconds": null,
         "timezone": null,
-        "english": "At every minute on every 2nd day-of-week from Friday through Saturday.",
+        "english": "At every minute on every 2nd day of the week from Friday through Saturday.",
         "translation": "Každú minútu v každý 2. deň v týždni od piatka do soboty."
     },
     "day-of-week-17": {
         "expression": "* * * * 7-1\/2",
         "seconds": null,
         "timezone": null,
-        "english": "At every minute on every 2nd day-of-week from Sunday through Monday.",
+        "english": "At every minute on every 2nd day of the week from Sunday through Monday.",
         "translation": "Každú minútu v každý 2. deň v týždni od nedele do pondelka."
     },
     "day-of-week-18": {
         "expression": "* * * * *\/2",
         "seconds": null,
         "timezone": null,
-        "english": "At every minute on every 2nd day-of-week.",
+        "english": "At every minute on every 2nd day of the week.",
         "translation": "Každú minútu v každý 2. deň v týždni."
     },
     "day-of-week-19": {
         "expression": "* * * * *\/3",
         "seconds": null,
         "timezone": null,
-        "english": "At every minute on every 3rd day-of-week.",
+        "english": "At every minute on every 3rd day of the week.",
         "translation": "Každú minútu v každý 3. deň v týždni."
     },
     "day-of-week-20": {
         "expression": "* * * * *\/4",
         "seconds": null,
         "timezone": null,
-        "english": "At every minute on every 4th day-of-week.",
+        "english": "At every minute on every 4th day of the week.",
         "translation": "Každú minútu v každý 4. deň v týždni."
     },
     "day-of-week-21": {
         "expression": "* * * * *\/5",
         "seconds": null,
         "timezone": null,
-        "english": "At every minute on every 5th day-of-week.",
+        "english": "At every minute on every 5th day of the week.",
         "translation": "Každú minútu v každý 5. deň v týždni."
     },
     "day-of-week-22": {
         "expression": "* * * * 0-5",
         "seconds": null,
         "timezone": null,
-        "english": "At every minute on every day-of-week from Sunday through Friday.",
+        "english": "At every minute on every day of the week from Sunday through Friday.",
         "translation": "Každú minútu v každý deň v týždni od nedele do piatka."
     },
     "day-of-week-23": {
         "expression": "* * * * 0-5\/2",
         "seconds": null,
         "timezone": null,
-        "english": "At every minute on every 2nd day-of-week from Sunday through Friday.",
+        "english": "At every minute on every 2nd day of the week from Sunday through Friday.",
         "translation": "Každú minútu v každý 2. deň v týždni od nedele do piatka."
     },
     "day-of-week-24": {
         "expression": "* * * * 0-2,3,4,5-6",
         "seconds": null,
         "timezone": null,
-        "english": "At every minute on every day-of-week from Sunday through Tuesday, Wednesday, Thursday and from Friday through Saturday.",
+        "english": "At every minute on every day of the week from Sunday through Tuesday, Wednesday, Thursday and from Friday through Saturday.",
         "translation": "Každú minútu v každý deň v týždni od nedele do utorka, stredu, štvrtok a od piatka do soboty."
     },
     "day-of-week-25": {
@@ -591,14 +591,14 @@
         "expression": "* * * * 7L-4L",
         "seconds": null,
         "timezone": null,
-        "english": "At every minute on every day-of-week from the last Sunday through the last Thursday.",
+        "english": "At every minute on every day of the week from the last Sunday through the last Thursday.",
         "translation": "Každú minútu v každý deň v týždni od poslednej nedele do posledného štvrtka."
     },
     "day-of-week-31": {
         "expression": "* * * * 7L-4",
         "seconds": null,
         "timezone": null,
-        "english": "At every minute on every day-of-week from the last Sunday through Thursday.",
+        "english": "At every minute on every day of the week from the last Sunday through Thursday.",
         "translation": "Každú minútu v každý deň v týždni od poslednej nedele do štvrtka."
     },
     "day-of-week-32": {
@@ -612,7 +612,7 @@
         "expression": "* * * * 3#3-7#5",
         "seconds": null,
         "timezone": null,
-        "english": "At every minute on every day-of-week from 3rd Wednesday through 5th Sunday.",
+        "english": "At every minute on every day of the week from 3rd Wednesday through 5th Sunday.",
         "translation": "Každú minútu v každý deň v týždni od 3. stredy do 5. nedele."
     },
     "day-of-week-34": {
@@ -626,14 +626,14 @@
         "expression": "* * * * 7#5-3",
         "seconds": null,
         "timezone": null,
-        "english": "At every minute on every day-of-week from 5th Sunday through Wednesday.",
+        "english": "At every minute on every day of the week from 5th Sunday through Wednesday.",
         "translation": "Každú minútu v každý deň v týždni od 5. nedele do stredy."
     },
     "day-of-week-36": {
         "expression": "* * * * 3-7#5",
         "seconds": null,
         "timezone": null,
-        "english": "At every minute on every day-of-week from Wednesday through 5th Sunday.",
+        "english": "At every minute on every day of the week from Wednesday through 5th Sunday.",
         "translation": "Každú minútu v každý deň v týždni od stredy do 5. nedele."
     },
     "month-0": {
@@ -829,21 +829,21 @@
         "expression": "* * 1 * 1",
         "seconds": null,
         "timezone": null,
-        "english": "At every minute on day-of-month 1 and on Monday.",
+        "english": "At every minute on day 1 and on Monday.",
         "translation": "Každú minútu dňa v mesiaci 1 a v pondelok."
     },
     "mixed-6": {
         "expression": "* * 1 * 1,2",
         "seconds": null,
         "timezone": null,
-        "english": "At every minute on day-of-month 1 and on Monday and Tuesday.",
+        "english": "At every minute on day 1 and on Monday and Tuesday.",
         "translation": "Každú minútu dňa v mesiaci 1 a v pondelok a utorok."
     },
     "mixed-7": {
         "expression": "0-59 0-23 1-31 1-12 0-6",
         "seconds": null,
         "timezone": null,
-        "english": "At every minute from 0 through 59 past every hour from 0 through 23 on every day-of-month from 1 through 31 and on every day-of-week from Sunday through Saturday in every month from January through December.",
+        "english": "At every minute from 0 through 59 past every hour from 0 through 23 on every day of the month from 1 through 31 and on every day of the week from Sunday through Saturday in every month from January through December.",
         "translation": "Každú minútu od 0 do 59 každú hodinu od 0 do 23 každý deň v mesiaci od 1 do 31 a v každý deň v týždni od nedele do soboty v každý mesiac od januára do decembra."
     }
 }

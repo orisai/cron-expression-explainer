@@ -297,122 +297,122 @@ final class DefaultCronExpressionExplainerTest extends TestCase
 	{
 		yield [
 			'* * 1 * *',
-			'At every minute on day-of-month 1.',
+			'At every minute on day 1.',
 		];
 
 		yield [
 			'* * 31 * *',
-			'At every minute on day-of-month 31.',
+			'At every minute on day 31.',
 		];
 
 		yield [
 			'* * 01 * *',
-			'At every minute on day-of-month 1.',
+			'At every minute on day 1.',
 		];
 
 		yield [
 			'* * 1,2,3 * *',
-			'At every minute on day-of-month 1, 2 and 3.',
+			'At every minute on day 1, 2 and 3.',
 		];
 
 		yield [
 			'* * 1-31 * *',
-			'At every minute on every day-of-month from 1 through 31.',
+			'At every minute on every day of the month from 1 through 31.',
 		];
 
 		yield [
 			'* * 2-31 * *',
-			'At every minute on every day-of-month from 2 through 31.',
+			'At every minute on every day of the month from 2 through 31.',
 		];
 
 		yield [
 			'* * 1-30 * *',
-			'At every minute on every day-of-month from 1 through 30.',
+			'At every minute on every day of the month from 1 through 30.',
 		];
 
 		yield [
 			'* * 1-10 * *',
-			'At every minute on every day-of-month from 1 through 10.',
+			'At every minute on every day of the month from 1 through 10.',
 		];
 
 		yield [
 			'* * 1-5,11-15 * *',
-			'At every minute on every day-of-month from 1 through 5 and from 11 through 15.',
+			'At every minute on every day of the month from 1 through 5 and from 11 through 15.',
 		];
 
 		yield [
 			'* * */2 * *',
-			'At every minute on every 2nd day-of-month.',
+			'At every minute on every 2nd day of the month.',
 		];
 
 		yield [
 			'* * 1-10/1 * *',
-			'At every minute on every day-of-month from 1 through 10.',
+			'At every minute on every day of the month from 1 through 10.',
 		];
 
 		yield [
 			'* * 1-10/2 * *',
-			'At every minute on every 2nd day-of-month from 1 through 10.',
+			'At every minute on every 2nd day of the month from 1 through 10.',
 		];
 
 		yield [
 			'* * 1-10/3 * *',
-			'At every minute on every 3rd day-of-month from 1 through 10.',
+			'At every minute on every 3rd day of the month from 1 through 10.',
 		];
 
 		yield [
 			'* * 1-10/4 * *',
-			'At every minute on every 4th day-of-month from 1 through 10.',
+			'At every minute on every 4th day of the month from 1 through 10.',
 		];
 
 		yield [
 			'* * 1-10/5 * *',
-			'At every minute on every 5th day-of-month from 1 through 10.',
+			'At every minute on every 5th day of the month from 1 through 10.',
 		];
 
 		yield [
 			'* * 1-31/1 * *',
-			'At every minute on every day-of-month from 1 through 31.',
+			'At every minute on every day of the month from 1 through 31.',
 		];
 
 		yield [
 			'* * 1,2-11/2 * *',
-			'At every minute on day-of-month 1 and every 2nd day-of-month from 2 through 11.',
+			'At every minute on day 1 and every 2nd day of the month from 2 through 11.',
 		];
 
 		yield [
 			'* * 1-10/2,20 * *',
-			'At every minute on every 2nd day-of-month from 1 through 10 and 20.',
+			'At every minute on every 2nd day of the month from 1 through 10 and 20.',
 		];
 
 		yield [
 			'* * 1-10/2,11,12,13,15-20,21,22 * *',
-			'At every minute on every 2nd day-of-month from 1 through 10, 11, 12, 13, from 15 through 20, 21 and 22.',
+			'At every minute on every 2nd day of the month from 1 through 10, 11, 12, 13, from 15 through 20, 21 and 22.',
 		];
 
 		yield [
 			'* * 1-10/2,15,20-25 * *',
-			'At every minute on every 2nd day-of-month from 1 through 10, 15 and from 20 through 25.',
+			'At every minute on every 2nd day of the month from 1 through 10, 15 and from 20 through 25.',
 		];
 
 		yield [
 			'* * 1W * *',
-			'At every minute on a weekday nearest to the 1st.',
+			'At every minute on the weekday nearest to the 1st.',
 		];
 
 		yield [
 			'* * 15W * *',
-			'At every minute on a weekday nearest to the 15th.',
+			'At every minute on the weekday nearest to the 15th.',
 		];
 
 		yield [
 			'* * L * *',
-			'At every minute on a last day-of-month.',
+			'At every minute on the last day of the month.',
 		];
 
 		yield [
 			'* * LW * *',
-			'At every minute on a last weekday.',
+			'At every minute on the last weekday of the month.',
 		];
 
 		yield [
@@ -530,82 +530,82 @@ final class DefaultCronExpressionExplainerTest extends TestCase
 
 		yield [
 			'* * * * 0-6',
-			'At every minute on every day-of-week from Sunday through Saturday.',
+			'At every minute on every day of the week from Sunday through Saturday.',
 		];
 
 		yield [
 			'* * * * SUN-SAT',
-			'At every minute on every day-of-week from Sunday through Saturday.',
+			'At every minute on every day of the week from Sunday through Saturday.',
 		];
 
 		yield [
 			'* * * * SUN-6',
-			'At every minute on every day-of-week from Sunday through Saturday.',
+			'At every minute on every day of the week from Sunday through Saturday.',
 		];
 
 		yield [
 			'* * * * MON-SAT',
-			'At every minute on every day-of-week from Monday through Saturday.',
+			'At every minute on every day of the week from Monday through Saturday.',
 		];
 
 		yield [
 			'* * * * 0-5',
-			'At every minute on every day-of-week from Sunday through Friday.',
+			'At every minute on every day of the week from Sunday through Friday.',
 		];
 
 		yield [
 			'* * * * 0-3',
-			'At every minute on every day-of-week from Sunday through Wednesday.',
+			'At every minute on every day of the week from Sunday through Wednesday.',
 		];
 
 		yield [
 			'* * * * 0-2,4-6',
-			'At every minute on every day-of-week from Sunday through Tuesday and from Thursday through Saturday.',
+			'At every minute on every day of the week from Sunday through Tuesday and from Thursday through Saturday.',
 		];
 
 		yield [
 			'* * * * */2',
-			'At every minute on every 2nd day-of-week.',
+			'At every minute on every 2nd day of the week.',
 		];
 
 		yield [
 			'* * * * 2-4/1',
-			'At every minute on every day-of-week from Tuesday through Thursday.',
+			'At every minute on every day of the week from Tuesday through Thursday.',
 		];
 
 		yield [
 			'* * * * 2-4/2',
-			'At every minute on every 2nd day-of-week from Tuesday through Thursday.',
+			'At every minute on every 2nd day of the week from Tuesday through Thursday.',
 		];
 
 		yield [
 			'* * * * 2-4/3',
-			'At every minute on every 3rd day-of-week from Tuesday through Thursday.',
+			'At every minute on every 3rd day of the week from Tuesday through Thursday.',
 		];
 
 		yield [
 			'* * * * 2-4/4',
-			'At every minute on every 4th day-of-week from Tuesday through Thursday.',
+			'At every minute on every 4th day of the week from Tuesday through Thursday.',
 		];
 
 		yield [
 			'* * * * 2-4/5',
-			'At every minute on every 5th day-of-week from Tuesday through Thursday.',
+			'At every minute on every 5th day of the week from Tuesday through Thursday.',
 		];
 
 		yield [
 			'* * * * 1-2/2,4',
-			'At every minute on every 2nd day-of-week from Monday through Tuesday and Thursday.',
+			'At every minute on every 2nd day of the week from Monday through Tuesday and Thursday.',
 		];
 
 		yield [
 			'* * * * 0-2,3,4,5-6',
-			'At every minute on every day-of-week from Sunday through Tuesday, Wednesday, Thursday and from Friday through Saturday.',
+			'At every minute on every day of the week from Sunday through Tuesday, Wednesday, Thursday and from Friday through Saturday.',
 		];
 
 		yield [
 			'* * * * 0-1/2,3,4-5',
-			'At every minute on every 2nd day-of-week from Sunday through Monday, Wednesday and from Thursday through Friday.',
+			'At every minute on every 2nd day of the week from Sunday through Monday, Wednesday and from Thursday through Friday.',
 		];
 
 		yield [
@@ -656,13 +656,13 @@ final class DefaultCronExpressionExplainerTest extends TestCase
 		// Impossible?
 		yield [
 			'* * * * 7L-4',
-			'At every minute on every day-of-week from the last Sunday through Thursday.',
+			'At every minute on every day of the week from the last Sunday through Thursday.',
 		];
 
 		// Impossible?
 		yield [
 			'* * * * 7L-4L',
-			'At every minute on every day-of-week from the last Sunday through the last Thursday.',
+			'At every minute on every day of the week from the last Sunday through the last Thursday.',
 		];
 
 		yield [
@@ -673,13 +673,13 @@ final class DefaultCronExpressionExplainerTest extends TestCase
 		// Impossible?
 		yield [
 			'* * * * 7#5-3',
-			'At every minute on every day-of-week from 5th Sunday through Wednesday.',
+			'At every minute on every day of the week from 5th Sunday through Wednesday.',
 		];
 
 		// Impossible?
 		yield [
 			'* * * * 3-7#5',
-			'At every minute on every day-of-week from Wednesday through 5th Sunday.',
+			'At every minute on every day of the week from Wednesday through 5th Sunday.',
 		];
 
 		yield [
@@ -690,7 +690,7 @@ final class DefaultCronExpressionExplainerTest extends TestCase
 		// Impossible?
 		yield [
 			'* * * * 3#3-7#5',
-			'At every minute on every day-of-week from 3rd Wednesday through 5th Sunday.',
+			'At every minute on every day of the week from 3rd Wednesday through 5th Sunday.',
 		];
 	}
 
@@ -1017,8 +1017,8 @@ final class DefaultCronExpressionExplainerTest extends TestCase
 	{
 		yield [
 			'0-59 0-23 1-31 1-12 0-6',
-			'At every minute from 0 through 59 past every hour from 0 through 23 on every day-of-month from 1 through 31'
-			. ' and on every day-of-week from Sunday through Saturday in every month from January through December.',
+			'At every minute from 0 through 59 past every hour from 0 through 23 on every day of the month from 1 through 31'
+			. ' and on every day of the week from Sunday through Saturday in every month from January through December.',
 		];
 
 		yield [
@@ -1028,7 +1028,7 @@ final class DefaultCronExpressionExplainerTest extends TestCase
 
 		yield [
 			'@monthly',
-			'At 00:00 on day-of-month 1.',
+			'At 00:00 on day 1.',
 		];
 
 		yield [
@@ -1048,28 +1048,28 @@ final class DefaultCronExpressionExplainerTest extends TestCase
 
 		yield [
 			'* * 1 * 1',
-			'At every minute on day-of-month 1 and on Monday.',
+			'At every minute on day 1 and on Monday.',
 		];
 
 		yield [
 			'* * 1 * 1,2',
-			'At every minute on day-of-month 1 and on Monday and Tuesday.',
+			'At every minute on day 1 and on Monday and Tuesday.',
 		];
 
 		yield [
 			'* * 1 2 5',
-			'At every minute on day-of-month 1 and on Friday in February.',
+			'At every minute on day 1 and on Friday in February.',
 		];
 
 		yield [
 			'1 1 1 1 1',
-			'At 01:01 on day-of-month 1 and on Monday in January.',
+			'At 01:01 on day 1 and on Monday in January.',
 		];
 
 		yield [
 			'1-2 1-2 1-2 1-2 1-2',
-			'At every minute from 1 through 2 past every hour from 1 through 2 on every day-of-month from 1 through 2'
-			. ' and on every day-of-week from Monday through Tuesday in every month from January through February.',
+			'At every minute from 1 through 2 past every hour from 1 through 2 on every day of the month from 1 through 2'
+			. ' and on every day of the week from Monday through Tuesday in every month from January through February.',
 		];
 
 		// Are invalid
@@ -1155,7 +1155,7 @@ final class DefaultCronExpressionExplainerTest extends TestCase
 		yield [
 			'* * 1 * *',
 			59,
-			'At every 59 seconds on day-of-month 1.',
+			'At every 59 seconds on day 1.',
 		];
 	}
 
