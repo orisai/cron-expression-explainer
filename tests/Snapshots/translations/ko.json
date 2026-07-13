@@ -17,14 +17,14 @@
         "expression": "1,2 * * * *",
         "seconds": null,
         "timezone": null,
-        "english": "At minute 1 and 2.",
+        "english": "At minutes 1 and 2.",
         "translation": "매시 1분 및 2분."
     },
     "minute-3": {
         "expression": "1,2,3,4,5 * * * *",
         "seconds": null,
         "timezone": null,
-        "english": "At minute 1, 2, 3, 4 and 5.",
+        "english": "At minutes 1, 2, 3, 4 and 5.",
         "translation": "매시 1분, 2분, 3분, 4분 및 5분."
     },
     "minute-4": {
@@ -94,14 +94,14 @@
         "expression": "* 1,2 * * *",
         "seconds": null,
         "timezone": null,
-        "english": "At every minute past hour 1 and 2.",
+        "english": "At every minute past hours 1 and 2.",
         "translation": "1시 및 2시 매분."
     },
     "hour-2": {
         "expression": "* 1,2,3,4,5 * * *",
         "seconds": null,
         "timezone": null,
-        "english": "At every minute past hour 1, 2, 3, 4 and 5.",
+        "english": "At every minute past hours 1, 2, 3, 4 and 5.",
         "translation": "1시, 2시, 3시, 4시 및 5시 매분."
     },
     "hour-3": {
@@ -262,14 +262,14 @@
         "expression": "* * 1,2 * *",
         "seconds": null,
         "timezone": null,
-        "english": "At every minute on day 1 and 2.",
+        "english": "At every minute on days 1 and 2.",
         "translation": "매월 1일 및 2일 매분."
     },
     "day-of-month-2": {
         "expression": "* * 1,2,3,4,5 * *",
         "seconds": null,
         "timezone": null,
-        "english": "At every minute on day 1, 2, 3, 4 and 5.",
+        "english": "At every minute on days 1, 2, 3, 4 and 5.",
         "translation": "매월 1일, 2일, 3일, 4일 및 5일 매분."
     },
     "day-of-month-3": {

@@ -86,10 +86,10 @@ return [
 	'before-minute' => '{position, select, first {} other { }}',
 	'every-minute' => 'щохвилини',
 	'minute' => '{minute}',
-	'minute-named' => 'у хвилину {minute}',
+	'minute-named' => '{valueCount, plural, =1 {у хвилину {minute}} other {у хвилини {minute}}}',
 	'before-hour' => ' ',
 	'hour' => '{hour}',
-	'hour-named' => 'о годині {hour}',
+	'hour-named' => '{valueCount, plural, =1 {о годині {hour}} other {о годинах {hour}}}',
 	'between-day-of-month-and-week' => ' та',
 	'before-day-of-week' => '{dayNumber, select,
       NaN { }

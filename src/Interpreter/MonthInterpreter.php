@@ -52,13 +52,20 @@ final class MonthInterpreter extends BasePartInterpreter
 		return '';
 	}
 
-	protected function translateValue(string $value, string $context, string $locale, bool $renderName): string
+	protected function translateValue(
+		string $value,
+		string $context,
+		string $locale,
+		bool $renderName,
+		int $valueCount
+	): string
 	{
 		return $this->translator->translate(
 			$this->getKey(),
 			[
 				'month' => $this->convertNumericValue($value),
 				'context' => $context,
+				'valueCount' => $valueCount,
 			],
 			$locale,
 		);

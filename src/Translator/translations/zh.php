@@ -68,7 +68,7 @@ return [
     }',
 	'before-month' => '',
 	'month' => '{month}月',
-	'before-time' => '{position, select, first {每天} other {}}',
+	'before-time' => '{previous, select, none {每天} timezone {每天} month {每天} other {}}',
 	'hour+minute' => '{hourNumeric}:{minute}',
 	'before-date' => '',
 	'day-of-month+month' => '{month}月{day}日',

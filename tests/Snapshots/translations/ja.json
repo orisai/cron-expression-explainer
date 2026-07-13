@@ -17,14 +17,14 @@
         "expression": "1,2 * * * *",
         "seconds": null,
         "timezone": null,
-        "english": "At minute 1 and 2.",
+        "english": "At minutes 1 and 2.",
         "translation": "毎時1分と2分。"
     },
     "minute-3": {
         "expression": "1,2,3,4,5 * * * *",
         "seconds": null,
         "timezone": null,
-        "english": "At minute 1, 2, 3, 4 and 5.",
+        "english": "At minutes 1, 2, 3, 4 and 5.",
         "translation": "毎時1分、2分、3分、4分と5分。"
     },
     "minute-4": {
@@ -94,14 +94,14 @@
         "expression": "* 1,2 * * *",
         "seconds": null,
         "timezone": null,
-        "english": "At every minute past hour 1 and 2.",
+        "english": "At every minute past hours 1 and 2.",
         "translation": "1時台と2時台に毎分。"
     },
     "hour-2": {
         "expression": "* 1,2,3,4,5 * * *",
         "seconds": null,
         "timezone": null,
-        "english": "At every minute past hour 1, 2, 3, 4 and 5.",
+        "english": "At every minute past hours 1, 2, 3, 4 and 5.",
         "translation": "1時台、2時台、3時台、4時台と5時台に毎分。"
     },
     "hour-3": {
@@ -262,14 +262,14 @@
         "expression": "* * 1,2 * *",
         "seconds": null,
         "timezone": null,
-        "english": "At every minute on day 1 and 2.",
+        "english": "At every minute on days 1 and 2.",
         "translation": "毎月1日と2日に毎分。"
     },
     "day-of-month-2": {
         "expression": "* * 1,2,3,4,5 * *",
         "seconds": null,
         "timezone": null,
-        "english": "At every minute on day 1, 2, 3, 4 and 5.",
+        "english": "At every minute on days 1, 2, 3, 4 and 5.",
         "translation": "毎月1日、2日、3日、4日と5日に毎分。"
     },
     "day-of-month-3": {

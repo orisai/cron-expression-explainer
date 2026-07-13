@@ -16,6 +16,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Changed
 
 - `en` locale - more natural phrasing (e.g. `on the last day of the month` instead of `on a last day-of-month`)
+- Plural unit labels for lists of values in most locales (e.g. `at minutes 1 and 2` instead of `at minute 1 and 2`)
+- `ja` and `zh` locales - contextual connectors (e.g. 「12月の月曜日に」, 「12月每天22:00」)
 
 ### Fixed
 

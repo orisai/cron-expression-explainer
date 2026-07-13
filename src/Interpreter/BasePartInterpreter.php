@@ -10,6 +10,8 @@ use Orisai\CronExpressionExplainer\Part\ValuePart;
 use Orisai\CronExpressionExplainer\Translator\PartTranslator;
 use function array_key_first;
 use function array_key_last;
+use function count;
+use function is_numeric;
 
 /**
  * @internal
@@ -35,18 +37,25 @@ abstract class BasePartInterpreter
 	/**
 	 * @param ListPart|StepPart|RangePart|ValuePart $part
 	 */
-	private function explainPartInternal(Part $part, Part $contextPart, string $locale, bool $renderName = true): string
+	private function explainPartInternal(
+		Part $part,
+		Part $contextPart,
+		string $locale,
+		bool $renderName = true,
+		int $valueCount = 1
+	): string
 	{
 		if ($part instanceof ListPart) {
 			$list = $part->getParts();
 			$listSeparator = $this->translator->translate('listSeparator', [], $locale);
 			$firstKey = array_key_first($list);
 			$lastKey = array_key_last($list);
+			$itemValueCount = $this->countNumericValues($list);
 
 			$string = '';
 			$lastValue = '';
 			foreach ($list as $key => $item) {
-				$explainedPart = $this->explainPartInternal($item, $part, $locale, $key === $firstKey);
+				$explainedPart = $this->explainPartInternal($item, $part, $locale, $key === $firstKey, $itemValueCount);
 				if ($key !== $lastKey) {
 					$string .= $explainedPart;
 
@@ -110,7 +119,21 @@ abstract class BasePartInterpreter
 			return $this->getAsteriskDescription($locale);
 		}
 
-		return $this->translateValue($part->getValue(), $contextPart->getName(), $locale, $renderName);
+		return $this->translateValue($part->getValue(), $contextPart->getName(), $locale, $renderName, $valueCount);
+	}
+
+	/**
+	 * @param array<int, ListPart|StepPart|RangePart|ValuePart> $items
+	 */
+	private function countNumericValues(array $items): int
+	{
+		foreach ($items as $item) {
+			if (!($item instanceof ValuePart && is_numeric($item->getValue()))) {
+				return 1;
+			}
+		}
+
+		return count($items);
 	}
 
 	/**
@@ -210,7 +233,8 @@ abstract class BasePartInterpreter
 		string $value,
 		string $context,
 		string $locale,
-		bool $renderName
+		bool $renderName,
+		int $valueCount
 	): string;
 
 }

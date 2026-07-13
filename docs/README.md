@@ -37,7 +37,7 @@ $explainer->explain('* * 1 * 1'); // At every minute on day 1 and on Monday.
 $explainer->explain('0 22 * 12 *'); // At 22:00 in December.
 $explainer->explain('0 8-18 * * *'); // At minute 0 past every hour from 8 through 18.
 $explainer->explain('0 8-18/2 * * *'); // At minute 0 past every 2nd hour from 8 through 18.
-$explainer->explain('0 8,12,16 * * *'); // At minute 0 past hour 8, 12 and 16.
+$explainer->explain('0 8,12,16 * * *'); // At minute 0 past hours 8, 12 and 16.
 $explainer->explain('* * 1 2 *'); // At every minute on 1st of February.
 $explainer->explain('* * * * SUN#2'); // At every minute on 2nd Sunday.
 $explainer->explain('* * 15W * *'); // At every minute on the weekday nearest to the 15th.
@@ -133,7 +133,12 @@ To add support for a new locale:
 - besides ICU messages, each file contains meta keys: `parts-order` (space-separated
   order in which sentence parts are rendered), `sentence-end` (terminal punctuation)
   and `before-*` glue keys which receive a `position` parameter (`first` at sentence
-  start, `other` elsewhere)
+  start, `other` elsewhere) and a `previous` parameter (token of the part rendered
+  before, e.g. `month`, `dayOfMonth`, or `none`)
+- value keys (minute, hour, day-of-month and their `-named` variants, day-of-week, month)
+  receive `valueCount` (number of items when the enclosing list holds only plain numeric
+  values, otherwise `1` — usable for plural unit labels) and `context`
+  (`value`/`list`/`range`/`step`)
 - add it to supported locales in `DefaultCronExpressionExplainer`
 - generate translations via `make update-snapshots`
 - verify that the generated test translations in `tests/Snapshots/translations` make sense and match their configuration

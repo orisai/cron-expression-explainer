@@ -17,15 +17,15 @@
         "expression": "1,2 * * * *",
         "seconds": null,
         "timezone": null,
-        "english": "At minute 1 and 2.",
-        "translation": "В минуту 1 и 2."
+        "english": "At minutes 1 and 2.",
+        "translation": "В минуты 1 и 2."
     },
     "minute-3": {
         "expression": "1,2,3,4,5 * * * *",
         "seconds": null,
         "timezone": null,
-        "english": "At minute 1, 2, 3, 4 and 5.",
-        "translation": "В минуту 1, 2, 3, 4 и 5."
+        "english": "At minutes 1, 2, 3, 4 and 5.",
+        "translation": "В минуты 1, 2, 3, 4 и 5."
     },
     "minute-4": {
         "expression": "1-10 * * * *",
@@ -94,15 +94,15 @@
         "expression": "* 1,2 * * *",
         "seconds": null,
         "timezone": null,
-        "english": "At every minute past hour 1 and 2.",
-        "translation": "Каждую минуту в час 1 и 2."
+        "english": "At every minute past hours 1 and 2.",
+        "translation": "Каждую минуту в часы 1 и 2."
     },
     "hour-2": {
         "expression": "* 1,2,3,4,5 * * *",
         "seconds": null,
         "timezone": null,
-        "english": "At every minute past hour 1, 2, 3, 4 and 5.",
-        "translation": "Каждую минуту в час 1, 2, 3, 4 и 5."
+        "english": "At every minute past hours 1, 2, 3, 4 and 5.",
+        "translation": "Каждую минуту в часы 1, 2, 3, 4 и 5."
     },
     "hour-3": {
         "expression": "* 1-10 * * *",
@@ -262,14 +262,14 @@
         "expression": "* * 1,2 * *",
         "seconds": null,
         "timezone": null,
-        "english": "At every minute on day 1 and 2.",
+        "english": "At every minute on days 1 and 2.",
         "translation": "Каждую минуту 1-го числа и 2-го."
     },
     "day-of-month-2": {
         "expression": "* * 1,2,3,4,5 * *",
         "seconds": null,
         "timezone": null,
-        "english": "At every minute on day 1, 2, 3, 4 and 5.",
+        "english": "At every minute on days 1, 2, 3, 4 and 5.",
         "translation": "Каждую минуту 1-го числа, 2-го, 3-го, 4-го и 5-го."
     },
     "day-of-month-3": {

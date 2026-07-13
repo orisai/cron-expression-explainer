@@ -64,7 +64,10 @@ return [
     }',
 	'before-day-of-month' => ' ',
 	'day-of-month' => '{day}',
-	'day-of-month-named' => 'op dag {day} van de maand',
+	'day-of-month-named' => '{valueCount, plural,
+      one {op dag {day} van de maand}
+      other {op dag {day}}
+    }',
 	'day-of-month-last-day' => '{context, select,
       range {de laatste dag van de maand}
       step {de laatste dag van de maand}

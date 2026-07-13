@@ -32,13 +32,20 @@ final class DayOfMonthInterpreter extends BasePartInterpreter
 		return '';
 	}
 
-	protected function translateValue(string $value, string $context, string $locale, bool $renderName): string
+	protected function translateValue(
+		string $value,
+		string $context,
+		string $locale,
+		bool $renderName,
+		int $valueCount
+	): string
 	{
 		if ($value === 'L') {
 			return $this->translator->translate(
 				'day-of-month-last-day',
 				[
 					'context' => $context,
+					'valueCount' => $valueCount,
 				],
 				$locale,
 			);
@@ -49,6 +56,7 @@ final class DayOfMonthInterpreter extends BasePartInterpreter
 				'day-of-month-last-weekday',
 				[
 					'context' => $context,
+					'valueCount' => $valueCount,
 				],
 				$locale,
 			);
@@ -67,6 +75,7 @@ final class DayOfMonthInterpreter extends BasePartInterpreter
 				[
 					'day' => $intValue,
 					'context' => $context,
+					'valueCount' => $valueCount,
 				],
 				$locale,
 			);
@@ -81,6 +90,8 @@ final class DayOfMonthInterpreter extends BasePartInterpreter
 			$key,
 			[
 				'day' => $intValue,
+				'context' => $context,
+				'valueCount' => $valueCount,
 			],
 			$locale,
 		);

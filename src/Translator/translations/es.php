@@ -63,10 +63,16 @@ return [
 	'before-minute' => '{position, select, first {} other { }}',
 	'every-minute' => 'cada minuto',
 	'minute' => '{minute}',
-	'minute-named' => 'en el minuto {minute}',
+	'minute-named' => '{valueCount, plural,
+      one {en el minuto {minute}}
+      other {en los minutos {minute}}
+    }',
 	'before-hour' => ' de ',
 	'hour' => '{hour}',
-	'hour-named' => 'la hora {hour}',
+	'hour-named' => '{valueCount, plural,
+      one {la hora {hour}}
+      other {las horas {hour}}
+    }',
 	'between-day-of-month-and-week' => ' y',
 	'before-day-of-week' => '{dayNumber, select,
       NaN { }
@@ -115,7 +121,10 @@ return [
     }',
 	'before-day-of-month' => ' ',
 	'day-of-month' => '{day}',
-	'day-of-month-named' => 'el día {day}',
+	'day-of-month-named' => '{valueCount, plural,
+      one {el día {day}}
+      other {los días {day}}
+    }',
 	'day-of-month-last-day' => '{context, select,
       range {último día}
       step {desde el último día del mes}

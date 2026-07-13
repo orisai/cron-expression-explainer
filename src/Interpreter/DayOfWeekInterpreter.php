@@ -56,7 +56,13 @@ final class DayOfWeekInterpreter extends BasePartInterpreter
 		return '';
 	}
 
-	protected function translateValue(string $value, string $context, string $locale, bool $renderName): string
+	protected function translateValue(
+		string $value,
+		string $context,
+		string $locale,
+		bool $renderName,
+		int $valueCount
+	): string
 	{
 		if (str_contains($value, '#')) {
 			[$value, $nth] = explode('#', $value);
@@ -76,6 +82,7 @@ final class DayOfWeekInterpreter extends BasePartInterpreter
 			[
 				'dayNumber' => $intValue,
 				'context' => $context,
+				'valueCount' => $valueCount,
 			],
 			$locale,
 		);
@@ -92,6 +99,7 @@ final class DayOfWeekInterpreter extends BasePartInterpreter
 					'day' => $translated,
 					'nth' => $nth,
 					'context' => $context,
+					'valueCount' => $valueCount,
 				],
 				$locale,
 			);
@@ -104,6 +112,7 @@ final class DayOfWeekInterpreter extends BasePartInterpreter
 					'dayNumber' => $intValue,
 					'day' => $translated,
 					'context' => $context,
+					'valueCount' => $valueCount,
 				],
 				$locale,
 			);

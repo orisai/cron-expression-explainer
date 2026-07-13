@@ -63,10 +63,16 @@ return [
 	'before-minute' => '{position, select, first {} other { }}',
 	'every-minute' => 'a cada minuto',
 	'minute' => '{minute}',
-	'minute-named' => 'no minuto {minute}',
+	'minute-named' => '{valueCount, plural,
+      one {no minuto {minute}}
+      other {nos minutos {minute}}
+    }',
 	'before-hour' => ' ',
 	'hour' => '{hour}',
-	'hour-named' => 'da hora {hour}',
+	'hour-named' => '{valueCount, plural,
+      one {da hora {hour}}
+      other {das horas {hour}}
+    }',
 	'between-day-of-month-and-week' => ' e',
 	'before-day-of-week' => '{dayNumber, select,
       6 { no }
@@ -110,7 +116,10 @@ return [
     }',
 	'before-day-of-month' => ' ',
 	'day-of-month' => '{day}',
-	'day-of-month-named' => 'no dia {day} do mês',
+	'day-of-month-named' => '{valueCount, plural,
+      one {no dia {day} do mês}
+      other {nos dias {day}}
+    }',
 	'day-of-month-last-day' => '{context, select,
       range {o último dia do mês}
       other {no último dia do mês}

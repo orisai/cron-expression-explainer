@@ -34,10 +34,10 @@ return [
 	'every-minute' => 'každú minútu',
 	'before-minute' => '{position, select, first {} other { }}',
 	'minute' => '{minute}',
-	'minute-named' => 'v minúte {minute}',
+	'minute-named' => '{valueCount, plural, one {v minúte {minute}} other {v minútach {minute}}}',
 	'before-hour' => ' ',
 	'hour' => '{hour}',
-	'hour-named' => 'v hodine {hour}',
+	'hour-named' => '{valueCount, plural, one {v hodine {hour}} other {v hodinách {hour}}}',
 	'between-day-of-month-and-week' => ' a',
 	'before-day-of-week' => '{dayNumber, select,
 	  4 { vo }
@@ -100,7 +100,7 @@ return [
     }',
 	'before-day-of-month' => ' ',
 	'day-of-month' => '{day}',
-	'day-of-month-named' => 'dňa v mesiaci {day}',
+	'day-of-month-named' => '{valueCount, plural, one {dňa v mesiaci {day}} other {v dňoch v mesiaci {day}}}',
 	'day-of-month-last-day' => '{context, select,
       range {posledného dňa v mesiaci}
       other {posledný deň v mesiaci}

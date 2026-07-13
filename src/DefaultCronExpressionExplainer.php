@@ -33,6 +33,11 @@ use const STR_PAD_LEFT;
 final class DefaultCronExpressionExplainer implements CronExpressionExplainer
 {
 
+	private const PreviousTokenNames = [
+		'day-of-month' => 'dayOfMonth',
+		'day-of-week' => 'dayOfWeek',
+	];
+
 	private PartParser $parser;
 
 	private PartTranslator $translator;
@@ -263,6 +268,7 @@ final class DefaultCronExpressionExplainer implements CronExpressionExplainer
 		$renderDayJoiner = isset($fragments['day-of-month'], $fragments['day-of-week']);
 		$dayPartRendered = false;
 
+		$previousToken = 'none';
 		$explanation = '';
 		foreach ($this->translator->getPartsOrder($locale) as $token) {
 			$fragment = $fragments[$token] ?? null;
@@ -283,10 +289,12 @@ final class DefaultCronExpressionExplainer implements CronExpressionExplainer
 				"before-$token",
 				$fragment['parameters'] + [
 					'position' => $explanation === '' ? 'first' : 'other',
+					'previous' => $previousToken,
 				],
 				$locale,
 			);
 			$explanation .= $fragment['explanation'];
+			$previousToken = self::PreviousTokenNames[$token] ?? $token;
 		}
 
 		$sentenceEnd = $this->translator->translate('sentence-end', [], $locale);

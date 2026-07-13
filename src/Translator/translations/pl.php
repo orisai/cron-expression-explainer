@@ -85,10 +85,10 @@ return [
 	'before-minute' => '{position, select, first {} other { }}',
 	'every-minute' => 'co minutę',
 	'minute' => '{minute}',
-	'minute-named' => 'w minucie {minute}',
+	'minute-named' => '{valueCount, plural, one {w minucie {minute}} other {w minutach {minute}}}',
 	'before-hour' => ' ',
 	'hour' => '{hour}',
-	'hour-named' => 'w godzinie {hour}',
+	'hour-named' => '{valueCount, plural, one {w godzinie {hour}} other {w godzinach {hour}}}',
 	'between-day-of-month-and-week' => ' oraz',
 	'before-day-of-week' => '{dayNumber, select,
       2 { we }

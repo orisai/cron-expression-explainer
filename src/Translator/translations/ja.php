@@ -38,7 +38,7 @@ return [
 	'hour' => '{hour}時台',
 	'hour-named' => '{hour}時台',
 	'between-day-of-month-and-week' => 'と',
-	'before-day-of-week' => '',
+	'before-day-of-week' => '{previous, select, none {} dayOfMonth {} other {の}}',
 	'day-of-week' => '{dayNumber, select,
       1 {月曜日}
       2 {火曜日}

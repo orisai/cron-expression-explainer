@@ -39,7 +39,13 @@ final class MinuteInterpreter extends BasePartInterpreter
 		return $intValue;
 	}
 
-	protected function translateValue(string $value, string $context, string $locale, bool $renderName): string
+	protected function translateValue(
+		string $value,
+		string $context,
+		string $locale,
+		bool $renderName,
+		int $valueCount
+	): string
 	{
 		$key = $this->getKey();
 		if ($renderName) {
@@ -50,6 +56,8 @@ final class MinuteInterpreter extends BasePartInterpreter
 			$key,
 			[
 				'minute' => $this->convertNumericValue($value),
+				'context' => $context,
+				'valueCount' => $valueCount,
 			],
 			$locale,
 		);

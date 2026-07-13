@@ -17,15 +17,15 @@
         "expression": "1,2 * * * *",
         "seconds": null,
         "timezone": null,
-        "english": "At minute 1 and 2.",
-        "translation": "Bei Minute 1 und 2."
+        "english": "At minutes 1 and 2.",
+        "translation": "Bei den Minuten 1 und 2."
     },
     "minute-3": {
         "expression": "1,2,3,4,5 * * * *",
         "seconds": null,
         "timezone": null,
-        "english": "At minute 1, 2, 3, 4 and 5.",
-        "translation": "Bei Minute 1, 2, 3, 4 und 5."
+        "english": "At minutes 1, 2, 3, 4 and 5.",
+        "translation": "Bei den Minuten 1, 2, 3, 4 und 5."
     },
     "minute-4": {
         "expression": "1-10 * * * *",
@@ -94,15 +94,15 @@
         "expression": "* 1,2 * * *",
         "seconds": null,
         "timezone": null,
-        "english": "At every minute past hour 1 and 2.",
-        "translation": "Jede Minute in Stunde 1 und 2."
+        "english": "At every minute past hours 1 and 2.",
+        "translation": "Jede Minute in den Stunden 1 und 2."
     },
     "hour-2": {
         "expression": "* 1,2,3,4,5 * * *",
         "seconds": null,
         "timezone": null,
-        "english": "At every minute past hour 1, 2, 3, 4 and 5.",
-        "translation": "Jede Minute in Stunde 1, 2, 3, 4 und 5."
+        "english": "At every minute past hours 1, 2, 3, 4 and 5.",
+        "translation": "Jede Minute in den Stunden 1, 2, 3, 4 und 5."
     },
     "hour-3": {
         "expression": "* 1-10 * * *",
@@ -262,15 +262,15 @@
         "expression": "* * 1,2 * *",
         "seconds": null,
         "timezone": null,
-        "english": "At every minute on day 1 and 2.",
-        "translation": "Jede Minute am Monatstag 1 und 2."
+        "english": "At every minute on days 1 and 2.",
+        "translation": "Jede Minute an den Monatstagen 1 und 2."
     },
     "day-of-month-2": {
         "expression": "* * 1,2,3,4,5 * *",
         "seconds": null,
         "timezone": null,
-        "english": "At every minute on day 1, 2, 3, 4 and 5.",
-        "translation": "Jede Minute am Monatstag 1, 2, 3, 4 und 5."
+        "english": "At every minute on days 1, 2, 3, 4 and 5.",
+        "translation": "Jede Minute an den Monatstagen 1, 2, 3, 4 und 5."
     },
     "day-of-month-3": {
         "expression": "* * 1-10 * *",

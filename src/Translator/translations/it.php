@@ -63,10 +63,16 @@ return [
 	'before-minute' => '{position, select, first {} other { }}',
 	'every-minute' => 'ogni minuto',
 	'minute' => '{minute}',
-	'minute-named' => 'al minuto {minute}',
+	'minute-named' => '{valueCount, plural,
+      one {al minuto {minute}}
+      other {ai minuti {minute}}
+    }',
 	'before-hour' => ' ',
 	'hour' => '{hour}',
-	'hour-named' => 'dell’ora {hour}',
+	'hour-named' => '{valueCount, plural,
+      one {dell’ora {hour}}
+      other {delle ore {hour}}
+    }',
 	'between-day-of-month-and-week' => ' e',
 	'before-day-of-week' => ' ',
 	'day-of-week' => '{context, select,
@@ -147,7 +153,10 @@ return [
     }',
 	'before-day-of-month' => ' ',
 	'day-of-month' => '{day}',
-	'day-of-month-named' => 'il giorno {day}',
+	'day-of-month-named' => '{valueCount, plural,
+      one {il giorno {day}}
+      other {i giorni {day}}
+    }',
 	'day-of-month-last-day' => 'l’ultimo giorno del mese',
 	'day-of-month-last-weekday' => 'l’ultimo giorno lavorativo del mese',
 	'day-of-month-nearest-weekday' => 'il giorno lavorativo più vicino {day, select,

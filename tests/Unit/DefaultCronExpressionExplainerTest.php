@@ -63,7 +63,7 @@ final class DefaultCronExpressionExplainerTest extends TestCase
 
 		yield [
 			'1,2,3 * * * *',
-			'At minute 1, 2 and 3.',
+			'At minutes 1, 2 and 3.',
 		];
 
 		yield [
@@ -166,7 +166,7 @@ final class DefaultCronExpressionExplainerTest extends TestCase
 
 		yield [
 			'* 1,2,3 * * *',
-			'At every minute past hour 1, 2 and 3.',
+			'At every minute past hours 1, 2 and 3.',
 		];
 
 		yield [
@@ -312,7 +312,7 @@ final class DefaultCronExpressionExplainerTest extends TestCase
 
 		yield [
 			'* * 1,2,3 * *',
-			'At every minute on day 1, 2 and 3.',
+			'At every minute on days 1, 2 and 3.',
 		];
 
 		yield [
